@@ -254,6 +254,20 @@ export class FlumeConfig {
       port.acceptTypes = config.acceptTypes;
     }
 
+
+    if (
+      typeof config.maxOutputs !== "undefined" &&
+      typeof config.maxOutputs !== "number"
+    ) {
+      throw new Error(
+        `Optional key, "maxOutputs" must be a number when calling addPortType.`
+      );
+    } else if (config.maxOutputs === undefined) {
+      port.maxOutputs = Infinity;
+    } else {
+      port.maxOutputs = config.maxOutputs;
+    }
+
     if (config.controls === undefined) {
       port.controls = [];
     } else if (!Array.isArray(config.controls)) {

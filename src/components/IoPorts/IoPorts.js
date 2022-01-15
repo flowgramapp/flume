@@ -363,21 +363,31 @@ const Port = ({
         document.addEventListener("mousemove", handleDrag);
       }
     } else {
-      const coordinates = {
-        x:
-          byScale(
-            startPort.x - stage.x + startPort.width / 2 - stage.width / 2
-          ) + byScale(stageState.translate.x),
-        y:
-          byScale(
-            startPort.y - stage.y + startPort.width / 2 - stage.height / 2
-          ) + byScale(stageState.translate.y)
-      };
-      setDragStartCoordinates(coordinates);
-      dragStartCoordinatesCache.current = coordinates;
-      setIsDragging(true);
-      document.addEventListener("mouseup", handleDragEnd);
-      document.addEventListener("mousemove", handleDrag);
+      const outputPort = inputTypes[port.current.dataset.portType];
+
+      const nodes = document.querySelectorAll(
+        `[data-output-node-id="${nodeId}"][data-output-port-name="${name}"]`
+      );
+
+      const canConnect = nodes.length < outputPort.maxOutputs;
+
+      if (canConnect) {
+        const coordinates = {
+          x:
+            byScale(
+              startPort.x - stage.x + startPort.width / 2 - stage.width / 2
+            ) + byScale(stageState.translate.x),
+          y:
+            byScale(
+              startPort.y - stage.y + startPort.width / 2 - stage.height / 2
+            ) + byScale(stageState.translate.y)
+        };
+        setDragStartCoordinates(coordinates);
+        dragStartCoordinatesCache.current = coordinates;
+        setIsDragging(true);
+        document.addEventListener("mouseup", handleDragEnd);
+        document.addEventListener("mousemove", handleDrag);
+      }
     }
   };
 
