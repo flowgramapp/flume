@@ -416,6 +416,7 @@ const Port = ({
             from={dragStartCoordinates}
             to={dragStartCoordinates}
             lineRef={line}
+            stroke={color}
           />
         </Portal>
       ) : null}

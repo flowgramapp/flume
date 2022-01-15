@@ -5057,14 +5057,15 @@ var createSVG = function createSVG(_ref5) {
       outputNodeId = _ref5.outputNodeId,
       outputPortName = _ref5.outputPortName,
       inputNodeId = _ref5.inputNodeId,
-      inputPortName = _ref5.inputPortName;
+      inputPortName = _ref5.inputPortName,
+      stroke = _ref5.stroke;
 
   var svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
   svg.setAttribute("class", styles$3.svg);
   var path = document.createElementNS("http://www.w3.org/2000/svg", "path");
   var curve = calculateCurve(from, to);
   path.setAttribute("d", curve);
-  path.setAttribute("stroke", "rgb(185, 186, 189)");
+  path.setAttribute("stroke", stroke);
   path.setAttribute("stroke-width", "3");
   path.setAttribute("stroke-linecap", "round");
   path.setAttribute("fill", "none");
@@ -5082,7 +5083,7 @@ var getStageRef = function getStageRef(editorId) {
   return document.getElementById('' + CONNECTIONS_ID + editorId);
 };
 
-var createConnections = function createConnections(nodes, _ref6, editorId) {
+var createConnections = function createConnections(nodes, _ref6, editorId, portTypes) {
   var scale = _ref6.scale,
       stageId = _ref6.stageId;
 
@@ -5123,12 +5124,14 @@ var createConnections = function createConnections(nodes, _ref6, editorId) {
                   }
                 });
               } else {
+                var stroke = portTypes[output.portName].color;
                 createSVG({
                   id: id,
                   outputNodeId: output.nodeId,
                   outputPortName: output.portName,
                   inputNodeId: node.id,
                   inputPortName: inputName,
+                  stroke: stroke,
                   from: {
                     x: byScale(fromPort.x - stage.x + portHalf - stageHalfWidth),
                     y: byScale(fromPort.y - stage.y + portHalf - stageHalfHeight)
@@ -5541,7 +5544,8 @@ var Connection = function Connection(_ref) {
       outputNodeId = _ref.outputNodeId,
       outputPortName = _ref.outputPortName,
       inputNodeId = _ref.inputNodeId,
-      inputPortName = _ref.inputPortName;
+      inputPortName = _ref.inputPortName,
+      stroke = _ref.stroke;
 
   var curve = calculateCurve(from, to);
   return React.createElement(
@@ -5553,7 +5557,7 @@ var Connection = function Connection(_ref) {
       "data-output-port-name": outputPortName,
       "data-input-node-id": inputNodeId,
       "data-input-port-name": inputPortName,
-      stroke: "rgb(185, 186, 189)",
+      stroke: stroke,
       fill: "none",
       strokeWidth: 3,
       strokeLinecap: "round",
@@ -5976,7 +5980,8 @@ var Port = function Port(_ref7) {
       React.createElement(Connection, {
         from: dragStartCoordinates,
         to: dragStartCoordinates,
-        lineRef: line
+        lineRef: line,
+        stroke: color
       })
     ) : null
   );
@@ -7677,7 +7682,7 @@ var NodeEditor = function NodeEditor(_ref, ref) {
       dispatchStageState = _React$useReducer8[1];
 
   var recalculateConnections = React.useCallback(function () {
-    createConnections(nodes, stageState, editorId);
+    createConnections(nodes, stageState, editorId, portTypes);
   }, [nodes, editorId, stageState]);
 
   var recalculateStageRect = function recalculateStageRect() {

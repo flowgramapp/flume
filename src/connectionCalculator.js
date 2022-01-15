@@ -90,14 +90,15 @@ export const createSVG = ({
   outputNodeId,
   outputPortName,
   inputNodeId,
-  inputPortName
+  inputPortName,
+  stroke
 }) => {
   const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
   svg.setAttribute("class", styles.svg);
   const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
   const curve = calculateCurve(from, to)
   path.setAttribute("d", curve)
-  path.setAttribute("stroke", "rgb(185, 186, 189)");
+  path.setAttribute("stroke", stroke);
   path.setAttribute("stroke-width", "3");
   path.setAttribute("stroke-linecap", "round");
   path.setAttribute("fill", "none");
@@ -114,7 +115,7 @@ export const createSVG = ({
 export const getStageRef = editorId =>
   document.getElementById(`${CONNECTIONS_ID}${editorId}`);
 
-export const createConnections = (nodes, {scale, stageId}, editorId) => {
+export const createConnections = (nodes, {scale, stageId}, editorId, portTypes) => {
   const stageRef = getStageRef(editorId);
   if(stageRef){
     const stage = stageRef.getBoundingClientRect();
@@ -153,12 +154,14 @@ export const createConnections = (nodes, {scale, stageId}, editorId) => {
                     }
                   });
                 } else {
+                  const stroke = portTypes[output.portName].color;
                   createSVG({
                     id,
                     outputNodeId: output.nodeId,
                     outputPortName: output.portName,
                     inputNodeId: node.id,
                     inputPortName: inputName,
+                    stroke,
                     from: {
                       x: byScale(fromPort.x - stage.x + portHalf - stageHalfWidth),
                       y: byScale(fromPort.y - stage.y + portHalf - stageHalfHeight)

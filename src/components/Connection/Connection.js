@@ -10,7 +10,8 @@ const Connection = ({
   outputNodeId,
   outputPortName,
   inputNodeId,
-  inputPortName
+  inputPortName,
+  stroke
 }) => {
   const curve = calculateCurve(from, to)
   return (
@@ -21,7 +22,7 @@ const Connection = ({
         data-output-port-name={outputPortName}
         data-input-node-id={inputNodeId}
         data-input-port-name={inputPortName}
-        stroke="rgb(185, 186, 189)"
+        stroke={stroke}
         fill="none"
         strokeWidth={3}
         strokeLinecap="round"
