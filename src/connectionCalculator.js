@@ -154,14 +154,18 @@ export const createConnections = (nodes, {scale, stageId}, editorId, portTypes) 
                     }
                   });
                 } else {
-                  const stroke = portTypes[output.portName].color;
+                  // const x = document.querySelector(
+                  //   `[data-input-node-id="${output.nodeId}"]`
+                  // );
+                  // console.log(x ? x.dataset : null, output);
+                  // const stroke = portTypes[inputName].color;
                   createSVG({
                     id,
                     outputNodeId: output.nodeId,
                     outputPortName: output.portName,
                     inputNodeId: node.id,
                     inputPortName: inputName,
-                    stroke,
+                    stroke: 'rgba(200, 200, 200, 0.9)',
                     from: {
                       x: byScale(fromPort.x - stage.x + portHalf - stageHalfWidth),
                       y: byScale(fromPort.y - stage.y + portHalf - stageHalfHeight)

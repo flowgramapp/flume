@@ -85,7 +85,7 @@ export let NodeEditor = (
 
   const recalculateConnections = React.useCallback(() => {
     createConnections(nodes, stageState, editorId, portTypes);
-  }, [nodes, editorId, stageState]);
+  }, [nodes, editorId, stageState, portTypes]);
 
   const recalculateStageRect = () => {
     stage.current = document

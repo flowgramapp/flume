@@ -5124,14 +5124,18 @@ var createConnections = function createConnections(nodes, _ref6, editorId, portT
                   }
                 });
               } else {
-                var stroke = portTypes[output.portName].color;
+                // const x = document.querySelector(
+                //   `[data-input-node-id="${output.nodeId}"]`
+                // );
+                // console.log(x ? x.dataset : null, output);
+                // const stroke = portTypes[inputName].color;
                 createSVG({
                   id: id,
                   outputNodeId: output.nodeId,
                   outputPortName: output.portName,
                   inputNodeId: node.id,
                   inputPortName: inputName,
-                  stroke: stroke,
+                  stroke: 'rgba(200, 200, 200, 0.9)',
                   from: {
                     x: byScale(fromPort.x - stage.x + portHalf - stageHalfWidth),
                     y: byScale(fromPort.y - stage.y + portHalf - stageHalfHeight)
@@ -6498,7 +6502,7 @@ var ColorPicker = (function (_ref) {
   var wrapper = React.useRef();
 
   var testClickOutside = React.useCallback(function (e) {
-    if (!wrapper.current.contains(e.target)) {
+    if (wrapper.current && !wrapper.current.contains(e.target)) {
       onRequestClose();
       document.removeEventListener("click", testClickOutside);
       document.removeEventListener("contextmenu", testClickOutside);
@@ -7683,7 +7687,7 @@ var NodeEditor = function NodeEditor(_ref, ref) {
 
   var recalculateConnections = React.useCallback(function () {
     createConnections(nodes, stageState, editorId, portTypes);
-  }, [nodes, editorId, stageState]);
+  }, [nodes, editorId, stageState, portTypes]);
 
   var recalculateStageRect = function recalculateStageRect() {
     stage.current = document.getElementById("" + STAGE_ID + editorId).getBoundingClientRect();
