@@ -1,5 +1,5 @@
 import React from "react";
-import {clamp} from "ramda";
+import clamp from "lodash/clamp";
 import {nanoid} from "nanoid/non-secure";
 import styles from "./ContextMenu.module.css";
 

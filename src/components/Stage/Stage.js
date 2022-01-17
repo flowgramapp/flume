@@ -3,8 +3,8 @@ import { Portal } from "react-portal";
 import ContextMenu from "../ContextMenu/ContextMenu";
 import { NodeTypesContext, NodeDispatchContext } from "../../context";
 import Draggable from "../Draggable/Draggable";
-// import {sortBy} from "lodash/sortBy";
-import {clamp} from "ramda";
+import sortBy from "lodash/sortBy";
+import clamp from "lodash/clamp";
 import { STAGE_ID } from '../../constants'
 
 import styles from "./Stage.module.css";
@@ -167,7 +167,7 @@ const Stage = ({
 
   const menuOptions = React.useMemo(
     () => {
-      const options = 
+      const options = sortBy(
         Object.values(nodeTypes)
           .filter(node => node.addable !== false)
           .map(node => ({
@@ -177,8 +177,8 @@ const Stage = ({
             sortIndex: node.sortIndex,
             node
           })),
-        // ["sortIndex", "label"]
-      // )
+        ["sortIndex", "label"]
+      )
       if(!disableComments){
         options.push({ value: "comment", label: "Comment", description: "A comment for documenting nodes", internalType: "comment" })
       }

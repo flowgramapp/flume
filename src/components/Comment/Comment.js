@@ -4,7 +4,7 @@ import ContextMenu from "../ContextMenu/ContextMenu";
 import ColorPicker from "../ColorPicker/ColorPicker";
 import { StageContext } from "../../context";
 import { Portal } from "react-portal";
-import {clamp} from "ramda";
+import clamp from "lodash/clamp";
 
 import styles from "./Comment.module.css";
 

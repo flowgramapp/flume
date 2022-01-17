@@ -2,12 +2,10 @@
 // import jsx from 'acorn-jsx';
 import external from 'rollup-plugin-peer-deps-external'
 import postcss from 'rollup-plugin-postcss'
-// import commonjs from '@rollup/plugin-commonjs'
+import commonjs from '@rollup/plugin-commonjs'
 import resolve from '@rollup/plugin-node-resolve'
 import url from '@rollup/plugin-url'
 import svgr from '@svgr/rollup'
-// import merge from 'deepmerge';
-// import { createBasicConfig } from '@open-wc/building-rollup';
 
 import pkg from './package.json';
 
@@ -22,13 +20,11 @@ export default {
       file: pkg.main,
       format: 'cjs',
       sourcemap: true,
-      exports: 'named'
     },
     {
       file: pkg.module,
       format: 'es',
-      sourcemap: true,
-      exports: 'named'
+      sourcemap: true
     },
   ],
   external: [ 'react', 'react-dom' ],
@@ -43,7 +39,7 @@ export default {
     url(),
     svgr(),
     // typescript(),
-    // commonjs(),
+    commonjs(),
     resolve()
   ]
 };

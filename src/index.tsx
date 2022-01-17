@@ -25,7 +25,7 @@ import commentsReducer from "./commentsReducer";
 import toastsReducer from "./toastsReducer";
 import stageReducer from "./stageReducer";
 import usePrevious from "./hooks/usePrevious";
-import {clamp} from "ramda";
+import clamp from "lodash/clamp";
 import Cache from "./Cache";
 import { STAGE_ID, DRAG_CONNECTION_ID } from "./constants";
 
