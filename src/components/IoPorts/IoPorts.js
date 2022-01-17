@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./IoPorts.css";
 import { Portal } from "react-portal";
 import {
   NodeDispatchContext,
@@ -14,6 +13,8 @@ import { PortTypesContext } from "../../context";
 import usePrevious from "../../hooks/usePrevious";
 import { calculateCurve, getPortRect } from "../../connectionCalculator";
 import { STAGE_ID, DRAG_CONNECTION_ID } from '../../constants'
+
+import styles from "./IoPorts.module.css";
 
 function useTransputs (transputsFn, transputType, nodeId, inputData, connections) {
   const nodesDispatch = React.useContext(NodeDispatchContext);

@@ -1,9 +1,10 @@
 import React from "react";
-import styles from "./Control.css";
 import Checkbox from "../Checkbox/Checkbox";
 import TextInput from "../TextInput/TextInput";
 import Select from "../Select/Select";
 import { NodeDispatchContext, ContextContext } from "../../context";
+
+import styles from "./Control.module.css";
 
 const Control = ({
   type,

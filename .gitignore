@@ -6,6 +6,7 @@ node_modules
 
 # builds
 build
+out-tsc
 # dist
 .rpt2_cache
 

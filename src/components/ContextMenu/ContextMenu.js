@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "./ContextMenu.css";
-import clamp from "lodash/clamp";
-import nanoid from "nanoid/non-secure/index";
+import {clamp} from "ramda";
+import {nanoid} from "nanoid/non-secure";
+import styles from "./ContextMenu.module.css";
 
 const ContextMenu = ({
   x,

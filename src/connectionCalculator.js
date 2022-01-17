@@ -1,6 +1,7 @@
-import styles from "./components/Connection/Connection.css";
 import { CONNECTIONS_ID } from './constants'
 import { line, curveBasis } from 'd3-shape'
+
+import styles from "./components/Connection/Connection.module.css";
 
 const getPort = (nodeId, portName, transputType = "input") => document
   .querySelector(

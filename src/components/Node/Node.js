@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./Node.css";
 import {
   NodeTypesContext,
   NodeDispatchContext,
@@ -11,6 +10,8 @@ import { Portal } from "react-portal";
 import ContextMenu from "../ContextMenu/ContextMenu";
 import IoPorts from "../IoPorts/IoPorts";
 import Draggable from "../Draggable/Draggable";
+
+import styles from "./Node.module.css";
 
 const Node = ({
   id,

@@ -1,11 +1,12 @@
 import React from "react";
-import styles from "./Comment.css";
 import Draggable from "../Draggable/Draggable";
 import ContextMenu from "../ContextMenu/ContextMenu";
 import ColorPicker from "../ColorPicker/ColorPicker";
 import { StageContext } from "../../context";
 import { Portal } from "react-portal";
-import clamp from "lodash/clamp";
+import {clamp} from "ramda";
+
+import styles from "./Comment.module.css";
 
 export default ({
   dispatch,

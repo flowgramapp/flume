@@ -25,14 +25,40 @@ import commentsReducer from "./commentsReducer";
 import toastsReducer from "./toastsReducer";
 import stageReducer from "./stageReducer";
 import usePrevious from "./hooks/usePrevious";
-import clamp from "lodash/clamp";
+import {clamp} from "ramda";
 import Cache from "./Cache";
 import { STAGE_ID, DRAG_CONNECTION_ID } from "./constants";
-import styles from "./styles.css";
+
+import styles from "./styles.module.css";
 
 const defaultContext = {};
 
-export let NodeEditor = (
+type Props = {
+  comments?: any;
+  nodes?: any;
+  nodeTypes?: Object;
+  portTypes?: Object;
+  defaultNodes?: any[];
+  context?: Object;
+  onChange?: any;
+  onCommentsChange?: any;
+  renderNodeHeader?: any;
+  initialScale?: any;
+  spaceToPan?: boolean;
+  hideComments?: boolean;
+  disableComments?: boolean;
+  disableZoom?: boolean;
+  disablePan?: boolean;
+  circularBehavior?: any;
+  debug?: any;
+}
+
+type Handle = {
+  getNodes: () => any,
+  getComments: () => any;
+}
+
+const NodeEditor: React.ForwardRefRenderFunction<Handle, Props> = (
   {
     comments: initialComments,
     nodes: initialNodes,
@@ -56,9 +82,9 @@ export let NodeEditor = (
 ) => {
   const editorId = useId();
   const cache = React.useRef(new Cache());
-  const stage = React.useRef();
-  const [sideEffectToasts, setSideEffectToasts] = React.useState()
-  const [toasts, dispatchToasts] = React.useReducer(toastsReducer, []);
+  const stage = React.useRef<DOMRect>();
+  const [sideEffectToasts, setSideEffectToasts] = React.useState() as any;
+  const [toasts, dispatchToasts] = React.useReducer(toastsReducer, []) as any;
   const [nodes, dispatchNodes] = React.useReducer(
     connectNodesReducer(
       nodesReducer,
@@ -67,7 +93,7 @@ export let NodeEditor = (
     ),
     {},
     () => getInitialNodes(initialNodes, defaultNodes, nodeTypes, portTypes, context)
-  );
+  ) as any;
   const [comments, dispatchComments] = React.useReducer(
     commentsReducer,
     initialComments || {}
@@ -90,7 +116,7 @@ export let NodeEditor = (
 
   const recalculateStageRect = () => {
     stage.current = document
-      .getElementById(`${STAGE_ID}${editorId}`)
+      .getElementById(`${STAGE_ID}${editorId}`)!
       .getBoundingClientRect();
   };
 
@@ -195,7 +221,7 @@ export let NodeEditor = (
                         }
                       >
                         {!hideComments &&
-                          Object.values(comments).map(comment => (
+                          Object.values(comments).map((comment: any) => (
                             <Comment
                               {...comment}
                               stageRect={stage}
@@ -204,7 +230,7 @@ export let NodeEditor = (
                               key={comment.id}
                             />
                           ))}
-                        {Object.values(nodes).map(node => (
+                        {Object.values(nodes).map((node: any) => (
                           <Node
                             {...node}
                             stageRect={stage}
@@ -231,8 +257,10 @@ export let NodeEditor = (
     </PortTypesContext.Provider>
   );
 };
-NodeEditor = React.forwardRef(NodeEditor);
+
+export default React.forwardRef(NodeEditor);
+
 export { FlumeConfig, Controls, Colors } from "./typeBuilders";
 export { RootEngine } from "./RootEngine";
-export const useRootEngine = (nodes, engine, context) =>
+export const useRootEngine = (nodes: any, engine: any, context: any) =>
   Object.keys(nodes).length ? engine.resolveRootNode(nodes, { context }) : {};

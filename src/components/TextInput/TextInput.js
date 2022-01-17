@@ -1,6 +1,7 @@
 import React from "react";
-import styles from "./TextInput.css";
 import { RecalculateStageRectContext } from '../../context'
+
+import styles from "./TextInput.module.css";
 
 const TextInput = ({
   placeholder,

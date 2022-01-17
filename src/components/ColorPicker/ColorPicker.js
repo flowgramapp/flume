@@ -1,6 +1,7 @@
 import React from "react";
-import styles from "./ColorPicker.css";
 import { Colors } from "../../typeBuilders";
+
+import styles from "./ColorPicker.module.css";
 
 export default ({ x, y, onColorPicked, onRequestClose }) => {
   const wrapper = React.useRef();
