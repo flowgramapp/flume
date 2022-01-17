@@ -5994,29 +5994,26 @@ var Port = function Port(_ref7) {
 var Node = function Node(_ref) {
   var id = _ref.id,
       width = _ref.width,
-      height = _ref.height,
       x = _ref.x,
       y = _ref.y,
-      _ref$delay = _ref.delay,
       stageRect = _ref.stageRect,
       connections = _ref.connections,
       type = _ref.type,
       inputData = _ref.inputData,
       onDragStart = _ref.onDragStart,
-      onDragEnd = _ref.onDragEnd,
-      onDrag = _ref.onDrag;
+      renderNodeHeader = _ref.renderNodeHeader;
 
   var cache = React.useContext(CacheContext);
   var nodeTypes = React.useContext(NodeTypesContext);
   var nodesDispatch = React.useContext(NodeDispatchContext);
   var stageState = React.useContext(StageContext);
-  var _nodeTypes$type = nodeTypes[type],
-      label = _nodeTypes$type.label,
-      deletable = _nodeTypes$type.deletable,
-      _nodeTypes$type$input = _nodeTypes$type.inputs,
-      inputs = _nodeTypes$type$input === undefined ? [] : _nodeTypes$type$input,
-      _nodeTypes$type$outpu = _nodeTypes$type.outputs,
-      outputs = _nodeTypes$type$outpu === undefined ? [] : _nodeTypes$type$outpu;
+  var currentNodeType = nodeTypes[type];
+  var label = currentNodeType.label,
+      deletable = currentNodeType.deletable,
+      _currentNodeType$inpu = currentNodeType.inputs,
+      inputs = _currentNodeType$inpu === undefined ? [] : _currentNodeType$inpu,
+      _currentNodeType$outp = currentNodeType.outputs,
+      outputs = _currentNodeType$outp === undefined ? [] : _currentNodeType$outp;
 
 
   var nodeWrapper = React.useRef();
@@ -6114,15 +6111,19 @@ var Node = function Node(_ref) {
     setMenuOpen(false);
   };
 
+  var deleteNode = function deleteNode() {
+    nodesDispatch({
+      type: "REMOVE_NODE",
+      nodeId: id
+    });
+  };
+
   var handleMenuOption = function handleMenuOption(_ref5) {
     var value = _ref5.value;
 
     switch (value) {
       case "deleteNode":
-        nodesDispatch({
-          type: "REMOVE_NODE",
-          nodeId: id
-        });
+        deleteNode();
         break;
       default:
         return;
@@ -6146,9 +6147,13 @@ var Node = function Node(_ref) {
       stageState: stageState,
       stageRect: stageRect
     },
-    React.createElement(
-      "h2",
-      { className: styles$2.label },
+    renderNodeHeader ? renderNodeHeader(NodeHeader, currentNodeType, {
+      openMenu: handleContextMenu,
+      closeMenu: closeContextMenu,
+      deleteNode: deleteNode
+    }) : React.createElement(
+      NodeHeader,
+      null,
       label
     ),
     React.createElement(IoPorts, {
@@ -6177,6 +6182,18 @@ var Node = function Node(_ref) {
         emptyText: "This node has no options."
       })
     ) : null
+  );
+};
+
+var NodeHeader = function NodeHeader(_ref6) {
+  var children = _ref6.children,
+      _ref6$className = _ref6.className,
+      className = _ref6$className === undefined ? "" : _ref6$className,
+      props = objectWithoutProperties(_ref6, ["children", "className"]);
+  return React.createElement(
+    "h2",
+    _extends({}, props, { className: styles$2.label + (className ? " " + className : "") }),
+    children
   );
 };
 
@@ -7640,6 +7657,7 @@ var NodeEditor = function NodeEditor(_ref, ref) {
       _ref$disablePan = _ref.disablePan,
       disablePan = _ref$disablePan === undefined ? false : _ref$disablePan,
       circularBehavior = _ref.circularBehavior,
+      renderNodeHeader = _ref.renderNodeHeader,
       debug = _ref.debug;
 
   var editorId = useId();
@@ -7837,6 +7855,7 @@ var NodeEditor = function NodeEditor(_ref, ref) {
                           stageRect: stage,
                           onDragEnd: triggerRecalculation,
                           onDragStart: recalculateStageRect,
+                          renderNodeHeader: renderNodeHeader,
                           key: node.id
                         }));
                       }),
