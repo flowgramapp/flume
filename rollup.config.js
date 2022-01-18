@@ -1,5 +1,3 @@
-// import typescript from '@rollup/plugin-typescript';
-// import jsx from 'acorn-jsx';
 import external from 'rollup-plugin-peer-deps-external'
 import postcss from 'rollup-plugin-postcss'
 import commonjs from '@rollup/plugin-commonjs'
@@ -9,12 +7,9 @@ import svgr from '@svgr/rollup'
 
 import pkg from './package.json';
 
-// const baseConfig = createBasicConfig();
-
 export default {
   input: './out-tsc/index.js',
   // preserveModules: true,
-  exports: 'named',
   output: [
     {
       file: pkg.main,
@@ -28,7 +23,6 @@ export default {
     },
   ],
   external: [ 'react', 'react-dom' ],
-  // acornInjectPlugins: [jsx()],
   plugins: [
     external(),
     postcss({
@@ -38,8 +32,7 @@ export default {
     }),
     url(),
     svgr(),
-    // typescript(),
-    commonjs(),
-    resolve()
+    resolve(),
+    commonjs()
   ]
 };
