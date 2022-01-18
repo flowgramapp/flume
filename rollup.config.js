@@ -32,7 +32,7 @@ export default {
   plugins: [
     external(),
     postcss({
-      extract: true,
+      // extract: true,
       modules: true,
       plugins: [require('postcss-nested')]
     }),

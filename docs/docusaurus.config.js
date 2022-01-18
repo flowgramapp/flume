@@ -23,7 +23,7 @@ module.exports = {
         src: 'img/logo.svg',
         srcDark: 'img/logo-dark.svg'
       },
-      links: [
+      items: [
         {
           to: 'docs/',
           activeBasePath: 'docs',
@@ -102,7 +102,7 @@ module.exports = {
       {
         docs: {
           // It is recommended to set document id as docs home page (`docs/` path).
-          homePageId: 'overview',
+          // homePageId: 'overview',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
