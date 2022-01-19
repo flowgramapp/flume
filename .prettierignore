@@ -1,0 +1,6 @@
+dist
+.tsc-out
+cypress
+.github
+docs
+example

@@ -8,7 +8,7 @@ import svgr from '@svgr/rollup'
 import pkg from './package.json';
 
 export default {
-  input: './out-tsc/index.js',
+  input: './.tsc-out/index.js',
   // preserveModules: true,
   output: [
     {
