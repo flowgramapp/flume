@@ -712,8 +712,8 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z$d = ".ContextMenu-module_menuWrapper__ITBWh{\n  position: fixed;\n  z-index: 9999;\n  background: rgba(29, 32, 34, 0.95);\n  border-radius: 5px;\n  box-shadow: 0px 6px 7px rgba(0,0,0,.3);\n  border: 1px solid rgba(0,0,0,.4);\n  font-size: 14px;\n  max-width: 300px;\n  min-width: 150px;\n  font-family: Helvetica, sans-serif;\n  line-height: 1.15;\n  outline: none;\n}\n@supports (backdrop-filter: blur(6px)){\n  .ContextMenu-module_menuWrapper__ITBWh{\n    backdrop-filter: blur(6px);\n    background: rgba(29, 32, 34, 0.8);\n  }\n}\n.ContextMenu-module_menuHeader__sx1wC{\n  padding: 5px;\n  border-bottom: 1px solid rgba(255,255,255,.1);\n  display: flex;\n  flex-direction: column;\n}\n.ContextMenu-module_menuLabel__xoQOZ{\n  margin: 0px;\n  color: #fff;\n  font-size: 16px;\n  font-weight: 600;\n}\n.ContextMenu-module_optionsWrapper__uQ15A{\n  max-height: 300px;\n  overflow-y: auto;\n  display: flex;\n  flex-direction: column;\n}\n.ContextMenu-module_menuFilter__jGnDB{\n  border: none;\n  background: none;\n  height: 24px;\n  flex: 1 1 auto;\n  width: 100%;\n  outline: none;\n  color: #fff;\n}\n.ContextMenu-module_menuFilter__jGnDB::placeholder{\n    font-style: italic;\n  }\n.ContextMenu-module_option__Qa-Ww{\n  display: flex;\n  flex-direction: column;\n  flex-shrink: 0;\n  padding: 5px;\n  border-bottom: 1px solid rgba(255,255,255,.1);\n  color: #ffffff;\n}\n.ContextMenu-module_option__Qa-Ww:last-child{\n    border-bottom: none;\n  }\n.ContextMenu-module_option__Qa-Ww:hover{\n    background: rgba(255,255,255,.05);\n  }\n.ContextMenu-module_option__Qa-Ww label{\n    margin-bottom: 5px;\n    user-select: none;\n  }\n.ContextMenu-module_option__Qa-Ww label:last-child{\n      margin-bottom: 0px;\n    }\n.ContextMenu-module_option__Qa-Ww p{\n    margin: 0px;\n    font-style: italic;\n    font-size: 12px;\n    color: rgb(182, 186, 194);\n    user-select: none;\n  }\n.ContextMenu-module_option__Qa-Ww[data-selected=true]{\n    background: rgba(255,255,255,.05);\n  }\n.ContextMenu-module_emptyText__Ia1jr{\n  color: #fff;\n  padding: 5px;\n}\n";
-var styles$d = {"menuWrapper":"ContextMenu-module_menuWrapper__ITBWh","menuHeader":"ContextMenu-module_menuHeader__sx1wC","menuLabel":"ContextMenu-module_menuLabel__xoQOZ","optionsWrapper":"ContextMenu-module_optionsWrapper__uQ15A","menuFilter":"ContextMenu-module_menuFilter__jGnDB","option":"ContextMenu-module_option__Qa-Ww","emptyText":"ContextMenu-module_emptyText__Ia1jr"};
+var css_248z$d = ".ContextMenu-module_menuWrapper__VHNqw {\n  position: fixed;\n  z-index: 9999;\n  background: rgba(29, 32, 34, 0.95);\n  border-radius: 5px;\n  box-shadow: 0px 6px 7px rgba(0, 0, 0, 0.3);\n  border: 1px solid rgba(0, 0, 0, 0.4);\n  font-size: 14px;\n  max-width: 300px;\n  min-width: 150px;\n  font-family: Helvetica, sans-serif;\n  line-height: 1.15;\n  outline: none;\n}\n@supports (backdrop-filter: blur(6px)) {\n  .ContextMenu-module_menuWrapper__VHNqw {\n    backdrop-filter: blur(6px);\n    background: rgba(29, 32, 34, 0.8);\n  }\n}\n.ContextMenu-module_menuHeader__h8XO6 {\n  padding: 5px;\n  border-bottom: 1px solid rgba(255, 255, 255, 0.1);\n  display: flex;\n  flex-direction: column;\n}\n.ContextMenu-module_menuLabel__uZcY5 {\n  margin: 0px;\n  color: #fff;\n  font-size: 16px;\n  font-weight: 600;\n}\n.ContextMenu-module_optionsWrapper__gqjp9 {\n  max-height: 300px;\n  overflow-y: auto;\n  display: flex;\n  flex-direction: column;\n}\n.ContextMenu-module_menuFilter__mG2Cd {\n  border: none;\n  background: none;\n  height: 24px;\n  flex: 1 1 auto;\n  width: 100%;\n  outline: none;\n  color: #fff;\n}\n.ContextMenu-module_menuFilter__mG2Cd::placeholder {\n    font-style: italic;\n  }\n.ContextMenu-module_option__0Q3H- {\n  display: flex;\n  flex-direction: column;\n  flex-shrink: 0;\n  padding: 5px;\n  border-bottom: 1px solid rgba(255, 255, 255, 0.1);\n  color: #ffffff;\n}\n.ContextMenu-module_option__0Q3H-:last-child {\n    border-bottom: none;\n  }\n.ContextMenu-module_option__0Q3H-:hover {\n    background: rgba(255, 255, 255, 0.05);\n  }\n.ContextMenu-module_option__0Q3H- label {\n    margin-bottom: 5px;\n    user-select: none;\n  }\n.ContextMenu-module_option__0Q3H- label:last-child {\n      margin-bottom: 0px;\n    }\n.ContextMenu-module_option__0Q3H- p {\n    margin: 0px;\n    font-style: italic;\n    font-size: 12px;\n    color: rgb(182, 186, 194);\n    user-select: none;\n  }\n.ContextMenu-module_option__0Q3H-[data-selected='true'] {\n    background: rgba(255, 255, 255, 0.05);\n  }\n.ContextMenu-module_emptyText__0eXk0 {\n  color: #fff;\n  padding: 5px;\n}\n";
+var styles$d = {"menuWrapper":"ContextMenu-module_menuWrapper__VHNqw","menuHeader":"ContextMenu-module_menuHeader__h8XO6","menuLabel":"ContextMenu-module_menuLabel__uZcY5","optionsWrapper":"ContextMenu-module_optionsWrapper__gqjp9","menuFilter":"ContextMenu-module_menuFilter__mG2Cd","option":"ContextMenu-module_option__0Q3H-","emptyText":"ContextMenu-module_emptyText__0eXk0"};
 styleInject(css_248z$d);
 
 var ContextMenu = function (_a) {
@@ -721,7 +721,7 @@ var ContextMenu = function (_a) {
     var menuWrapper = React__default["default"].useRef();
     var menuOptionsWrapper = React__default["default"].useRef();
     var filterInput = React__default["default"].useRef();
-    var _c = React__default["default"].useState(""), filter = _c[0], setFilter = _c[1];
+    var _c = React__default["default"].useState(''), filter = _c[0], setFilter = _c[1];
     var _d = React__default["default"].useState(0), menuWidth = _d[0], setMenuWidth = _d[1];
     var _e = React__default["default"].useState(0), selectedIndex = _e[0], setSelectedIndex = _e[1];
     var menuId = React__default["default"].useRef(nanoid(10));
@@ -732,14 +732,14 @@ var ContextMenu = function (_a) {
     var testClickOutside = React__default["default"].useCallback(function (e) {
         if (menuWrapper.current && !menuWrapper.current.contains(e.target)) {
             onRequestClose();
-            document.removeEventListener("click", testClickOutside, { capture: true });
-            document.removeEventListener("contextmenu", testClickOutside, { capture: true });
+            document.removeEventListener('click', testClickOutside, { capture: true });
+            document.removeEventListener('contextmenu', testClickOutside, { capture: true });
         }
     }, [menuWrapper, onRequestClose]);
     var testEscape = React__default["default"].useCallback(function (e) {
         if (e.keyCode === 27) {
             onRequestClose();
-            document.removeEventListener("keydown", testEscape, { capture: true });
+            document.removeEventListener('keydown', testEscape, { capture: true });
         }
     }, [onRequestClose]);
     React__default["default"].useEffect(function () {
@@ -747,13 +747,13 @@ var ContextMenu = function (_a) {
             filterInput.current.focus();
         }
         setMenuWidth(menuWrapper.current.getBoundingClientRect().width);
-        document.addEventListener("keydown", testEscape, { capture: true });
-        document.addEventListener("click", testClickOutside, { capture: true });
-        document.addEventListener("contextmenu", testClickOutside, { capture: true });
+        document.addEventListener('keydown', testEscape, { capture: true });
+        document.addEventListener('click', testClickOutside, { capture: true });
+        document.addEventListener('contextmenu', testClickOutside, { capture: true });
         return function () {
-            document.removeEventListener("click", testClickOutside, { capture: true });
-            document.removeEventListener("contextmenu", testClickOutside, { capture: true });
-            document.removeEventListener("keydown", testEscape, { capture: true });
+            document.removeEventListener('click', testClickOutside, { capture: true });
+            document.removeEventListener('contextmenu', testClickOutside, { capture: true });
+            document.removeEventListener('keydown', testEscape, { capture: true });
         };
     }, [testClickOutside, testEscape]);
     var filteredOptions = React__default["default"].useMemo(function () {
@@ -806,16 +806,15 @@ var ContextMenu = function (_a) {
         if (menuOption) {
             var menuRect = menuOptionsWrapper.current.getBoundingClientRect();
             var optionRect = menuOption.getBoundingClientRect();
-            if (optionRect.y + optionRect.height > menuRect.y + menuRect.height ||
-                optionRect.y < menuRect.y) {
-                menuOption.scrollIntoView({ block: "nearest" });
+            if (optionRect.y + optionRect.height > menuRect.y + menuRect.height || optionRect.y < menuRect.y) {
+                menuOption.scrollIntoView({ block: 'nearest' });
             }
         }
     }, [selectedIndex]);
     return (React__default["default"].createElement("div", { className: styles$d.menuWrapper, onMouseDown: function (e) { return e.stopPropagation(); }, onKeyDown: handleKeyDown, style: {
             left: x,
             top: y,
-            width: filter ? menuWidth : "auto"
+            width: filter ? menuWidth : 'auto'
         }, ref: menuWrapper, tabIndex: 0, role: "menu", "aria-activedescendant": "".concat(menuId.current, "-").concat(selectedIndex) },
         !hideHeader && (label ? true : !!options.length) ? (React__default["default"].createElement("div", { className: styles$d.menuHeader },
             React__default["default"].createElement("label", { className: styles$d.menuLabel }, label),
@@ -824,7 +823,7 @@ var ContextMenu = function (_a) {
             filteredOptions.map(function (option, i) { return (React__default["default"].createElement(ContextOption, { menuId: menuId.current, selected: selectedIndex === i, onClick: function () { return handleOptionSelected(option); }, onMouseEnter: function () { return setSelectedIndex(null); }, index: i, key: option.value + i },
                 React__default["default"].createElement("label", null, option.label),
                 option.description ? React__default["default"].createElement("p", null, option.description) : null)); }),
-            !options.length ? (React__default["default"].createElement("span", { className: styles$d.emptyText }, emptyText)) : null)));
+            !options.length ? React__default["default"].createElement("span", { className: styles$d.emptyText }, emptyText) : null)));
 };
 var ContextOption = function (_a) {
     var menuId = _a.menuId, index = _a.index, children = _a.children, onClick = _a.onClick, selected = _a.selected, onMouseEnter = _a.onMouseEnter;
@@ -891,8 +890,8 @@ var Draggable = (function (_a) {
         if (onDragEnd) {
             onDragEnd(e, coordinates);
         }
-        window.removeEventListener("mouseup", stopDrag);
-        window.removeEventListener("mousemove", updateCoordinates);
+        window.removeEventListener('mouseup', stopDrag);
+        window.removeEventListener('mousemove', updateCoordinates);
     };
     var startDrag = function (e) {
         if (onDragStart) {
@@ -903,13 +902,13 @@ var Draggable = (function (_a) {
             x: startCoordinates.current.x - nodeRect.left,
             y: startCoordinates.current.y - nodeRect.top
         };
-        window.addEventListener("mouseup", stopDrag);
-        window.addEventListener("mousemove", updateCoordinates);
+        window.addEventListener('mouseup', stopDrag);
+        window.addEventListener('mousemove', updateCoordinates);
     };
     var checkDragDelay = function (e) {
         var x;
         var y;
-        if ("ontouchstart" in window && e.touches) {
+        if ('ontouchstart' in window && e.touches) {
             x = e.touches[0].clientX;
             y = e.touches[0].clientY;
         }
@@ -928,8 +927,8 @@ var Draggable = (function (_a) {
         }
     };
     var endDragDelay = function () {
-        document.removeEventListener("mouseup", endDragDelay);
-        document.removeEventListener("mousemove", checkDragDelay);
+        document.removeEventListener('mouseup', endDragDelay);
+        document.removeEventListener('mousemove', checkDragDelay);
         startCoordinates.current = null;
     };
     var startDragDelay = function (e) {
@@ -939,7 +938,7 @@ var Draggable = (function (_a) {
         e.stopPropagation();
         var x;
         var y;
-        if ("ontouchstart" in window && e.touches) {
+        if ('ontouchstart' in window && e.touches) {
             x = e.touches[0].clientX;
             y = e.touches[0].clientY;
         }
@@ -949,8 +948,8 @@ var Draggable = (function (_a) {
             y = e.clientY;
         }
         startCoordinates.current = { x: x, y: y };
-        document.addEventListener("mouseup", endDragDelay);
-        document.addEventListener("mousemove", checkDragDelay);
+        document.addEventListener('mouseup', endDragDelay);
+        document.addEventListener('mousemove', checkDragDelay);
     };
     return (React__default["default"].createElement("div", __assign$c({ onMouseDown: function (e) {
             if (!disabled) {
@@ -4556,8 +4555,8 @@ var STAGE_ID = '__node_editor_stage__';
 var DRAG_CONNECTION_ID = '__node_editor_drag_connection__';
 var CONNECTIONS_ID = '__node_editor_connections__';
 
-var css_248z$c = ".Stage-module_wrapper__4mnnp {\n  width: 100%;\n  height: 100%;\n  min-height: 100px;\n  background-color: rgb(26, 28, 29);\n  background-image: linear-gradient(\n      0deg,\n      transparent 24%,\n      rgba(255, 255, 255, 0.04) 25%,\n      rgba(255, 255, 255, 0.04) 26%,\n      transparent 27%,\n      transparent 74%,\n      rgba(255, 255, 255, 0.04) 75%,\n      rgba(255, 255, 255, 0.04) 76%,\n      transparent 77%,\n      transparent\n    ),\n    linear-gradient(\n      90deg,\n      transparent 24%,\n      rgba(255, 255, 255, 0.04) 25%,\n      rgba(255, 255, 255, 0.04) 26%,\n      transparent 27%,\n      transparent 74%,\n      rgba(255, 255, 255, 0.04) 75%,\n      rgba(255, 255, 255, 0.04) 76%,\n      transparent 77%,\n      transparent\n    );\n  color: #000;\n  background-size: 30px 30px;\n  position: relative;\n  overflow: hidden;\n  -webkit-overflow-scrolling: touch;\n  font-family: Helvetica, sans-serif;\n  text-align: left;\n  line-height: 1;\n  outline: none !important;\n}\n.Stage-module_wrapper__4mnnp * {\n  box-sizing: border-box;\n}\n.Stage-module_wrapper__4mnnp input,\ntextarea,\nselect {\n  font-family: Helvetica, sans-serif;\n}\n.Stage-module_transformWrapper__sSHnC {\n  transform-origin: center center;\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  width: 0px;\n  height: 0px;\n}\n.Stage-module_scaleWrapper__PEsM4 {\n  position: absolute;\n  left: 0px;\n  top: 0px;\n  width: 0px;\n  height: 0px;\n}\n";
-var styles$c = {"wrapper":"Stage-module_wrapper__4mnnp","transformWrapper":"Stage-module_transformWrapper__sSHnC","scaleWrapper":"Stage-module_scaleWrapper__PEsM4"};
+var css_248z$c = ".Stage-module_wrapper__ey3LM {\n  width: 100%;\n  height: 100%;\n  min-height: 100px;\n  background-color: rgb(26, 28, 29);\n  background-image: linear-gradient(\n      0deg,\n      transparent 24%,\n      rgba(255, 255, 255, 0.04) 25%,\n      rgba(255, 255, 255, 0.04) 26%,\n      transparent 27%,\n      transparent 74%,\n      rgba(255, 255, 255, 0.04) 75%,\n      rgba(255, 255, 255, 0.04) 76%,\n      transparent 77%,\n      transparent\n    ),\n    linear-gradient(\n      90deg,\n      transparent 24%,\n      rgba(255, 255, 255, 0.04) 25%,\n      rgba(255, 255, 255, 0.04) 26%,\n      transparent 27%,\n      transparent 74%,\n      rgba(255, 255, 255, 0.04) 75%,\n      rgba(255, 255, 255, 0.04) 76%,\n      transparent 77%,\n      transparent\n    );\n  color: #000;\n  background-size: 30px 30px;\n  position: relative;\n  overflow: hidden;\n  -webkit-overflow-scrolling: touch;\n  font-family: Helvetica, sans-serif;\n  text-align: left;\n  line-height: 1;\n  outline: none !important;\n}\n.Stage-module_wrapper__ey3LM * {\n  box-sizing: border-box;\n}\n.Stage-module_wrapper__ey3LM input,\ntextarea,\nselect {\n  font-family: Helvetica, sans-serif;\n}\n.Stage-module_transformWrapper__grUrT {\n  transform-origin: center center;\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  width: 0px;\n  height: 0px;\n}\n.Stage-module_scaleWrapper__XAhiw {\n  position: absolute;\n  left: 0px;\n  top: 0px;\n  width: 0px;\n  height: 0px;\n}\n";
+var styles$c = {"wrapper":"Stage-module_wrapper__ey3LM","transformWrapper":"Stage-module_transformWrapper__grUrT","scaleWrapper":"Stage-module_scaleWrapper__XAhiw"};
 styleInject(css_248z$c);
 
 var Stage = function (_a) {
@@ -4575,13 +4574,13 @@ var Stage = function (_a) {
     }, []);
     React__default["default"].useEffect(function () {
         stageRef.current = wrapper.current.getBoundingClientRect();
-        window.addEventListener("resize", setStageRect);
+        window.addEventListener('resize', setStageRect);
         return function () {
-            window.removeEventListener("resize", setStageRect);
+            window.removeEventListener('resize', setStageRect);
         };
     }, [stageRef, setStageRect]);
     var handleWheel = React__default["default"].useCallback(function (e) {
-        if (e.target.nodeName === "TEXTAREA" || e.target.dataset.comment) {
+        if (e.target.nodeName === 'TEXTAREA' || e.target.dataset.comment) {
             if (e.target.clientHeight < e.target.scrollHeight)
                 return;
         }
@@ -4591,7 +4590,7 @@ var Stage = function (_a) {
             dispatchStageState(function (_a) {
                 var scale = _a.scale;
                 return ({
-                    type: "SET_SCALE",
+                    type: 'SET_SCALE',
                     scale: clamp_1(scale - clamp_1(delta_1, -10, 10) * 0.005, 0.1, 7)
                 });
             });
@@ -4620,7 +4619,7 @@ var Stage = function (_a) {
         dispatchStageState(function (_a) {
             var tran = _a.translate;
             return ({
-                type: "SET_TRANSLATE",
+                type: 'SET_TRANSLATE',
                 translate: {
                     x: tran.x + xDistance,
                     y: tran.y + yDistance
@@ -4641,20 +4640,18 @@ var Stage = function (_a) {
     var addNode = function (_a) {
         var node = _a.node, internalType = _a.internalType;
         var wrapperRect = wrapper.current.getBoundingClientRect();
-        var x = byScale(menuCoordinates.x - wrapperRect.x - wrapperRect.width / 2) +
-            byScale(translate.x);
-        var y = byScale(menuCoordinates.y - wrapperRect.y - wrapperRect.height / 2) +
-            byScale(translate.y);
-        if (internalType === "comment") {
+        var x = byScale(menuCoordinates.x - wrapperRect.x - wrapperRect.width / 2) + byScale(translate.x);
+        var y = byScale(menuCoordinates.y - wrapperRect.y - wrapperRect.height / 2) + byScale(translate.y);
+        if (internalType === 'comment') {
             dispatchComments({
-                type: "ADD_COMMENT",
+                type: 'ADD_COMMENT',
                 x: x,
                 y: y
             });
         }
         else {
             dispatchNodes({
-                type: "ADD_NODE",
+                type: 'ADD_NODE',
                 x: x,
                 y: y,
                 nodeType: node.type
@@ -4664,7 +4661,7 @@ var Stage = function (_a) {
     var handleDocumentKeyUp = function (e) {
         if (e.which === 32) {
             setSpaceIsPressed(false);
-            document.removeEventListener("keyup", handleDocumentKeyUp);
+            document.removeEventListener('keyup', handleDocumentKeyUp);
         }
     };
     var handleKeyDown = function (e) {
@@ -4672,7 +4669,7 @@ var Stage = function (_a) {
             e.preventDefault();
             e.stopPropagation();
             setSpaceIsPressed(true);
-            document.addEventListener("keyup", handleDocumentKeyUp);
+            document.addEventListener('keyup', handleDocumentKeyUp);
         }
     };
     var handleMouseEnter = function () {
@@ -4683,9 +4680,9 @@ var Stage = function (_a) {
     React__default["default"].useEffect(function () {
         if (!disableZoom) {
             var stageWrapper_1 = wrapper.current;
-            stageWrapper_1.addEventListener("wheel", handleWheel);
+            stageWrapper_1.addEventListener('wheel', handleWheel);
             return function () {
-                stageWrapper_1.removeEventListener("wheel", handleWheel);
+                stageWrapper_1.removeEventListener('wheel', handleWheel);
             };
         }
     }, [handleWheel, disableZoom]);
@@ -4698,13 +4695,18 @@ var Stage = function (_a) {
             description: node.description,
             sortIndex: node.sortIndex,
             node: node
-        }); }), ["sortIndex", "label"]);
+        }); }), ['sortIndex', 'label']);
         if (!disableComments) {
-            options.push({ value: "comment", label: "Comment", description: "A comment for documenting nodes", internalType: "comment" });
+            options.push({
+                value: 'comment',
+                label: 'Comment',
+                description: 'A comment for documenting nodes',
+                internalType: 'comment'
+            });
         }
         return options;
     }, [nodeTypes, disableComments]);
-    return (React__default["default"].createElement(Draggable, { id: "".concat(STAGE_ID).concat(editorId), className: styles$c.wrapper, innerRef: wrapper, onContextMenu: handleContextMenu, onMouseEnter: handleMouseEnter, onDragDelayStart: handleDragDelayStart, onDragStart: handleDragStart, onDrag: handleMouseDrag, onDragEnd: handleDragEnd, onKeyDown: handleKeyDown, tabIndex: -1, stageState: { scale: scale, translate: translate }, style: { cursor: spaceIsPressed && spaceToPan ? "grab" : "" }, disabled: disablePan || (spaceToPan && !spaceIsPressed), "data-flume-stage": true },
+    return (React__default["default"].createElement(Draggable, { id: "".concat(STAGE_ID).concat(editorId), className: styles$c.wrapper, innerRef: wrapper, onContextMenu: handleContextMenu, onMouseEnter: handleMouseEnter, onDragDelayStart: handleDragDelayStart, onDragStart: handleDragStart, onDrag: handleMouseDrag, onDragEnd: handleDragEnd, onKeyDown: handleKeyDown, tabIndex: -1, stageState: { scale: scale, translate: translate }, style: { cursor: spaceIsPressed && spaceToPan ? 'grab' : '' }, disabled: disablePan || (spaceToPan && !spaceIsPressed), "data-flume-stage": true },
         menuOpen ? (React__default["default"].createElement(Portal$1, null,
             React__default["default"].createElement(ContextMenu, { x: menuCoordinates.x, y: menuCoordinates.y, options: menuOptions, onRequestClose: closeContextMenu, onOptionSelected: addNode, label: "Add Node" }))) : null,
         React__default["default"].createElement("div", { ref: translateWrapper, className: styles$c.transformWrapper, style: { transform: "translate(".concat(-translate.x, "px, ").concat(-translate.y, "px)") } },
@@ -4712,7 +4714,7 @@ var Stage = function (_a) {
         outerStageChildren));
 };
 
-var pi = Math.PI,
+const pi = Math.PI,
     tau = 2 * pi,
     epsilon = 1e-6,
     tauEpsilon = tau - epsilon;
@@ -4997,17 +4999,16 @@ function curveBasis(context) {
   return new Basis(context);
 }
 
-var css_248z$b = ".Connection-module_svg__as47u{\n  position: absolute;\n  left: 0px;\n  top: 0px;\n  pointer-events: none;\n  z-index: 0;\n  overflow: visible !important;\n}\n";
-var styles$b = {"svg":"Connection-module_svg__as47u"};
+var css_248z$b = ".Connection-module_svg__JwtaQ {\n  position: absolute;\n  left: 0px;\n  top: 0px;\n  pointer-events: none;\n  z-index: 0;\n  overflow: visible !important;\n}\n";
+var styles$b = {"svg":"Connection-module_svg__JwtaQ"};
 styleInject(css_248z$b);
 
 var getPort = function (nodeId, portName, transputType) {
-    if (transputType === void 0) { transputType = "input"; }
-    return document
-        .querySelector("[data-node-id=\"".concat(nodeId, "\"] [data-port-name=\"").concat(portName, "\"][data-port-transput-type=\"").concat(transputType, "\"]"));
+    if (transputType === void 0) { transputType = 'input'; }
+    return document.querySelector("[data-node-id=\"".concat(nodeId, "\"] [data-port-name=\"").concat(portName, "\"][data-port-transput-type=\"").concat(transputType, "\"]"));
 };
 var getPortRect = function (nodeId, portName, transputType, cache) {
-    if (transputType === void 0) { transputType = "input"; }
+    if (transputType === void 0) { transputType = 'input'; }
     if (cache) {
         var portCacheName = nodeId + portName + transputType;
         var cachedPort = cache.current.ports[portCacheName];
@@ -5051,31 +5052,29 @@ var deleteConnectionsByNodeId = function (nodeId) {
 };
 var updateConnection = function (_a) {
     var line = _a.line, from = _a.from, to = _a.to;
-    line.setAttribute("d", calculateCurve(from, to));
+    line.setAttribute('d', calculateCurve(from, to));
 };
 var createSVG = function (_a) {
     var from = _a.from, to = _a.to, stage = _a.stage, id = _a.id, outputNodeId = _a.outputNodeId, outputPortName = _a.outputPortName, inputNodeId = _a.inputNodeId, inputPortName = _a.inputPortName, stroke = _a.stroke;
-    var svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-    svg.setAttribute("class", styles$b.svg);
-    var path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+    var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    svg.setAttribute('class', styles$b.svg);
+    var path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
     var curve = calculateCurve(from, to);
-    path.setAttribute("d", curve);
-    path.setAttribute("stroke", stroke);
-    path.setAttribute("stroke-width", "3");
-    path.setAttribute("stroke-linecap", "round");
-    path.setAttribute("fill", "none");
-    path.setAttribute("data-connection-id", id);
-    path.setAttribute("data-output-node-id", outputNodeId);
-    path.setAttribute("data-output-port-name", outputPortName);
-    path.setAttribute("data-input-node-id", inputNodeId);
-    path.setAttribute("data-input-port-name", inputPortName);
+    path.setAttribute('d', curve);
+    path.setAttribute('stroke', stroke);
+    path.setAttribute('stroke-width', '3');
+    path.setAttribute('stroke-linecap', 'round');
+    path.setAttribute('fill', 'none');
+    path.setAttribute('data-connection-id', id);
+    path.setAttribute('data-output-node-id', outputNodeId);
+    path.setAttribute('data-output-port-name', outputPortName);
+    path.setAttribute('data-input-node-id', inputNodeId);
+    path.setAttribute('data-input-port-name', inputPortName);
     svg.appendChild(path);
     stage.appendChild(svg);
     return svg;
 };
-var getStageRef = function (editorId) {
-    return document.getElementById("".concat(CONNECTIONS_ID).concat(editorId));
-};
+var getStageRef = function (editorId) { return document.getElementById("".concat(CONNECTIONS_ID).concat(editorId)); };
 var createConnections = function (nodes, _a, editorId, portTypes) {
     var scale = _a.scale; _a.stageId;
     var stageRef = getStageRef(editorId);
@@ -5089,8 +5088,8 @@ var createConnections = function (nodes, _a, editorId, portTypes) {
                 Object.entries(node.connections.inputs).forEach(function (_a, k) {
                     var inputName = _a[0], outputs = _a[1];
                     outputs.forEach(function (output) {
-                        var fromPort = getPortRect(output.nodeId, output.portName, "output");
-                        var toPort = getPortRect(node.id, inputName, "input");
+                        var fromPort = getPortRect(output.nodeId, output.portName, 'output');
+                        var toPort = getPortRect(node.id, inputName, 'input');
                         var portHalf = fromPort ? fromPort.width / 2 : 0;
                         if (fromPort && toPort) {
                             var id = output.nodeId + output.portName + node.id + inputName;
@@ -5140,8 +5139,8 @@ var createConnections = function (nodes, _a, editorId, portTypes) {
     }
 };
 
-var css_248z$a = ".Checkbox-module_wrapper__PqN7h{\n  display: flex;\n  align-items: center;\n}\n.Checkbox-module_checkbox__Sr-um{\n  background: linear-gradient(to bottom, #5b5f62, #6f7477);\n  border: 1px solid #3c3e40;\n  border-radius: 4px;\n  margin-right: 8px;\n}\n.Checkbox-module_label__lvTV-{\n  padding-top: 2px;\n  font-size: 13px;\n}\n";
-var styles$a = {"wrapper":"Checkbox-module_wrapper__PqN7h","checkbox":"Checkbox-module_checkbox__Sr-um","label":"Checkbox-module_label__lvTV-"};
+var css_248z$a = ".Checkbox-module_wrapper__YoGeN {\n  display: flex;\n  align-items: center;\n}\n.Checkbox-module_checkbox__Yldtq {\n  background: linear-gradient(to bottom, #5b5f62, #6f7477);\n  border: 1px solid #3c3e40;\n  border-radius: 4px;\n  margin-right: 8px;\n}\n.Checkbox-module_label__Qv41w {\n  padding-top: 2px;\n  font-size: 13px;\n}\n";
+var styles$a = {"wrapper":"Checkbox-module_wrapper__YoGeN","checkbox":"Checkbox-module_checkbox__Yldtq","label":"Checkbox-module_label__Qv41w"};
 styleInject(css_248z$a);
 
 var Checkbox = function (_a) {
@@ -5152,8 +5151,8 @@ var Checkbox = function (_a) {
         React__default["default"].createElement("label", { className: styles$a.label, htmlFor: id }, label)));
 };
 
-var css_248z$9 = ".TextInput-module_wrapper__z4wcl{\n  background: none;\n  border: none;\n}\n.TextInput-module_input__UOLLa{\n  background: linear-gradient(to bottom, #5b5f62, #6f7477);\n  width: 100%;\n  border: 1px solid #3c3e40;\n  border-radius: 4px;\n  font-size: 13px;\n  padding: 5px;\n  resize: vertical;\n  outline: none;\n}\n.TextInput-module_input__UOLLa::placeholder{\n    color: rgb(47, 49, 50);\n  }\n.TextInput-module_input__UOLLa:focus{\n    background: linear-gradient(to bottom, #676b6e, #75797c);\n  }\n";
-var styles$9 = {"wrapper":"TextInput-module_wrapper__z4wcl","input":"TextInput-module_input__UOLLa"};
+var css_248z$9 = ".TextInput-module_wrapper__XaQwo {\n  background: none;\n  border: none;\n}\n.TextInput-module_input__OriOa {\n  background: linear-gradient(to bottom, #5b5f62, #6f7477);\n  width: 100%;\n  border: 1px solid #3c3e40;\n  border-radius: 4px;\n  font-size: 13px;\n  padding: 5px;\n  resize: vertical;\n  outline: none;\n}\n.TextInput-module_input__OriOa::placeholder {\n    color: rgb(47, 49, 50);\n  }\n.TextInput-module_input__OriOa:focus {\n    background: linear-gradient(to bottom, #676b6e, #75797c);\n  }\n";
+var styles$9 = {"wrapper":"TextInput-module_wrapper__XaQwo","input":"TextInput-module_input__OriOa"};
 styleInject(css_248z$9);
 
 var TextInput = function (_a) {
@@ -5161,8 +5160,8 @@ var TextInput = function (_a) {
     var numberInput = React__default["default"].useRef();
     var recalculateStageRect = React__default["default"].useContext(RecalculateStageRectContext);
     var handleDragEnd = function () {
-        document.removeEventListener("mousemove", handleMouseMove);
-        document.removeEventListener("mouseup", handleDragEnd);
+        document.removeEventListener('mousemove', handleMouseMove);
+        document.removeEventListener('mouseup', handleDragEnd);
     };
     var handleMouseMove = function (e) {
         e.stopPropagation();
@@ -5171,10 +5170,10 @@ var TextInput = function (_a) {
     var handlePossibleResize = function (e) {
         e.stopPropagation();
         recalculateStageRect();
-        document.addEventListener("mousemove", handleMouseMove);
-        document.addEventListener("mouseup", handleDragEnd);
+        document.addEventListener('mousemove', handleMouseMove);
+        document.addEventListener('mouseup', handleDragEnd);
     };
-    return (React__default["default"].createElement("div", { className: styles$9.wrapper }, type === "number" ? (React__default["default"].createElement("input", { onKeyDown: function (e) {
+    return (React__default["default"].createElement("div", { className: styles$9.wrapper }, type === 'number' ? (React__default["default"].createElement("input", { onKeyDown: function (e) {
             if (e.keyCode === 69) {
                 e.preventDefault();
                 return false;
@@ -5196,11 +5195,11 @@ var TextInput = function (_a) {
                 onChange(0);
                 numberInput.current.value = 0;
             }
-        }, step: step || "1", onMouseDown: handlePossibleResize, type: type || "text", placeholder: placeholder, className: styles$9.input, defaultValue: data, onDragStart: function (e) { return e.stopPropagation(); }, ref: numberInput })) : (React__default["default"].createElement("textarea", { onChange: function (e) { return onChange(e.target.value); }, onMouseDown: handlePossibleResize, type: "text", placeholder: placeholder, className: styles$9.input, value: data, onDragStart: function (e) { return e.stopPropagation(); } }))));
+        }, step: step || '1', onMouseDown: handlePossibleResize, type: type || 'text', placeholder: placeholder, className: styles$9.input, defaultValue: data, onDragStart: function (e) { return e.stopPropagation(); }, ref: numberInput })) : (React__default["default"].createElement("textarea", { onChange: function (e) { return onChange(e.target.value); }, onMouseDown: handlePossibleResize, type: "text", placeholder: placeholder, className: styles$9.input, value: data, onDragStart: function (e) { return e.stopPropagation(); } }))));
 };
 
-var css_248z$8 = ".Select-module_wrapper__WC4Xv{\n  font-size: 14px;\n  padding: 3px 6px;\n  border-radius: 4px;\n  background: linear-gradient(to top, #5b5f62, #6f7477);\n  width: 100%;\n  border: 1px solid #3c3e40;\n  padding-right: 15px;\n  position: relative;\n}\n  .Select-module_wrapper__WC4Xv::after{\n    content: \"\";\n    position: absolute;\n    background: none;\n    right: 5px;\n    top: 8px;\n    width: 0;\n    height: 0;\n    border-style: solid;\n    border-width: 6px 5px 0 5px;\n    border-color: #191b1c transparent transparent transparent;\n  }\n  .Select-module_wrapper__WC4Xv:hover{\n    background: linear-gradient(to top, #63676a, #777b7e);\n  }\n.Select-module_chipWrapper__9cKYa{\n  font-size: 14px;\n  padding: 3px 6px;\n  border-radius: 4px;\n  background: linear-gradient(to top, #5b5f62, #6f7477);\n  border: 1px solid #3c3e40;\n  margin: 2px;\n  position: relative;\n}\n.Select-module_chipWrapper__9cKYa:hover .Select-module_deleteButton__pZU6Q{\n  opacity: 1;\n}\n.Select-module_chipsWrapper__hUO6Y{\n  display: flex;\n  flex-direction: column;\n  margin-bottom: 6px;\n}\n.Select-module_deleteButton__pZU6Q{\n  position: absolute;\n  right: 0px;\n  top: 0px;\n  height: 100%;\n  width: 22px;\n  padding: 0px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  background: linear-gradient(to top, #5b5f62, #6f7477);\n  border-radius: 3px;\n  border: none;\n  font-weight: bold;\n  opacity: 0;\n}\n.Select-module_deleteButton__pZU6Q:focus{\n  opacity: 1;\n}\n.Select-module_deleteButton__pZU6Q:hover{\n  background: linear-gradient(to top, #64696c, #797f82);\n}\n.Select-module_selectedWrapper__6286l{\n  display: flex;\n  flex-direction: column;\n  border-radius: 4px;\n  background: linear-gradient(to top, #5b5f62, #6f7477);\n  width: 100%;\n  border: 1px solid #3c3e40;\n  font-size: 14px;\n  padding: 3px 6px;\n  padding-right: 15px;\n  position: relative;\n}\n.Select-module_selectedWrapper__6286l::after{\n    content: \"\";\n    position: absolute;\n    background: none;\n    right: 5px;\n    top: calc(50% - 4px);\n    width: 0;\n    height: 0;\n    border-style: solid;\n    border-width: 6px 5px 0 5px;\n    border-color: #191b1c transparent transparent transparent;\n  }\n.Select-module_selectedWrapper__6286l label{\n    margin: 0px;\n  }\n.Select-module_selectedWrapper__6286l p{\n    margin: 0px;\n    margin-top: 5px;\n    font-size: 12px;\n    font-style: italic;\n    color: rgb(50, 50, 50);\n  }\n";
-var styles$8 = {"wrapper":"Select-module_wrapper__WC4Xv","chipWrapper":"Select-module_chipWrapper__9cKYa","deleteButton":"Select-module_deleteButton__pZU6Q","chipsWrapper":"Select-module_chipsWrapper__hUO6Y","selectedWrapper":"Select-module_selectedWrapper__6286l"};
+var css_248z$8 = ".Select-module_wrapper__-bdH- {\n  font-size: 14px;\n  padding: 3px 6px;\n  border-radius: 4px;\n  background: linear-gradient(to top, #5b5f62, #6f7477);\n  width: 100%;\n  border: 1px solid #3c3e40;\n  padding-right: 15px;\n  position: relative;\n}\n  .Select-module_wrapper__-bdH-::after {\n    content: '';\n    position: absolute;\n    background: none;\n    right: 5px;\n    top: 8px;\n    width: 0;\n    height: 0;\n    border-style: solid;\n    border-width: 6px 5px 0 5px;\n    border-color: #191b1c transparent transparent transparent;\n  }\n  .Select-module_wrapper__-bdH-:hover {\n    background: linear-gradient(to top, #63676a, #777b7e);\n  }\n.Select-module_chipWrapper__MDfS0 {\n  font-size: 14px;\n  padding: 3px 6px;\n  border-radius: 4px;\n  background: linear-gradient(to top, #5b5f62, #6f7477);\n  border: 1px solid #3c3e40;\n  margin: 2px;\n  position: relative;\n}\n.Select-module_chipWrapper__MDfS0:hover .Select-module_deleteButton__M1ff7 {\n  opacity: 1;\n}\n.Select-module_chipsWrapper__-aRPE {\n  display: flex;\n  flex-direction: column;\n  margin-bottom: 6px;\n}\n.Select-module_deleteButton__M1ff7 {\n  position: absolute;\n  right: 0px;\n  top: 0px;\n  height: 100%;\n  width: 22px;\n  padding: 0px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  background: linear-gradient(to top, #5b5f62, #6f7477);\n  border-radius: 3px;\n  border: none;\n  font-weight: bold;\n  opacity: 0;\n}\n.Select-module_deleteButton__M1ff7:focus {\n  opacity: 1;\n}\n.Select-module_deleteButton__M1ff7:hover {\n  background: linear-gradient(to top, #64696c, #797f82);\n}\n.Select-module_selectedWrapper__oybC7 {\n  display: flex;\n  flex-direction: column;\n  border-radius: 4px;\n  background: linear-gradient(to top, #5b5f62, #6f7477);\n  width: 100%;\n  border: 1px solid #3c3e40;\n  font-size: 14px;\n  padding: 3px 6px;\n  padding-right: 15px;\n  position: relative;\n}\n.Select-module_selectedWrapper__oybC7::after {\n    content: '';\n    position: absolute;\n    background: none;\n    right: 5px;\n    top: calc(50% - 4px);\n    width: 0;\n    height: 0;\n    border-style: solid;\n    border-width: 6px 5px 0 5px;\n    border-color: #191b1c transparent transparent transparent;\n  }\n.Select-module_selectedWrapper__oybC7 label {\n    margin: 0px;\n  }\n.Select-module_selectedWrapper__oybC7 p {\n    margin: 0px;\n    margin-top: 5px;\n    font-size: 12px;\n    font-style: italic;\n    color: rgb(50, 50, 50);\n  }\n";
+var styles$8 = {"wrapper":"Select-module_wrapper__-bdH-","chipWrapper":"Select-module_chipWrapper__MDfS0","deleteButton":"Select-module_deleteButton__M1ff7","chipsWrapper":"Select-module_chipsWrapper__-aRPE","selectedWrapper":"Select-module_selectedWrapper__oybC7"};
 styleInject(css_248z$8);
 
 var __assign$b = (undefined && undefined.__assign) || function () {
@@ -5225,7 +5224,7 @@ var __spreadArray$3 = (undefined && undefined.__spreadArray) || function (to, fr
 };
 var MAX_LABEL_LENGTH = 50;
 var Select = function (_a) {
-    var _b = _a.options, options = _b === void 0 ? [] : _b, _c = _a.placeholder, placeholder = _c === void 0 ? "[Select an option]" : _c, onChange = _a.onChange, data = _a.data, allowMultiple = _a.allowMultiple;
+    var _b = _a.options, options = _b === void 0 ? [] : _b, _c = _a.placeholder, placeholder = _c === void 0 ? '[Select an option]' : _c, onChange = _a.onChange, data = _a.data, allowMultiple = _a.allowMultiple;
     var _d = React__default["default"].useState(false), drawerOpen = _d[0], setDrawerOpen = _d[1];
     var _e = React__default["default"].useState({
         x: 0,
@@ -5256,24 +5255,19 @@ var Select = function (_a) {
     var handleOptionDeleted = function (optionIndex) {
         onChange(__spreadArray$3(__spreadArray$3([], data.slice(0, optionIndex), true), data.slice(optionIndex + 1), true));
     };
-    var getFilteredOptions = function () { return (allowMultiple ?
-        options.filter(function (opt) { return !data.includes(opt.value); })
-        : options); };
+    var getFilteredOptions = function () { return (allowMultiple ? options.filter(function (opt) { return !data.includes(opt.value); }) : options); };
     var selectedOption = React__default["default"].useMemo(function () {
         var option = options.find(function (o) { return o.value === data; });
         if (option) {
-            return __assign$b(__assign$b({}, option), { label: option.label.length > MAX_LABEL_LENGTH
-                    ? option.label.slice(0, MAX_LABEL_LENGTH) + "..."
-                    : option.label });
+            return __assign$b(__assign$b({}, option), { label: option.label.length > MAX_LABEL_LENGTH ? option.label.slice(0, MAX_LABEL_LENGTH) + '...' : option.label });
         }
     }, [options, data]);
     return (React__default["default"].createElement(React__default["default"].Fragment, null,
         allowMultiple ? (data.length ? (React__default["default"].createElement("div", { className: styles$8.chipsWrapper }, data.map(function (val, i) {
-            var optLabel = (options.find(function (opt) { return opt.value === val; }) || {}).label || "";
+            var optLabel = (options.find(function (opt) { return opt.value === val; }) || {}).label || '';
             return (React__default["default"].createElement(OptionChip, { onRequestDelete: function () { return handleOptionDeleted(i); }, key: val }, optLabel));
         }))) : null) : data ? (React__default["default"].createElement(SelectedOption, { wrapperRef: wrapper, option: selectedOption, onClick: openDrawer })) : null,
-        (allowMultiple || !data) &&
-            React__default["default"].createElement("div", { className: styles$8.wrapper, ref: wrapper, onClick: openDrawer }, placeholder),
+        (allowMultiple || !data) && (React__default["default"].createElement("div", { className: styles$8.wrapper, ref: wrapper, onClick: openDrawer }, placeholder)),
         drawerOpen && (React__default["default"].createElement(Portal$1, null,
             React__default["default"].createElement(ContextMenu, { x: drawerCoordinates.x, y: drawerCoordinates.y, emptyText: "There are no options", options: getFilteredOptions(), onOptionSelected: handleOptionSelected, onRequestClose: closeDrawer })))));
 };
@@ -5292,8 +5286,8 @@ var OptionChip = function (_a) {
             }, onClick: onRequestDelete }, "\u2715")));
 };
 
-var css_248z$7 = ".Control-module_wrapper__WhTVh {\n  width: 100%;\n  padding-right: 3px;\n  padding-top: 3px;\n  padding-bottom: 5px;\n}\n.Control-module_label__-ky3l {\n  font-size: 14px;\n}\n.Control-module_controlLabel__AW3xe {\n  font-size: 13px;\n  display: inline-block;\n  margin-left: 2px;\n}\n";
-var styles$7 = {"wrapper":"Control-module_wrapper__WhTVh","label":"Control-module_label__-ky3l","controlLabel":"Control-module_controlLabel__AW3xe"};
+var css_248z$7 = ".Control-module_wrapper__n2IIT {\n  width: 100%;\n  padding-right: 3px;\n  padding-top: 3px;\n  padding-bottom: 5px;\n}\n.Control-module_label__zUxFA {\n  font-size: 14px;\n}\n.Control-module_controlLabel__lJFSL {\n  font-size: 13px;\n  display: inline-block;\n  margin-left: 2px;\n}\n";
+var styles$7 = {"wrapper":"Control-module_wrapper__n2IIT","label":"Control-module_label__zUxFA","controlLabel":"Control-module_controlLabel__lJFSL"};
 styleInject(css_248z$7);
 
 var __assign$a = (undefined && undefined.__assign) || function () {
@@ -5314,7 +5308,7 @@ var Control = function (_a) {
     var calculatedLabel = isMonoControl ? inputLabel : label;
     var onChange = function (data) {
         nodesDispatch({
-            type: "SET_PORT_DATA",
+            type: 'SET_PORT_DATA',
             data: data,
             nodeId: nodeId,
             portName: portName,
@@ -5331,17 +5325,17 @@ var Control = function (_a) {
             data: data
         };
         switch (type) {
-            case "select":
+            case 'select':
                 return (React__default["default"].createElement(Select, __assign$a({}, commonProps, { options: getOptions ? getOptions(inputData, executionContext) : options, placeholder: placeholder })));
-            case "text":
+            case 'text':
                 return React__default["default"].createElement(TextInput, __assign$a({}, commonProps, { placeholder: placeholder }));
-            case "number":
-                return (React__default["default"].createElement(TextInput, __assign$a({}, commonProps, { step: step, type: "number", placeholder: placeholder })));
-            case "checkbox":
+            case 'number':
+                return React__default["default"].createElement(TextInput, __assign$a({}, commonProps, { step: step, type: "number", placeholder: placeholder }));
+            case 'checkbox':
                 return React__default["default"].createElement(Checkbox, __assign$a({}, commonProps, { label: calculatedLabel }));
-            case "multiselect":
+            case 'multiselect':
                 return (React__default["default"].createElement(Select, __assign$a({ allowMultiple: true }, commonProps, { options: getOptions ? getOptions(inputData, executionContext) : options, placeholder: placeholder, label: label })));
-            case "custom":
+            case 'custom':
                 return render(data, onChange, executionContext, triggerRecalculation, {
                     label: label,
                     name: name,
@@ -5354,7 +5348,7 @@ var Control = function (_a) {
         }
     };
     return (React__default["default"].createElement("div", { className: styles$7.wrapper },
-        calculatedLabel && type !== "checkbox" && type !== "custom" && (React__default["default"].createElement("label", { className: styles$7.controlLabel }, calculatedLabel)),
+        calculatedLabel && type !== 'checkbox' && type !== 'custom' && (React__default["default"].createElement("label", { className: styles$7.controlLabel }, calculatedLabel)),
         getControlByType(type)));
 };
 
@@ -5373,8 +5367,8 @@ var usePrevious = function (value) {
     return ref.current;
 };
 
-var css_248z$6 = ".IoPorts-module_wrapper__Qn-hL{\n  display: flex;\n  flex-direction: column;\n  margin-top: auto;\n  width: 100%;\n  padding: 5px;\n}\n.IoPorts-module_inputs__8eu0c{\n  display: flex;\n  flex-direction: column;\n  justify-content: flex-end;\n  width: 100%;\n  margin-bottom: 10px;\n}\n.IoPorts-module_inputs__8eu0c:last-child{\n    margin-bottom: 0px;\n  }\n.IoPorts-module_inputs__8eu0c .IoPorts-module_transput__AVDTt:first-child .IoPorts-module_portLabel__wcQF5, .IoPorts-module_inputs__8eu0c .IoPorts-module_transput__AVDTt:first-child .IoPorts-module_port__uhUMU{\n        margin-top: 5px;\n      }\n.IoPorts-module_inputs__8eu0c .IoPorts-module_transput__AVDTt:last-child .IoPorts-module_portLabel__wcQF5, .IoPorts-module_inputs__8eu0c .IoPorts-module_transput__AVDTt:last-child .IoPorts-module_port__uhUMU{\n        margin-bottom: 5px;\n      }\n.IoPorts-module_outputs__J3jf5{\n  display: flex;\n  flex-direction: column;\n  margin-left: auto;\n  justify-content: flex-end;\n  align-items: flex-end;\n  width: 100%;\n}\n.IoPorts-module_outputs__J3jf5 .IoPorts-module_transput__AVDTt:last-child .IoPorts-module_portLabel__wcQF5, .IoPorts-module_outputs__J3jf5 .IoPorts-module_transput__AVDTt:last-child .IoPorts-module_port__uhUMU{\n        margin-bottom: 5px;\n      }\n.IoPorts-module_outputs__J3jf5:first-child{\n    margin-top: 5px;\n  }\n.IoPorts-module_transput__AVDTt{\n  display: flex;\n  align-items: center;\n  margin-top: 6px;\n  margin-bottom: 6px;\n}\n.IoPorts-module_transput__AVDTt:first-child{\n    margin-top: 0px;\n  }\n.IoPorts-module_transput__AVDTt[data-controlless=\"true\"]{\n    margin-top: 6px;\n    margin-bottom: 6px;\n  }\n.IoPorts-module_transput__AVDTt[data-controlless=\"true\"]:first-child{\n      margin-top: 0px;\n    }\n.IoPorts-module_transput__AVDTt[data-controlless=\"false\"]{\n    margin-top: 2px;\n    margin-bottom: 2px;\n  }\n.IoPorts-module_controls__gdFEh{\n  display: flex;\n  flex-direction: column;\n  width: 100%;\n}\n.IoPorts-module_portLabel__wcQF5{\n  font-size: 13px;\n  font-weight: 400;\n}\n.IoPorts-module_port__uhUMU{\n  width: 12px;\n  height: 12px;\n  background: linear-gradient(to bottom, #acb1b4, #919699);\n  border-radius: 100%;\n  margin-right: 5px;\n  margin-left: -11px;\n  flex: 0 0 auto;\n  box-shadow: 0px 2px 1px 0px rgba(0,0,0,.6);\n}\n.IoPorts-module_port__uhUMU:last-child{\n    margin-right: -11px;\n    margin-left: 5px;\n  }\n.IoPorts-module_port__uhUMU[data-port-color=\"red\"]{\n    background: linear-gradient(to bottom, #fa4a6f, #c22e4d);\n  }\n.IoPorts-module_port__uhUMU[data-port-color=\"purple\"]{\n    background: linear-gradient(to bottom, #9e55fb, #6024b6);\n  }\n.IoPorts-module_port__uhUMU[data-port-color=\"blue\"]{\n    background: linear-gradient(to bottom, #4284f7, #2867d4);\n  }\n.IoPorts-module_port__uhUMU[data-port-color=\"green\"]{\n    background: linear-gradient(to bottom, #31dd9f, #11ad7a);\n  }\n.IoPorts-module_port__uhUMU[data-port-color=\"yellow\"]{\n    background: linear-gradient(to bottom, #d6bf47, #9d8923);\n  }\n.IoPorts-module_port__uhUMU[data-port-color=\"orange\"]{\n    background: linear-gradient(to bottom, #fa7841, #c94b23);\n  }\n.IoPorts-module_port__uhUMU[data-port-color=\"pink\"]{\n    background: linear-gradient(to bottom, #fe8aeb, #e046c3);\n  }\n";
-var styles$6 = {"wrapper":"IoPorts-module_wrapper__Qn-hL","inputs":"IoPorts-module_inputs__8eu0c","transput":"IoPorts-module_transput__AVDTt","portLabel":"IoPorts-module_portLabel__wcQF5","port":"IoPorts-module_port__uhUMU","outputs":"IoPorts-module_outputs__J3jf5","controls":"IoPorts-module_controls__gdFEh"};
+var css_248z$6 = ".IoPorts-module_wrapper__tCxNY {\n  display: flex;\n  flex-direction: column;\n  margin-top: auto;\n  width: 100%;\n  padding: 5px;\n}\n.IoPorts-module_inputs__KrLU5 {\n  display: flex;\n  flex-direction: column;\n  justify-content: flex-end;\n  width: 100%;\n  margin-bottom: 10px;\n}\n.IoPorts-module_inputs__KrLU5:last-child {\n    margin-bottom: 0px;\n  }\n.IoPorts-module_inputs__KrLU5 .IoPorts-module_transput__kasqG:first-child .IoPorts-module_portLabel__TcY7r,\n      .IoPorts-module_inputs__KrLU5 .IoPorts-module_transput__kasqG:first-child .IoPorts-module_port__aPckL {\n        margin-top: 5px;\n      }\n.IoPorts-module_inputs__KrLU5 .IoPorts-module_transput__kasqG:last-child .IoPorts-module_portLabel__TcY7r,\n      .IoPorts-module_inputs__KrLU5 .IoPorts-module_transput__kasqG:last-child .IoPorts-module_port__aPckL {\n        margin-bottom: 5px;\n      }\n.IoPorts-module_outputs__uSjQM {\n  display: flex;\n  flex-direction: column;\n  margin-left: auto;\n  justify-content: flex-end;\n  align-items: flex-end;\n  width: 100%;\n}\n.IoPorts-module_outputs__uSjQM .IoPorts-module_transput__kasqG:last-child .IoPorts-module_portLabel__TcY7r,\n      .IoPorts-module_outputs__uSjQM .IoPorts-module_transput__kasqG:last-child .IoPorts-module_port__aPckL {\n        margin-bottom: 5px;\n      }\n.IoPorts-module_outputs__uSjQM:first-child {\n    margin-top: 5px;\n  }\n.IoPorts-module_transput__kasqG {\n  display: flex;\n  align-items: center;\n  margin-top: 6px;\n  margin-bottom: 6px;\n}\n.IoPorts-module_transput__kasqG:first-child {\n    margin-top: 0px;\n  }\n.IoPorts-module_transput__kasqG[data-controlless='true'] {\n    margin-top: 6px;\n    margin-bottom: 6px;\n  }\n.IoPorts-module_transput__kasqG[data-controlless='true']:first-child {\n      margin-top: 0px;\n    }\n.IoPorts-module_transput__kasqG[data-controlless='false'] {\n    margin-top: 2px;\n    margin-bottom: 2px;\n  }\n.IoPorts-module_controls__4-zB2 {\n  display: flex;\n  flex-direction: column;\n  width: 100%;\n}\n.IoPorts-module_portLabel__TcY7r {\n  font-size: 13px;\n  font-weight: 400;\n}\n.IoPorts-module_port__aPckL {\n  width: 12px;\n  height: 12px;\n  background: linear-gradient(to bottom, #acb1b4, #919699);\n  border-radius: 100%;\n  margin-right: 5px;\n  margin-left: -11px;\n  flex: 0 0 auto;\n  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.6);\n}\n.IoPorts-module_port__aPckL:last-child {\n    margin-right: -11px;\n    margin-left: 5px;\n  }\n.IoPorts-module_port__aPckL[data-port-color='red'] {\n    background: linear-gradient(to bottom, #fa4a6f, #c22e4d);\n  }\n.IoPorts-module_port__aPckL[data-port-color='purple'] {\n    background: linear-gradient(to bottom, #9e55fb, #6024b6);\n  }\n.IoPorts-module_port__aPckL[data-port-color='blue'] {\n    background: linear-gradient(to bottom, #4284f7, #2867d4);\n  }\n.IoPorts-module_port__aPckL[data-port-color='green'] {\n    background: linear-gradient(to bottom, #31dd9f, #11ad7a);\n  }\n.IoPorts-module_port__aPckL[data-port-color='yellow'] {\n    background: linear-gradient(to bottom, #d6bf47, #9d8923);\n  }\n.IoPorts-module_port__aPckL[data-port-color='orange'] {\n    background: linear-gradient(to bottom, #fa7841, #c94b23);\n  }\n.IoPorts-module_port__aPckL[data-port-color='pink'] {\n    background: linear-gradient(to bottom, #fe8aeb, #e046c3);\n  }\n";
+var styles$6 = {"wrapper":"IoPorts-module_wrapper__tCxNY","inputs":"IoPorts-module_inputs__KrLU5","transput":"IoPorts-module_transput__kasqG","portLabel":"IoPorts-module_portLabel__TcY7r","port":"IoPorts-module_port__aPckL","outputs":"IoPorts-module_outputs__uSjQM","controls":"IoPorts-module_controls__4-zB2"};
 styleInject(css_248z$6);
 
 var __assign$9 = (undefined && undefined.__assign) || function () {
@@ -5446,9 +5440,7 @@ var Input = function (_a) {
         } },
         !hidePort ? (React__default["default"].createElement(Port, { type: type, color: color, name: name, nodeId: nodeId, isInput: true, triggerRecalculation: triggerRecalculation })) : null,
         (!controls.length || noControls || isConnected) && (React__default["default"].createElement("label", { className: styles$6.portLabel }, label || defaultLabel)),
-        !noControls && !isConnected
-            ? (React__default["default"].createElement("div", { className: styles$6.controls }, controls.map(function (control) { return (React__default["default"].createElement(Control, __assign$9({}, control, { nodeId: nodeId, portName: name, triggerRecalculation: triggerRecalculation, updateNodeConnections: updateNodeConnections, inputLabel: label, data: data[control.name], allData: data, key: control.name, inputData: inputData, isMonoControl: controls.length === 1 }))); })))
-            : null));
+        !noControls && !isConnected ? (React__default["default"].createElement("div", { className: styles$6.controls }, controls.map(function (control) { return (React__default["default"].createElement(Control, __assign$9({}, control, { nodeId: nodeId, portName: name, triggerRecalculation: triggerRecalculation, updateNodeConnections: updateNodeConnections, inputLabel: label, data: data[control.name], allData: data, key: control.name, inputData: inputData, isMonoControl: controls.length === 1 }))); }))) : null));
 };
 var Output = function (_a) {
     var label = _a.label, name = _a.name, nodeId = _a.nodeId, type = _a.type, inputTypes = _a.inputTypes, triggerRecalculation = _a.triggerRecalculation;
@@ -5461,7 +5453,7 @@ var Output = function (_a) {
         React__default["default"].createElement(Port, { type: type, name: name, color: color, nodeId: nodeId, triggerRecalculation: triggerRecalculation })));
 };
 var Port = function (_a) {
-    var _b = _a.color, color = _b === void 0 ? "grey" : _b, _c = _a.name, name = _c === void 0 ? "" : _c, type = _a.type, isInput = _a.isInput, nodeId = _a.nodeId, triggerRecalculation = _a.triggerRecalculation;
+    var _b = _a.color, color = _b === void 0 ? 'grey' : _b, _c = _a.name, name = _c === void 0 ? '' : _c, type = _a.type, isInput = _a.isInput, nodeId = _a.nodeId, triggerRecalculation = _a.triggerRecalculation;
     var nodesDispatch = React__default["default"].useContext(NodeDispatchContext);
     var stageState = React__default["default"].useContext(StageContext);
     var editorId = React__default["default"].useContext(EditorIdContext);
@@ -5478,26 +5470,20 @@ var Port = function (_a) {
     var lineInToPort = React__default["default"].useRef();
     var byScale = function (value) { return (1 / stageState.scale) * value; };
     var handleDrag = function (e) {
-        var stage = document
-            .getElementById(stageId)
-            .getBoundingClientRect();
+        var stage = document.getElementById(stageId).getBoundingClientRect();
         if (isInput) {
             var to = {
-                x: byScale(e.clientX - stage.x - stage.width / 2) +
-                    byScale(stageState.translate.x),
-                y: byScale(e.clientY - stage.y - stage.height / 2) +
-                    byScale(stageState.translate.y)
+                x: byScale(e.clientX - stage.x - stage.width / 2) + byScale(stageState.translate.x),
+                y: byScale(e.clientY - stage.y - stage.height / 2) + byScale(stageState.translate.y)
             };
-            lineInToPort.current.setAttribute("d", calculateCurve(dragStartCoordinatesCache.current, to));
+            lineInToPort.current.setAttribute('d', calculateCurve(dragStartCoordinatesCache.current, to));
         }
         else {
             var to = {
-                x: byScale(e.clientX - stage.x - stage.width / 2) +
-                    byScale(stageState.translate.x),
-                y: byScale(e.clientY - stage.y - stage.height / 2) +
-                    byScale(stageState.translate.y)
+                x: byScale(e.clientX - stage.x - stage.width / 2) + byScale(stageState.translate.x),
+                y: byScale(e.clientY - stage.y - stage.height / 2) + byScale(stageState.translate.y)
             };
-            line.current.setAttribute("d", calculateCurve(dragStartCoordinatesCache.current, to));
+            line.current.setAttribute('d', calculateCurve(dragStartCoordinatesCache.current, to));
         }
     };
     var handleDragEnd = function (e) {
@@ -5505,18 +5491,18 @@ var Port = function (_a) {
         if (isInput) {
             var _a = lineInToPort.current.dataset, inputNodeId = _a.inputNodeId, inputPortName = _a.inputPortName, outputNodeId = _a.outputNodeId, outputPortName = _a.outputPortName;
             nodesDispatch({
-                type: "REMOVE_CONNECTION",
+                type: 'REMOVE_CONNECTION',
                 input: { nodeId: inputNodeId, portName: inputPortName },
                 output: { nodeId: outputNodeId, portName: outputPortName }
             });
             if (droppedOnPort) {
                 var _b = e.target.dataset, connectToPortName = _b.portName, connectToNodeId = _b.nodeId, connectToPortType = _b.portType, connectToTransputType = _b.portTransputType;
                 var isNotSameNode = outputNodeId !== connectToNodeId;
-                if (isNotSameNode && connectToTransputType !== "output") {
+                if (isNotSameNode && connectToTransputType !== 'output') {
                     var inputWillAcceptConnection = inputTypes[connectToPortType].acceptTypes.includes(type);
                     if (inputWillAcceptConnection) {
                         nodesDispatch({
-                            type: "ADD_CONNECTION",
+                            type: 'ADD_CONNECTION',
                             input: { nodeId: connectToNodeId, portName: connectToPortName },
                             output: { nodeId: outputNodeId, portName: outputPortName }
                         });
@@ -5528,11 +5514,11 @@ var Port = function (_a) {
             if (droppedOnPort) {
                 var _c = e.target.dataset, inputPortName = _c.portName, inputNodeId = _c.nodeId, inputNodeType = _c.portType, inputTransputType = _c.portTransputType;
                 var isNotSameNode = inputNodeId !== nodeId;
-                if (isNotSameNode && inputTransputType !== "output") {
+                if (isNotSameNode && inputTransputType !== 'output') {
                     var inputWillAcceptConnection = inputTypes[inputNodeType].acceptTypes.includes(type);
                     if (inputWillAcceptConnection) {
                         nodesDispatch({
-                            type: "ADD_CONNECTION",
+                            type: 'ADD_CONNECTION',
                             output: { nodeId: nodeId, portName: name },
                             input: { nodeId: inputNodeId, portName: inputPortName }
                         });
@@ -5542,22 +5528,20 @@ var Port = function (_a) {
             }
         }
         setIsDragging(false);
-        document.removeEventListener("mouseup", handleDragEnd);
-        document.removeEventListener("mousemove", handleDrag);
+        document.removeEventListener('mouseup', handleDragEnd);
+        document.removeEventListener('mousemove', handleDrag);
     };
     var handleDragStart = function (e) {
         e.preventDefault();
         e.stopPropagation();
         var startPort = port.current.getBoundingClientRect();
-        var stage = document
-            .getElementById(stageId)
-            .getBoundingClientRect();
+        var stage = document.getElementById(stageId).getBoundingClientRect();
         if (isInput) {
             lineInToPort.current = document.querySelector("[data-input-node-id=\"".concat(nodeId, "\"][data-input-port-name=\"").concat(name, "\"]"));
             var portIsConnected = !!lineInToPort.current;
             if (portIsConnected) {
                 lineInToPort.current.parentNode.style.zIndex = 9999;
-                var outputPort = getPortRect(lineInToPort.current.dataset.outputNodeId, lineInToPort.current.dataset.outputPortName, "output");
+                var outputPort = getPortRect(lineInToPort.current.dataset.outputNodeId, lineInToPort.current.dataset.outputPortName, 'output');
                 var coordinates = {
                     x: byScale(outputPort.x - stage.x + outputPort.width / 2 - stage.width / 2) + byScale(stageState.translate.x),
                     y: byScale(outputPort.y - stage.y + outputPort.width / 2 - stage.height / 2) + byScale(stageState.translate.y)
@@ -5565,8 +5549,8 @@ var Port = function (_a) {
                 setDragStartCoordinates(coordinates);
                 dragStartCoordinatesCache.current = coordinates;
                 setIsDragging(true);
-                document.addEventListener("mouseup", handleDragEnd);
-                document.addEventListener("mousemove", handleDrag);
+                document.addEventListener('mouseup', handleDragEnd);
+                document.addEventListener('mousemove', handleDrag);
             }
         }
         else {
@@ -5581,13 +5565,13 @@ var Port = function (_a) {
                 setDragStartCoordinates(coordinates);
                 dragStartCoordinatesCache.current = coordinates;
                 setIsDragging(true);
-                document.addEventListener("mouseup", handleDragEnd);
-                document.addEventListener("mousemove", handleDrag);
+                document.addEventListener('mouseup', handleDragEnd);
+                document.addEventListener('mousemove', handleDrag);
             }
         }
     };
     return (React__default["default"].createElement(React__default["default"].Fragment, null,
-        React__default["default"].createElement("div", { style: { zIndex: 999 }, onMouseDown: handleDragStart, className: styles$6.port, "data-port-color": color, "data-port-name": name, "data-port-type": type, "data-port-transput-type": isInput ? "input" : "output", "data-node-id": nodeId, onDragStart: function (e) {
+        React__default["default"].createElement("div", { style: { zIndex: 999 }, onMouseDown: handleDragStart, className: styles$6.port, "data-port-color": color, "data-port-name": name, "data-port-type": type, "data-port-transput-type": isInput ? 'input' : 'output', "data-node-id": nodeId, onDragStart: function (e) {
                 e.preventDefault();
                 e.stopPropagation();
             }, ref: port }),
@@ -5595,8 +5579,8 @@ var Port = function (_a) {
             React__default["default"].createElement(Connection, { from: dragStartCoordinates, to: dragStartCoordinates, lineRef: line, stroke: color }))) : null));
 };
 
-var css_248z$5 = ".Node-module_wrapper__hQhwu{\n  background: rgba(91, 96, 99, 0.9);\n  border-radius: 5px;\n  box-shadow: 0px 4px 8px rgba(0,0,0,.4);\n  position: absolute;\n  left: 0px;\n  top: 0px;\n  user-select: none;\n  display: flex;\n  flex-direction: column;\n  z-index: 1;\n  cursor: default;\n}\n.Node-module_label__v7hU3{\n  font-size: 13px;\n  text-transform: uppercase;\n  padding: 5px;\n  background: #464b4e;\n  border-radius: 5px 5px 0px 0px;\n  margin: 0px;\n  margin-bottom: 3px;\n  border-bottom: 1px solid rgba(0,0,0,.15);\n}\n";
-var styles$5 = {"wrapper":"Node-module_wrapper__hQhwu","label":"Node-module_label__v7hU3"};
+var css_248z$5 = ".Node-module_wrapper__-lARP {\n  background: rgba(91, 96, 99, 0.9);\n  border-radius: 5px;\n  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);\n  position: absolute;\n  left: 0px;\n  top: 0px;\n  user-select: none;\n  display: flex;\n  flex-direction: column;\n  z-index: 1;\n  cursor: default;\n}\n.Node-module_label__l-xsL {\n  font-size: 13px;\n  text-transform: uppercase;\n  padding: 5px;\n  background: #464b4e;\n  border-radius: 5px 5px 0px 0px;\n  margin: 0px;\n  margin-bottom: 3px;\n  border-bottom: 1px solid rgba(0, 0, 0, 0.15);\n}\n";
+var styles$5 = {"wrapper":"Node-module_wrapper__-lARP","label":"Node-module_label__l-xsL"};
 styleInject(css_248z$5);
 
 var __assign$8 = (undefined && undefined.__assign) || function () {
@@ -5647,8 +5631,8 @@ var Node = function (_a) {
         Object.entries(transput).forEach(function (_a) {
             var portName = _a[0], outputs = _a[1];
             outputs.forEach(function (output) {
-                var toRect = getPortRect(id, portName, isOutput ? "output" : "input", cache);
-                var fromRect = getPortRect(output.nodeId, output.portName, isOutput ? "input" : "output", cache);
+                var toRect = getPortRect(id, portName, isOutput ? 'output' : 'input', cache);
+                var fromRect = getPortRect(output.nodeId, output.portName, isOutput ? 'input' : 'output', cache);
                 var portHalf = fromRect.width / 2;
                 var combined;
                 if (isOutput) {
@@ -5667,26 +5651,18 @@ var Node = function (_a) {
                     cache.current.connections[combined] = cnx;
                 }
                 var from = {
-                    x: byScale(toRect.x -
-                        stageRect.current.x +
-                        portHalf -
-                        stageRect.current.width / 2) + byScale(stageState.translate.x),
-                    y: byScale(toRect.y -
-                        stageRect.current.y +
-                        portHalf -
-                        stageRect.current.height / 2) + byScale(stageState.translate.y)
+                    x: byScale(toRect.x - stageRect.current.x + portHalf - stageRect.current.width / 2) +
+                        byScale(stageState.translate.x),
+                    y: byScale(toRect.y - stageRect.current.y + portHalf - stageRect.current.height / 2) +
+                        byScale(stageState.translate.y)
                 };
                 var to = {
-                    x: byScale(fromRect.x -
-                        stageRect.current.x +
-                        portHalf -
-                        stageRect.current.width / 2) + byScale(stageState.translate.x),
-                    y: byScale(fromRect.y -
-                        stageRect.current.y +
-                        portHalf -
-                        stageRect.current.height / 2) + byScale(stageState.translate.y)
+                    x: byScale(fromRect.x - stageRect.current.x + portHalf - stageRect.current.width / 2) +
+                        byScale(stageState.translate.x),
+                    y: byScale(fromRect.y - stageRect.current.y + portHalf - stageRect.current.height / 2) +
+                        byScale(stageState.translate.y)
                 };
-                cnx.setAttribute("d", calculateCurve(from, to));
+                cnx.setAttribute('d', calculateCurve(from, to));
             });
         });
     };
@@ -5697,7 +5673,7 @@ var Node = function (_a) {
         }
     };
     var stopDrag = function (e, coordinates) {
-        nodesDispatch(__assign$8(__assign$8({ type: "SET_NODE_COORDINATES" }, coordinates), { nodeId: id }));
+        nodesDispatch(__assign$8(__assign$8({ type: 'SET_NODE_COORDINATES' }, coordinates), { nodeId: id }));
     };
     var handleDrag = function (_a) {
         var x = _a.x, y = _a.y;
@@ -5719,14 +5695,14 @@ var Node = function (_a) {
     };
     var deleteNode = function () {
         nodesDispatch({
-            type: "REMOVE_NODE",
+            type: 'REMOVE_NODE',
             nodeId: id
         });
     };
     var handleMenuOption = function (_a) {
         var value = _a.value;
         switch (value) {
-            case "deleteNode":
+            case 'deleteNode':
                 deleteNode();
                 break;
             default:
@@ -5747,16 +5723,16 @@ var Node = function (_a) {
             React__default["default"].createElement(ContextMenu, { x: menuCoordinates.x, y: menuCoordinates.y, options: __spreadArray$2([], (deletable !== false
                     ? [
                         {
-                            label: "Delete Node",
-                            value: "deleteNode",
-                            description: "Deletes a node and all of its connections."
+                            label: 'Delete Node',
+                            value: 'deleteNode',
+                            description: 'Deletes a node and all of its connections.'
                         }
                     ]
                     : []), true), onRequestClose: closeContextMenu, onOptionSelected: handleMenuOption, hideFilter: true, label: "Node Options", emptyText: "This node has no options." }))) : null));
 };
 var NodeHeader = function (_a) {
-    var children = _a.children, _b = _a.className, className = _b === void 0 ? "" : _b, props = __rest$3(_a, ["children", "className"]);
-    return (React__default["default"].createElement("h2", __assign$8({}, props, { className: styles$5.label + (className ? " ".concat(className) : "") }), children));
+    var children = _a.children, _b = _a.className, className = _b === void 0 ? '' : _b, props = __rest$3(_a, ["children", "className"]);
+    return (React__default["default"].createElement("h2", __assign$8({}, props, { className: styles$5.label + (className ? " ".concat(className) : '') }), children));
 };
 
 var __assign$7 = (undefined && undefined.__assign) || function () {
@@ -5781,48 +5757,46 @@ var __rest$2 = (undefined && undefined.__rest) || function (s, e) {
         }
     return t;
 };
-var define = function (value, defaultValue) {
-    return value !== undefined ? value : defaultValue;
-};
+var define = function (value, defaultValue) { return (value !== undefined ? value : defaultValue); };
 var buildControlType = function (defaultConfig, validate, setup) {
     if (validate === void 0) { validate = function () { }; }
     if (setup === void 0) { setup = function () { return ({}); }; }
     return function (config) {
         validate(config);
-        return __assign$7({ type: defaultConfig.type, label: define(config.label, defaultConfig.label || ""), name: define(config.name, defaultConfig.name || ""), defaultValue: define(config.defaultValue, defaultConfig.defaultValue), setValue: define(config.setValue, undefined) }, setup(config));
+        return __assign$7({ type: defaultConfig.type, label: define(config.label, defaultConfig.label || ''), name: define(config.name, defaultConfig.name || ''), defaultValue: define(config.defaultValue, defaultConfig.defaultValue), setValue: define(config.setValue, undefined) }, setup(config));
     };
 };
 var Controls = {
     text: buildControlType({
-        type: "text",
-        name: "text",
-        defaultValue: ""
+        type: 'text',
+        name: 'text',
+        defaultValue: ''
     }),
     select: buildControlType({
-        type: "select",
-        name: "select",
+        type: 'select',
+        name: 'select',
         options: [],
-        defaultValue: ""
+        defaultValue: ''
     }, function () { }, function (config) { return ({
         options: define(config.options, []),
         getOptions: define(config.getOptions, undefined),
         placeholder: define(config.placeholder, undefined)
     }); }),
     number: buildControlType({
-        type: "number",
-        name: "number",
+        type: 'number',
+        name: 'number',
         defaultValue: 0
     }, function () { }, function (config) { return ({
         step: define(config.step, undefined)
     }); }),
     checkbox: buildControlType({
-        type: "checkbox",
-        name: "checkbox",
+        type: 'checkbox',
+        name: 'checkbox',
         defaultValue: false
     }),
     multiselect: buildControlType({
-        type: "multiselect",
-        name: "multiselect",
+        type: 'multiselect',
+        name: 'multiselect',
         options: [],
         defaultValue: []
     }, function () { }, function (config) { return ({
@@ -5831,8 +5805,8 @@ var Controls = {
         placeholder: define(config.placeholder, undefined)
     }); }),
     custom: buildControlType({
-        type: "custom",
-        name: "custom",
+        type: 'custom',
+        name: 'custom',
         render: function () { },
         defaultValue: undefined
     }, function () { }, function (config) { return ({
@@ -5840,14 +5814,14 @@ var Controls = {
     }); })
 };
 var Colors = {
-    yellow: "yellow",
-    orange: "orange",
-    red: "red",
-    pink: "pink",
-    purple: "purple",
-    blue: "blue",
-    green: "green",
-    grey: "grey"
+    yellow: 'yellow',
+    orange: 'orange',
+    red: 'red',
+    pink: 'pink',
+    purple: 'purple',
+    blue: 'blue',
+    green: 'green',
+    grey: 'grey'
 };
 var getPortBuilders = function (ports) {
     return Object.values(ports).reduce(function (obj, port) {
@@ -5882,14 +5856,13 @@ var FlumeConfig = /** @class */ (function () {
         return this;
     };
     FlumeConfig.prototype.addNodeType = function (config) {
-        if (typeof config !== "object" && config !== null) {
-            throw new Error("You must provide a configuration object when calling addNodeType.");
+        if (typeof config !== 'object' && config !== null) {
+            throw new Error('You must provide a configuration object when calling addNodeType.');
         }
-        if (typeof config.type !== "string") {
+        if (typeof config.type !== 'string') {
             throw new Error("Required key, \"type\" must be a string when calling addNodeType.");
         }
-        if (typeof config.initialWidth !== "undefined" &&
-            typeof config.initialWidth !== "number") {
+        if (typeof config.initialWidth !== 'undefined' && typeof config.initialWidth !== 'number') {
             throw new Error("Optional key, \"initialWidth\" must be a number when calling addNodeType.");
         }
         if (this.nodeTypes[config.type] !== undefined) {
@@ -5897,8 +5870,8 @@ var FlumeConfig = /** @class */ (function () {
         }
         var node = {
             type: config.type,
-            label: define(config.label, ""),
-            description: define(config.description, ""),
+            label: define(config.label, ''),
+            description: define(config.description, ''),
             addable: define(config.addable, true),
             deletable: define(config.deletable, true)
         };
@@ -5908,7 +5881,7 @@ var FlumeConfig = /** @class */ (function () {
         if (config.sortIndex !== undefined) {
             node.sortIndex = config.sortIndex;
         }
-        if (typeof config.inputs === "function") {
+        if (typeof config.inputs === 'function') {
             var inputs = config.inputs(getPortBuilders(this.portTypes));
             if (!Array.isArray(inputs) && typeof config.inputs !== 'function') {
                 throw new Error("When providing a function to the \"inputs\" key, you must return either an array or a function.");
@@ -5924,7 +5897,7 @@ var FlumeConfig = /** @class */ (function () {
         else {
             node.inputs = config.inputs;
         }
-        if (typeof config.outputs === "function") {
+        if (typeof config.outputs === 'function') {
             var outputs = config.outputs(getPortBuilders(this.portTypes));
             if (!Array.isArray(outputs) && typeof config.outputs !== 'function') {
                 throw new Error("When providing a function to the \"outputs\" key, you must return either an array or a function.");
@@ -5941,7 +5914,7 @@ var FlumeConfig = /** @class */ (function () {
             node.outputs = config.outputs;
         }
         if (config.root !== undefined) {
-            if (typeof config.root !== "boolean") {
+            if (typeof config.root !== 'boolean') {
                 throw new Error("Optional key, \"root\" must be a boolean.");
             }
             else {
@@ -5962,22 +5935,22 @@ var FlumeConfig = /** @class */ (function () {
         return this;
     };
     FlumeConfig.prototype.addPortType = function (config) {
-        if (typeof config !== "object" && config !== null) {
-            throw new Error("You must provide a configuration object when calling addPortType");
+        if (typeof config !== 'object' && config !== null) {
+            throw new Error('You must provide a configuration object when calling addPortType');
         }
-        if (typeof config.type !== "string") {
+        if (typeof config.type !== 'string') {
             throw new Error("Required key, \"type\" must be a string when calling addPortType.");
         }
         if (this.portTypes[config.type] !== undefined) {
             throw new Error("A port with type \"".concat(config.type, "\" has already been declared."));
         }
-        if (typeof config.name !== "string") {
+        if (typeof config.name !== 'string') {
             throw new Error("Required key, \"name\" must be a string when calling addPortType.");
         }
         var port = {
             type: config.type,
             name: config.name,
-            label: define(config.label, ""),
+            label: define(config.label, ''),
             color: define(config.color, Colors.grey),
             hidePort: define(config.hidePort, false)
         };
@@ -5990,8 +5963,7 @@ var FlumeConfig = /** @class */ (function () {
         else {
             port.acceptTypes = config.acceptTypes;
         }
-        if (typeof config.maxOutputs !== "undefined" &&
-            typeof config.maxOutputs !== "number") {
+        if (typeof config.maxOutputs !== 'undefined' && typeof config.maxOutputs !== 'number') {
             throw new Error("Optional key, \"maxOutputs\" must be a number when calling addPortType.");
         }
         else if (config.maxOutputs === undefined) {
@@ -6019,24 +5991,19 @@ var FlumeConfig = /** @class */ (function () {
         }
         else {
             if (!skipDynamicNodesCheck) {
-                var dynamicNodes = Object.values(this.nodeTypes).filter(function (node) {
-                    return typeof node.inputs === 'function' ||
-                        typeof node.outputs === 'function';
-                });
+                var dynamicNodes = Object.values(this.nodeTypes).filter(function (node) { return typeof node.inputs === 'function' || typeof node.outputs === 'function'; });
                 if (dynamicNodes.length) {
                     console.warn("We've detected that one or more of your nodes is using dynamic inputs/outputs. This is a potentially dangerous operation as we are unable to detect if this portType is being used in one of those nodes. You can quiet this message by passing { skipDynamicNodesCheck: true } in as the second argument.");
                 }
             }
             var affectedNodes = Object.values(this.nodeTypes).filter(function (node) {
-                return (Array.isArray(node.inputs) &&
-                    node.inputs.find(function (p) { return p.type === type; })) ||
-                    (Array.isArray(node.outputs) &&
-                        node.outputs.find(function (p) { return p.type === type; }));
+                return (Array.isArray(node.inputs) && node.inputs.find(function (p) { return p.type === type; })) ||
+                    (Array.isArray(node.outputs) && node.outputs.find(function (p) { return p.type === type; }));
             });
             if (affectedNodes.length) {
                 throw new Error("Cannot delete port type \"".concat(type, "\" without first deleting all node types using these ports: [").concat(affectedNodes
                     .map(function (n) { return "".concat(n.type); })
-                    .join(", "), "]"));
+                    .join(', '), "]"));
             }
             else {
                 var _d = this.portTypes, _e = type; _d[_e]; var portTypes = __rest$2(_d, [typeof _e === "symbol" ? _e : _e + ""]);
@@ -6048,8 +6015,8 @@ var FlumeConfig = /** @class */ (function () {
     return FlumeConfig;
 }());
 
-var css_248z$4 = ".ColorPicker-module_wrapper__vJjVx{\n  position: fixed;\n  z-index: 9999;\n  background: rgba(29, 32, 34, 0.95);\n  border-radius: 5px;\n  box-shadow: 0px 6px 7px rgba(0,0,0,.3);\n  border: 1px solid rgba(0,0,0,.4);\n  color: #fff;\n  display: flex;\n  width: 102px;\n  flex-wrap: wrap;\n  padding: 2px;\n}\n@supports (backdrop-filter: blur(6px)){\n  .ColorPicker-module_wrapper__vJjVx{\n    backdrop-filter: blur(6px);\n    background: rgba(29, 32, 34, 0.8);\n  }\n}\n.ColorPicker-module_colorButtonWrapper__wurMz{\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  padding: 2px;\n}\n.ColorPicker-module_colorButton__LzfqW{\n  border-radius: 3px;\n  border: none;\n  width: 20px;\n  height: 20px;\n  background: rgba(204, 204, 204, 1);\n}\n.ColorPicker-module_colorButton__LzfqW[data-color=\"red\"]{\n    background: rgba(210, 101, 111, 1)\n  }\n.ColorPicker-module_colorButton__LzfqW[data-color=\"purple\"]{\n    background: rgba(159, 101, 210, 1)\n  }\n.ColorPicker-module_colorButton__LzfqW[data-color=\"blue\"]{\n    background: rgba(101, 151, 210, 1)\n  }\n.ColorPicker-module_colorButton__LzfqW[data-color=\"green\"]{\n    background: rgba(101, 210, 168, 1)\n  }\n.ColorPicker-module_colorButton__LzfqW[data-color=\"orange\"]{\n    background: rgba(210, 137, 101, 1)\n  }\n.ColorPicker-module_colorButton__LzfqW[data-color=\"yellow\"]{\n    background: rgba(210, 196, 101, 1)\n  }\n.ColorPicker-module_colorButton__LzfqW[data-color=\"pink\"]{\n    background: rgba(241, 124, 226, 1)\n  }\n.ColorPicker-module_colorButton__LzfqW:hover{\n    opacity: .8;\n  }\n";
-var styles$4 = {"wrapper":"ColorPicker-module_wrapper__vJjVx","colorButtonWrapper":"ColorPicker-module_colorButtonWrapper__wurMz","colorButton":"ColorPicker-module_colorButton__LzfqW"};
+var css_248z$4 = ".ColorPicker-module_wrapper__rrBWw {\n  position: fixed;\n  z-index: 9999;\n  background: rgba(29, 32, 34, 0.95);\n  border-radius: 5px;\n  box-shadow: 0px 6px 7px rgba(0, 0, 0, 0.3);\n  border: 1px solid rgba(0, 0, 0, 0.4);\n  color: #fff;\n  display: flex;\n  width: 102px;\n  flex-wrap: wrap;\n  padding: 2px;\n}\n@supports (backdrop-filter: blur(6px)) {\n  .ColorPicker-module_wrapper__rrBWw {\n    backdrop-filter: blur(6px);\n    background: rgba(29, 32, 34, 0.8);\n  }\n}\n.ColorPicker-module_colorButtonWrapper__SKUJL {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  padding: 2px;\n}\n.ColorPicker-module_colorButton__GQXE2 {\n  border-radius: 3px;\n  border: none;\n  width: 20px;\n  height: 20px;\n  background: rgba(204, 204, 204, 1);\n}\n.ColorPicker-module_colorButton__GQXE2[data-color='red'] {\n    background: rgba(210, 101, 111, 1);\n  }\n.ColorPicker-module_colorButton__GQXE2[data-color='purple'] {\n    background: rgba(159, 101, 210, 1);\n  }\n.ColorPicker-module_colorButton__GQXE2[data-color='blue'] {\n    background: rgba(101, 151, 210, 1);\n  }\n.ColorPicker-module_colorButton__GQXE2[data-color='green'] {\n    background: rgba(101, 210, 168, 1);\n  }\n.ColorPicker-module_colorButton__GQXE2[data-color='orange'] {\n    background: rgba(210, 137, 101, 1);\n  }\n.ColorPicker-module_colorButton__GQXE2[data-color='yellow'] {\n    background: rgba(210, 196, 101, 1);\n  }\n.ColorPicker-module_colorButton__GQXE2[data-color='pink'] {\n    background: rgba(241, 124, 226, 1);\n  }\n.ColorPicker-module_colorButton__GQXE2:hover {\n    opacity: 0.8;\n  }\n";
+var styles$4 = {"wrapper":"ColorPicker-module_wrapper__rrBWw","colorButtonWrapper":"ColorPicker-module_colorButtonWrapper__SKUJL","colorButton":"ColorPicker-module_colorButton__GQXE2"};
 styleInject(css_248z$4);
 
 var ColorPicker = (function (_a) {
@@ -6058,24 +6025,24 @@ var ColorPicker = (function (_a) {
     var testClickOutside = React__default["default"].useCallback(function (e) {
         if (wrapper.current && !wrapper.current.contains(e.target)) {
             onRequestClose();
-            document.removeEventListener("click", testClickOutside);
-            document.removeEventListener("contextmenu", testClickOutside);
+            document.removeEventListener('click', testClickOutside);
+            document.removeEventListener('contextmenu', testClickOutside);
         }
     }, [wrapper, onRequestClose]);
     var testEscape = React__default["default"].useCallback(function (e) {
         if (e.keyCode === 27) {
             onRequestClose();
-            document.removeEventListener("keydown", testEscape);
+            document.removeEventListener('keydown', testEscape);
         }
     }, [onRequestClose]);
     React__default["default"].useEffect(function () {
-        document.addEventListener("keydown", testEscape);
-        document.addEventListener("click", testClickOutside);
-        document.addEventListener("contextmenu", testClickOutside);
+        document.addEventListener('keydown', testEscape);
+        document.addEventListener('click', testClickOutside);
+        document.addEventListener('contextmenu', testClickOutside);
         return function () {
-            document.removeEventListener("click", testClickOutside);
-            document.removeEventListener("contextmenu", testClickOutside);
-            document.removeEventListener("keydown", testEscape);
+            document.removeEventListener('click', testClickOutside);
+            document.removeEventListener('contextmenu', testClickOutside);
+            document.removeEventListener('keydown', testEscape);
         };
     }, [testClickOutside, testEscape]);
     return (React__default["default"].createElement("div", { ref: wrapper, className: styles$4.wrapper, style: {
@@ -6092,8 +6059,8 @@ var ColorButton = function (_a) {
         React__default["default"].createElement("button", { className: styles$4.colorButton, onClick: onSelected, "data-color": color, "aria-label": color })));
 };
 
-var css_248z$3 = ".Comment-module_wrapper__4-iQL {\n  position: absolute;\n  left: 0px;\n  top: 0px;\n  padding: 5px;\n  background: rgba(147, 154, 158, 0.7);\n  border-radius: 5px;\n  border-bottom-right-radius: 2px;\n  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);\n  min-width: 80px;\n  font-size: 14px;\n  display: flex;\n  text-shadow: 0px 1px rgba(255,255,255,.1);\n  border: 1px solid rgba(168, 176, 181, 0.7);\n  user-select: none;\n}\n  .Comment-module_wrapper__4-iQL[data-color=\"red\"]{\n    background: rgba(213, 84, 103, 0.65);\n    border-color: rgba(227, 85, 119, 0.65);\n  }\n  .Comment-module_wrapper__4-iQL[data-color=\"purple\"]{\n    background: rgba(153, 83, 196, 0.65);\n    border-color: rgba(156, 85, 227, 0.65);\n  }\n  .Comment-module_wrapper__4-iQL[data-color=\"blue\"]{\n    background: rgba(76, 142, 203, 0.65);\n    border-color: rgba(85, 159, 227, 0.65);\n  }\n  .Comment-module_wrapper__4-iQL[data-color=\"green\"]{\n    background: rgba(70, 200, 130, 0.65);\n    border-color: rgba(85, 227, 150, 0.65);\n  }\n  .Comment-module_wrapper__4-iQL[data-color=\"yellow\"]{\n    background: rgba(200, 167, 63, 0.65);\n    border-color: rgba(227, 213, 85, 0.65);\n  }\n  .Comment-module_wrapper__4-iQL[data-color=\"orange\"]{\n    background: rgba(215, 123, 64, 0.65);\n    border-color: rgba(227, 149, 85, 0.65);\n  }\n  .Comment-module_wrapper__4-iQL[data-color=\"pink\"]{\n    background: rgba(255, 102, 208, 0.65);\n    border-color: rgba(242, 131, 228, 0.65);\n  }\n.Comment-module_text__wBPGw{\n  width: 100%;\n  height: 100%;\n  overflow: auto;\n  white-space: pre-wrap;\n  cursor: default;\n}\n.Comment-module_resizeThumb__cp55C {\n  width: 10px;\n  height: 10px;\n  border-radius: 4px 0px 4px 0px;\n  position: absolute;\n  right: 0px;\n  bottom: 0px;\n  overflow: hidden;\n  cursor: nwse-resize;\n}\n.Comment-module_resizeThumb__cp55C::before,\n  .Comment-module_resizeThumb__cp55C::after {\n    content: \"\";\n    position: absolute;\n    right: 0px;\n    top: 0px;\n    width: 250%;\n    height: 0px;\n    border-top: 1px solid rgba(0, 0, 0, 0.7);\n    border-bottom: 2px solid rgba(255, 255, 255, 0.7);\n    transform-origin: center right;\n    transform: rotate(-45deg) scale(0.5);\n  }\n.Comment-module_resizeThumb__cp55C::after {\n    transform: rotate(-45deg) translateY(3px) scale(0.5);\n  }\n.Comment-module_textarea__9Jwsf {\n  resize: none;\n  width: calc(100% + 2px);\n  height: calc(100% + 2px);\n  border-radius: 3px;\n  background: rgba(255,255,255,.1);\n  border: none;\n  outline: none;\n  margin: -2px;\n  margin-top: -1px;\n  padding-top: 0px;\n  font-size: 14px;\n}\n.Comment-module_textarea__9Jwsf::placeholder{\n    color: rgba(0,0,0,.5);\n  }\n";
-var styles$3 = {"wrapper":"Comment-module_wrapper__4-iQL","text":"Comment-module_text__wBPGw","resizeThumb":"Comment-module_resizeThumb__cp55C","textarea":"Comment-module_textarea__9Jwsf"};
+var css_248z$3 = ".Comment-module_wrapper__1ZMop {\n  position: absolute;\n  left: 0px;\n  top: 0px;\n  padding: 5px;\n  background: rgba(147, 154, 158, 0.7);\n  border-radius: 5px;\n  border-bottom-right-radius: 2px;\n  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);\n  min-width: 80px;\n  font-size: 14px;\n  display: flex;\n  text-shadow: 0px 1px rgba(255, 255, 255, 0.1);\n  border: 1px solid rgba(168, 176, 181, 0.7);\n  user-select: none;\n}\n  .Comment-module_wrapper__1ZMop[data-color='red'] {\n    background: rgba(213, 84, 103, 0.65);\n    border-color: rgba(227, 85, 119, 0.65);\n  }\n  .Comment-module_wrapper__1ZMop[data-color='purple'] {\n    background: rgba(153, 83, 196, 0.65);\n    border-color: rgba(156, 85, 227, 0.65);\n  }\n  .Comment-module_wrapper__1ZMop[data-color='blue'] {\n    background: rgba(76, 142, 203, 0.65);\n    border-color: rgba(85, 159, 227, 0.65);\n  }\n  .Comment-module_wrapper__1ZMop[data-color='green'] {\n    background: rgba(70, 200, 130, 0.65);\n    border-color: rgba(85, 227, 150, 0.65);\n  }\n  .Comment-module_wrapper__1ZMop[data-color='yellow'] {\n    background: rgba(200, 167, 63, 0.65);\n    border-color: rgba(227, 213, 85, 0.65);\n  }\n  .Comment-module_wrapper__1ZMop[data-color='orange'] {\n    background: rgba(215, 123, 64, 0.65);\n    border-color: rgba(227, 149, 85, 0.65);\n  }\n  .Comment-module_wrapper__1ZMop[data-color='pink'] {\n    background: rgba(255, 102, 208, 0.65);\n    border-color: rgba(242, 131, 228, 0.65);\n  }\n.Comment-module_text__ACt9w {\n  width: 100%;\n  height: 100%;\n  overflow: auto;\n  white-space: pre-wrap;\n  cursor: default;\n}\n.Comment-module_resizeThumb__QAP27 {\n  width: 10px;\n  height: 10px;\n  border-radius: 4px 0px 4px 0px;\n  position: absolute;\n  right: 0px;\n  bottom: 0px;\n  overflow: hidden;\n  cursor: nwse-resize;\n}\n.Comment-module_resizeThumb__QAP27::before,\n  .Comment-module_resizeThumb__QAP27::after {\n    content: '';\n    position: absolute;\n    right: 0px;\n    top: 0px;\n    width: 250%;\n    height: 0px;\n    border-top: 1px solid rgba(0, 0, 0, 0.7);\n    border-bottom: 2px solid rgba(255, 255, 255, 0.7);\n    transform-origin: center right;\n    transform: rotate(-45deg) scale(0.5);\n  }\n.Comment-module_resizeThumb__QAP27::after {\n    transform: rotate(-45deg) translateY(3px) scale(0.5);\n  }\n.Comment-module_textarea__0dn53 {\n  resize: none;\n  width: calc(100% + 2px);\n  height: calc(100% + 2px);\n  border-radius: 3px;\n  background: rgba(255, 255, 255, 0.1);\n  border: none;\n  outline: none;\n  margin: -2px;\n  margin-top: -1px;\n  padding-top: 0px;\n  font-size: 14px;\n}\n.Comment-module_textarea__0dn53::placeholder {\n    color: rgba(0, 0, 0, 0.5);\n  }\n";
+var styles$3 = {"wrapper":"Comment-module_wrapper__1ZMop","text":"Comment-module_text__ACt9w","resizeThumb":"Comment-module_resizeThumb__QAP27","textarea":"Comment-module_textarea__0dn53"};
 styleInject(css_248z$3);
 
 var Comment = (function (_a) {
@@ -6127,7 +6094,7 @@ var Comment = (function (_a) {
     var handleDragEnd = function (_, _a) {
         var x = _a.x, y = _a.y;
         dispatch({
-            type: "SET_COMMENT_COORDINATES",
+            type: 'SET_COMMENT_COORDINATES',
             id: id,
             x: x,
             y: y
@@ -6143,7 +6110,7 @@ var Comment = (function (_a) {
         var width = clamp_1(coordinates.x - x + 10, 80, 10000);
         var height = clamp_1(coordinates.y - y + 10, 30, 10000);
         dispatch({
-            type: "SET_COMMENT_DIMENSIONS",
+            type: 'SET_COMMENT_DIMENSIONS',
             id: id,
             width: width,
             height: height
@@ -6151,16 +6118,16 @@ var Comment = (function (_a) {
     };
     var handleMenuOption = function (option, e) {
         switch (option.value) {
-            case "edit":
+            case 'edit':
                 startTextEdit();
                 break;
-            case "color":
+            case 'color':
                 setColorPickerCoordinates(menuCoordinates);
                 setIsPickingColor(true);
                 break;
-            case "delete":
+            case 'delete':
                 dispatch({
-                    type: "DELETE_COMMENT",
+                    type: 'DELETE_COMMENT',
                     id: id
                 });
                 break;
@@ -6174,14 +6141,14 @@ var Comment = (function (_a) {
     };
     var handleTextChange = function (e) {
         dispatch({
-            type: "SET_COMMENT_TEXT",
+            type: 'SET_COMMENT_TEXT',
             id: id,
             text: e.target.value
         });
     };
     var handleColorPicked = function (color) {
         dispatch({
-            type: "SET_COMMENT_COLOR",
+            type: 'SET_COMMENT_COLOR',
             id: id,
             color: color
         });
@@ -6190,7 +6157,7 @@ var Comment = (function (_a) {
         if (isNew) {
             setIsEditing(true);
             dispatch({
-                type: "REMOVE_COMMENT_NEW",
+                type: 'REMOVE_COMMENT_NEW',
                 id: id
             });
         }
@@ -6199,34 +6166,34 @@ var Comment = (function (_a) {
             transform: "translate(".concat(x, "px,").concat(y, "px)"),
             width: width,
             height: height,
-            zIndex: isEditing ? 999 : ""
+            zIndex: isEditing ? 999 : ''
         }, stageState: stageState, stageRect: stageRect, onDragStart: startDrag, onDrag: handleDrag, onDragEnd: handleDragEnd, onContextMenu: handleContextMenu, onDoubleClick: startTextEdit, onWheel: function (e) { return e.stopPropagation(); }, "data-color": color },
         isEditing ? (React__default["default"].createElement("textarea", { className: styles$3.textarea, onChange: handleTextChange, onMouseDown: function (e) { return e.stopPropagation(); }, onBlur: endTextEdit, placeholder: "Text of the comment...", autoFocus: true, value: text, ref: textarea })) : (React__default["default"].createElement("div", { "data-comment": true, className: styles$3.text }, text)),
         React__default["default"].createElement(Draggable, { className: styles$3.resizeThumb, stageState: stageState, stageRect: stageRect, onDrag: handleResize, onDragEnd: handleResizeEnd }),
         menuOpen ? (React__default["default"].createElement(Portal$1, null,
             React__default["default"].createElement(ContextMenu, { hideFilter: true, label: "Comment Options", x: menuCoordinates.x, y: menuCoordinates.y, options: [
                     {
-                        value: "edit",
-                        label: "Edit Comment",
-                        description: "Edit the text of the comment"
+                        value: 'edit',
+                        label: 'Edit Comment',
+                        description: 'Edit the text of the comment'
                     },
                     {
-                        value: "color",
-                        label: "Change Color",
-                        description: "Change the color of the comment"
+                        value: 'color',
+                        label: 'Change Color',
+                        description: 'Change the color of the comment'
                     },
                     {
-                        value: "delete",
-                        label: "Delete Comment",
-                        description: "Delete the comment"
+                        value: 'delete',
+                        label: 'Delete Comment',
+                        description: 'Delete the comment'
                     }
                 ], onRequestClose: closeContextMenu, onOptionSelected: handleMenuOption }))) : null,
         isPickingColor ? (React__default["default"].createElement(Portal$1, null,
             React__default["default"].createElement(ColorPicker, { x: colorPickerCoordinates.x, y: colorPickerCoordinates.y, onRequestClose: function () { return setIsPickingColor(false); }, onColorPicked: handleColorPicked }))) : null));
 });
 
-var css_248z$2 = ".Toaster-module_toaster__6SfVH{\n  position: absolute;\n  left: 0px;\n  bottom: 0px;\n  width: 100%;\n  height: 1px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  padding-bottom: 15px;\n  box-shadow: 0px 5px 10px -2px rgba(0,0,0,.3);\n  pointer-events: none;\n}\n.Toaster-module_toast__zR0nj{\n  position: absolute;\n  left: calc(50% - 200px);\n  top: 0px;\n  pointer-events: all;\n  width: 400px;\n  padding: 10px;\n  padding-top: 7px;\n  padding-right: 16px;\n  border-radius: 6px;\n  background: rgba(231, 231, 231, 1);\n  border: 1px solid;\n  margin-bottom: 5px;\n  transition: transform 300ms;\n  flex: 0 0 auto;\n  animation: Toaster-module_fade-in__omr82 150ms;\n  user-select: none;\n  font-size: 14px;\n  display: flex;\n  flex-direction: column;\n  will-change: transform;\n}\n.Toaster-module_toast__zR0nj[data-type=\"danger\"]{\n    background: rgb(255, 116, 137);\n    border-color: rgb(254, 99, 136);\n    color: rgb(66, 6, 20);\n  }\n.Toaster-module_toast__zR0nj[data-type=\"info\"]{\n    background: rgb(76, 193, 250);\n    border-color: rgb(103, 182, 255);\n    color: rgb(5, 36, 64);\n  }\n.Toaster-module_toast__zR0nj[data-type=\"success\"]{\n    background: rgb(81, 230, 150);\n    border-color: rgb(85, 227, 150);\n    color: rgb(7, 57, 30);\n  }\n.Toaster-module_toast__zR0nj[data-type=\"warning\"]{\n    background: rgb(245, 208, 93);\n    border-color: rgb(247, 235, 125);\n    color: rgb(83, 75, 8);\n  }\n.Toaster-module_toast__zR0nj[data-exiting=true]{\n    animation: Toaster-module_fade-out__XemDj 150ms;\n    animation-fill-mode: forwards;\n  }\n.Toaster-module_toast__zR0nj p{\n  margin: 0px;\n}\n.Toaster-module_title__Co7gk{\n  font-size: 16px;\n  font-weight: bold;\n  margin-bottom: 5px;\n}\n.Toaster-module_timer__30kN1{\n  position: absolute;\n  bottom: -1px;\n  left: -1px;\n  width: calc(100% + 2px);\n  height: 3px;\n  background: rgba(0,0,0,.4);\n  transform-origin: left center;\n  animation: Toaster-module_timer__30kN1 1000ms linear;\n  animation-fill-mode: forwards;\n  z-index: 9;\n}\n.Toaster-module_exitButton__paB3P{\n  position: absolute;\n  right: 0px;\n  top: 0px;\n  width: 20px;\n  height: 20px;\n  padding: 0px;\n  background: none;\n  border: none;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  font-size: 14px;\n  color: inherit;\n  opacity: .6;\n}\n.Toaster-module_exitButton__paB3P:hover{\n  opacity: .9;\n}\n\n@keyframes Toaster-module_fade-in__omr82 {\n  from{\n    opacity: 0;\n  }\n  to{\n    opacity: 1;\n  }\n}\n\n@keyframes Toaster-module_fade-out__XemDj {\n  from{\n    opacity: 1;\n  }\n  to{\n    opacity: 0;\n  }\n}\n\n@keyframes Toaster-module_timer__30kN1 {\n  from{\n    transform: scaleX(1);\n  }\n  to{\n    transform: scaleX(0);\n  }\n}\n";
-var styles$2 = {"toaster":"Toaster-module_toaster__6SfVH","toast":"Toaster-module_toast__zR0nj","fade-in":"Toaster-module_fade-in__omr82","fade-out":"Toaster-module_fade-out__XemDj","title":"Toaster-module_title__Co7gk","timer":"Toaster-module_timer__30kN1","exitButton":"Toaster-module_exitButton__paB3P"};
+var css_248z$2 = ".Toaster-module_toaster__5OG3d {\n  position: absolute;\n  left: 0px;\n  bottom: 0px;\n  width: 100%;\n  height: 1px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  padding-bottom: 15px;\n  box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.3);\n  pointer-events: none;\n}\n.Toaster-module_toast__zhnxk {\n  position: absolute;\n  left: calc(50% - 200px);\n  top: 0px;\n  pointer-events: all;\n  width: 400px;\n  padding: 10px;\n  padding-top: 7px;\n  padding-right: 16px;\n  border-radius: 6px;\n  background: rgba(231, 231, 231, 1);\n  border: 1px solid;\n  margin-bottom: 5px;\n  transition: transform 300ms;\n  flex: 0 0 auto;\n  animation: Toaster-module_fade-in__qfU-W 150ms;\n  user-select: none;\n  font-size: 14px;\n  display: flex;\n  flex-direction: column;\n  will-change: transform;\n}\n.Toaster-module_toast__zhnxk[data-type='danger'] {\n    background: rgb(255, 116, 137);\n    border-color: rgb(254, 99, 136);\n    color: rgb(66, 6, 20);\n  }\n.Toaster-module_toast__zhnxk[data-type='info'] {\n    background: rgb(76, 193, 250);\n    border-color: rgb(103, 182, 255);\n    color: rgb(5, 36, 64);\n  }\n.Toaster-module_toast__zhnxk[data-type='success'] {\n    background: rgb(81, 230, 150);\n    border-color: rgb(85, 227, 150);\n    color: rgb(7, 57, 30);\n  }\n.Toaster-module_toast__zhnxk[data-type='warning'] {\n    background: rgb(245, 208, 93);\n    border-color: rgb(247, 235, 125);\n    color: rgb(83, 75, 8);\n  }\n.Toaster-module_toast__zhnxk[data-exiting='true'] {\n    animation: Toaster-module_fade-out__7bx-z 150ms;\n    animation-fill-mode: forwards;\n  }\n.Toaster-module_toast__zhnxk p {\n  margin: 0px;\n}\n.Toaster-module_title__D5vcd {\n  font-size: 16px;\n  font-weight: bold;\n  margin-bottom: 5px;\n}\n.Toaster-module_timer__gHvzF {\n  position: absolute;\n  bottom: -1px;\n  left: -1px;\n  width: calc(100% + 2px);\n  height: 3px;\n  background: rgba(0, 0, 0, 0.4);\n  transform-origin: left center;\n  animation: Toaster-module_timer__gHvzF 1000ms linear;\n  animation-fill-mode: forwards;\n  z-index: 9;\n}\n.Toaster-module_exitButton__7H-w7 {\n  position: absolute;\n  right: 0px;\n  top: 0px;\n  width: 20px;\n  height: 20px;\n  padding: 0px;\n  background: none;\n  border: none;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  font-size: 14px;\n  color: inherit;\n  opacity: 0.6;\n}\n.Toaster-module_exitButton__7H-w7:hover {\n  opacity: 0.9;\n}\n\n@keyframes Toaster-module_fade-in__qfU-W {\n  from {\n    opacity: 0;\n  }\n  to {\n    opacity: 1;\n  }\n}\n\n@keyframes Toaster-module_fade-out__7bx-z {\n  from {\n    opacity: 1;\n  }\n  to {\n    opacity: 0;\n  }\n}\n\n@keyframes Toaster-module_timer__gHvzF {\n  from {\n    transform: scaleX(1);\n  }\n  to {\n    transform: scaleX(0);\n  }\n}\n";
+var styles$2 = {"toaster":"Toaster-module_toaster__5OG3d","toast":"Toaster-module_toast__zhnxk","fade-in":"Toaster-module_fade-in__qfU-W","fade-out":"Toaster-module_fade-out__7bx-z","title":"Toaster-module_title__D5vcd","timer":"Toaster-module_timer__gHvzF","exitButton":"Toaster-module_exitButton__7H-w7"};
 styleInject(css_248z$2);
 
 var __assign$6 = (undefined && undefined.__assign) || function () {
@@ -6244,20 +6211,20 @@ var Toaster = (function (_a) {
     var _b = _a.toasts, toasts = _b === void 0 ? [] : _b, dispatchToasts = _a.dispatchToasts;
     var setHeight = React__default["default"].useCallback(function (id, height) {
         dispatchToasts({
-            type: "SET_HEIGHT",
+            type: 'SET_HEIGHT',
             id: id,
             height: height
         });
     }, [dispatchToasts]);
     var startExit = React__default["default"].useCallback(function (id) {
         dispatchToasts({
-            type: "SET_EXITING",
+            type: 'SET_EXITING',
             id: id
         });
     }, [dispatchToasts]);
     var removeToast = React__default["default"].useCallback(function (id) {
         dispatchToasts({
-            type: "REMOVE_TOAST",
+            type: 'REMOVE_TOAST',
             id: id
         });
     }, [dispatchToasts]);
@@ -6301,13 +6268,13 @@ var Toast = function (_a) {
             } }, "\u2715")));
 };
 
-var css_248z$1 = ".Connections-module_svgWrapper__UpHhQ{\n  position: absolute;\n  left: 0px;\n  height: 0px;\n}\n";
-var styles$1 = {"svgWrapper":"Connections-module_svgWrapper__UpHhQ"};
+var css_248z$1 = ".Connections-module_svgWrapper__GuB6h {\n  position: absolute;\n  left: 0px;\n  height: 0px;\n}\n";
+var styles$1 = {"svgWrapper":"Connections-module_svgWrapper__GuB6h"};
 styleInject(css_248z$1);
 
 var Connections = function (_a) {
     _a.nodes; var editorId = _a.editorId;
-    return (React__default["default"].createElement("div", { className: styles$1.svgWrapper, id: "".concat(CONNECTIONS_ID).concat(editorId) }));
+    return React__default["default"].createElement("div", { className: styles$1.svgWrapper, id: "".concat(CONNECTIONS_ID).concat(editorId) });
 };
 
 var checkForCircularNodes = function (nodes, startNodeId) {
@@ -6373,8 +6340,7 @@ var addConnection = function (nodes, input, output, portTypes) {
                     nodeId: output.nodeId,
                     portName: output.portName
                 }
-            ], false), _b)) }) }), _a[output.nodeId] = __assign$5(__assign$5({}, nodes[output.nodeId]), { connections: __assign$5(__assign$5({}, nodes[output.nodeId].connections), { outputs: __assign$5(__assign$5({}, nodes[output.nodeId].connections.outputs), (_c = {}, _c[output.portName] = __spreadArray$1(__spreadArray$1([], (nodes[output.nodeId].connections.outputs[output.portName] ||
-                []), true), [
+            ], false), _b)) }) }), _a[output.nodeId] = __assign$5(__assign$5({}, nodes[output.nodeId]), { connections: __assign$5(__assign$5({}, nodes[output.nodeId].connections), { outputs: __assign$5(__assign$5({}, nodes[output.nodeId].connections.outputs), (_c = {}, _c[output.portName] = __spreadArray$1(__spreadArray$1([], (nodes[output.nodeId].connections.outputs[output.portName] || []), true), [
                 {
                     nodeId: input.nodeId,
                     portName: input.portName
@@ -6425,7 +6391,7 @@ var reconcileNodes = function (initialNodes, nodeTypes, portTypes, context) {
         .filter(function (x) { return x; });
     nodesToDelete.forEach(function (nodeId) {
         nodes = nodesReducer(nodes, {
-            type: "REMOVE_NODE",
+            type: 'REMOVE_NODE',
             nodeId: nodeId
         }, { nodeTypes: nodeTypes, portTypes: portTypes, context: context });
     });
@@ -6469,7 +6435,7 @@ var getInitialNodes = function (initialNodes, defaultNodes, nodeTypes, portTypes
         var nodeNotAdded = !Object.values(initialNodes).find(function (n) { return n.type === dNode.type; });
         if (nodeNotAdded) {
             nodes = nodesReducer(nodes, {
-                type: "ADD_NODE",
+                type: 'ADD_NODE',
                 id: "default-".concat(i),
                 defaultNode: true,
                 x: dNode.x || 0,
@@ -6487,9 +6453,7 @@ var getDefaultData = function (_a) {
         : nodeType.inputs(node.inputData, node.connections, context);
     return inputs.reduce(function (obj, input) {
         var inputType = portTypes[input.type];
-        obj[input.name || inputType.name] = (input.controls ||
-            inputType.controls ||
-            []).reduce(function (obj2, control) {
+        obj[input.name || inputType.name] = (input.controls || inputType.controls || []).reduce(function (obj2, control) {
             obj2[control.name] = control.defaultValue;
             return obj2;
         }, {});
@@ -6501,30 +6465,30 @@ var nodesReducer = function (nodes, action, _a, dispatchToasts) {
     if (action === void 0) { action = {}; }
     var nodeTypes = _a.nodeTypes, portTypes = _a.portTypes, cache = _a.cache, circularBehavior = _a.circularBehavior, context = _a.context;
     switch (action.type) {
-        case "ADD_CONNECTION": {
+        case 'ADD_CONNECTION': {
             var input = action.input, output = action.output;
             var inputIsNotConnected = !nodes[input.nodeId].connections.inputs[input.portName];
             if (inputIsNotConnected) {
-                var allowCircular = circularBehavior === "warn" || circularBehavior === "allow";
+                var allowCircular = circularBehavior === 'warn' || circularBehavior === 'allow';
                 var newNodes = addConnection(nodes, input, output);
                 var isCircular = checkForCircularNodes(newNodes, output.nodeId);
                 if (isCircular && !allowCircular) {
                     dispatchToasts({
-                        type: "ADD_TOAST",
-                        title: "Unable to connect",
-                        message: "Connecting these nodes would result in an infinite loop.",
-                        toastType: "warning",
+                        type: 'ADD_TOAST',
+                        title: 'Unable to connect',
+                        message: 'Connecting these nodes would result in an infinite loop.',
+                        toastType: 'warning',
                         duration: 5000
                     });
                     return nodes;
                 }
                 else {
-                    if (isCircular && circularBehavior === "warn") {
+                    if (isCircular && circularBehavior === 'warn') {
                         dispatchToasts({
-                            type: "ADD_TOAST",
-                            title: "Circular Connection Detected",
-                            message: "Connecting these nodes has created an infinite loop.",
-                            toastType: "warning",
+                            type: 'ADD_TOAST',
+                            title: 'Circular Connection Detected',
+                            message: 'Connecting these nodes has created an infinite loop.',
+                            toastType: 'warning',
                             duration: 5000
                         });
                     }
@@ -6534,14 +6498,14 @@ var nodesReducer = function (nodes, action, _a, dispatchToasts) {
             else
                 return nodes;
         }
-        case "REMOVE_CONNECTION": {
+        case 'REMOVE_CONNECTION': {
             var input = action.input, output = action.output;
             var id = output.nodeId + output.portName + input.nodeId + input.portName;
             delete cache.current.connections[id];
             deleteConnection({ id: id });
             return removeConnection(nodes, input, output);
         }
-        case "DESTROY_TRANSPUT": {
+        case 'DESTROY_TRANSPUT': {
             var transput_1 = action.transput, transputType_1 = action.transputType;
             var portId = transput_1.nodeId + transput_1.portName + transputType_1;
             delete cache.current.ports[portId];
@@ -6557,7 +6521,7 @@ var nodesReducer = function (nodes, action, _a, dispatchToasts) {
                 return removeConnection(nodes, input, output);
             }, nodes);
         }
-        case "ADD_NODE": {
+        case 'ADD_NODE': {
             var x = action.x, y = action.y, nodeType = action.nodeType, id = action.id, defaultNode = action.defaultNode;
             var newNodeId = id || nanoid(10);
             var newNode = {
@@ -6586,11 +6550,11 @@ var nodesReducer = function (nodes, action, _a, dispatchToasts) {
             }
             return __assign$5(__assign$5({}, nodes), (_b = {}, _b[newNodeId] = newNode, _b));
         }
-        case "REMOVE_NODE": {
+        case 'REMOVE_NODE': {
             var nodeId = action.nodeId;
             return removeNode(nodes, nodeId);
         }
-        case "HYDRATE_DEFAULT_NODES": {
+        case 'HYDRATE_DEFAULT_NODES': {
             var newNodes = __assign$5({}, nodes);
             for (var key in newNodes) {
                 if (newNodes[key].defaultNode) {
@@ -6602,7 +6566,7 @@ var nodesReducer = function (nodes, action, _a, dispatchToasts) {
             }
             return newNodes;
         }
-        case "SET_PORT_DATA": {
+        case 'SET_PORT_DATA': {
             var nodeId = action.nodeId, portName = action.portName, controlName = action.controlName, data = action.data, setValue = action.setValue;
             var newData = __assign$5(__assign$5({}, nodes[nodeId].inputData), (_c = {}, _c[portName] = __assign$5(__assign$5({}, nodes[nodeId].inputData[portName]), (_d = {}, _d[controlName] = data, _d)), _c));
             if (setValue) {
@@ -6610,7 +6574,7 @@ var nodesReducer = function (nodes, action, _a, dispatchToasts) {
             }
             return __assign$5(__assign$5({}, nodes), (_e = {}, _e[nodeId] = __assign$5(__assign$5({}, nodes[nodeId]), { inputData: newData }), _e));
         }
-        case "SET_NODE_COORDINATES": {
+        case 'SET_NODE_COORDINATES': {
             var x = action.x, y = action.y, nodeId = action.nodeId;
             return __assign$5(__assign$5({}, nodes), (_f = {}, _f[nodeId] = __assign$5(__assign$5({}, nodes[nodeId]), { x: x, y: y }), _f));
         }
@@ -6618,7 +6582,9 @@ var nodesReducer = function (nodes, action, _a, dispatchToasts) {
             return nodes;
     }
 };
-var connectNodesReducer = function (reducer, environment, dispatchToasts) { return function (state, action) { return reducer(state, action, environment, dispatchToasts); }; };
+var connectNodesReducer = function (reducer, environment, dispatchToasts) { return function (state, action) {
+    return reducer(state, action, environment, dispatchToasts);
+}; };
 
 var __assign$4 = (undefined && undefined.__assign) || function () {
     __assign$4 = Object.assign || function(t) {
@@ -6650,38 +6616,38 @@ var commentsReducer = (function (comments, action) {
     var _a, _b;
     if (comments === void 0) { comments = {}; }
     switch (action.type) {
-        case "ADD_COMMENT": {
+        case 'ADD_COMMENT': {
             var comment_1 = {
                 id: nanoid(10),
-                text: "",
+                text: '',
                 x: action.x,
                 y: action.y,
                 width: 200,
                 height: 30,
-                color: "blue",
+                color: 'blue',
                 isNew: true
             };
             return __assign$4(__assign$4({}, comments), (_a = {}, _a[comment_1.id] = comment_1, _a));
         }
-        case "REMOVE_COMMENT_NEW":
+        case 'REMOVE_COMMENT_NEW':
             var _c = comments[action.id]; _c.isNew; var comment = __rest(_c, ["isNew"]);
             return __assign$4(__assign$4({}, comments), (_b = {}, _b[action.id] = comment, _b));
-        case "SET_COMMENT_COORDINATES": {
+        case 'SET_COMMENT_COORDINATES': {
             return setComment(comments, action.id, { x: action.x, y: action.y });
         }
-        case "SET_COMMENT_DIMENSIONS": {
+        case 'SET_COMMENT_DIMENSIONS': {
             return setComment(comments, action.id, {
                 width: action.width,
                 height: action.height
             });
         }
-        case "SET_COMMENT_TEXT": {
+        case 'SET_COMMENT_TEXT': {
             return setComment(comments, action.id, { text: action.text });
         }
-        case "SET_COMMENT_COLOR": {
+        case 'SET_COMMENT_COLOR': {
             return setComment(comments, action.id, { color: action.color });
         }
-        case "DELETE_COMMENT": {
+        case 'DELETE_COMMENT': {
             var _d = comments, _e = action.id; _d[_e]; var newComments = __rest(_d, [typeof _e === "symbol" ? _e : _e + ""]);
             return newComments;
         }
@@ -6713,7 +6679,7 @@ var __spreadArray = (undefined && undefined.__spreadArray) || function (to, from
 var toastsReducer = (function (toasts, action) {
     if (toasts === void 0) { toasts = []; }
     switch (action.type) {
-        case "ADD_TOAST":
+        case 'ADD_TOAST':
             return __spreadArray([
                 {
                     id: nanoid(5),
@@ -6725,19 +6691,19 @@ var toastsReducer = (function (toasts, action) {
                     exiting: false
                 }
             ], toasts, true);
-        case "SET_HEIGHT": {
+        case 'SET_HEIGHT': {
             var index = toasts.findIndex(function (t) { return t.id === action.id; });
             return __spreadArray(__spreadArray(__spreadArray([], toasts.slice(0, index), true), [
                 __assign$3(__assign$3({}, toasts[index]), { height: action.height })
             ], false), toasts.slice(index + 1), true);
         }
-        case "SET_EXITING": {
+        case 'SET_EXITING': {
             var index = toasts.findIndex(function (t) { return t.id === action.id; });
             return __spreadArray(__spreadArray(__spreadArray([], toasts.slice(0, index), true), [
                 __assign$3(__assign$3({}, toasts[index]), { exiting: true })
             ], false), toasts.slice(index + 1), true);
         }
-        case "REMOVE_TOAST": {
+        case 'REMOVE_TOAST': {
             var index = toasts.findIndex(function (t) { return t.id === action.id; });
             return __spreadArray(__spreadArray([], toasts.slice(0, index), true), toasts.slice(index + 1), true);
         }
@@ -6777,8 +6743,8 @@ var Cache = /** @class */ (function () {
     return Cache;
 }());
 
-var css_248z = ".styles-module_dragWrapper__ZzTkF{\n  z-index: 9999;\n  position: absolute;\n  left: 0px;\n  top: 0px;\n}\n.styles-module_debugWrapper__PvhQN{\n  display: flex;\n  position: absolute;\n  left: 10px;\n  bottom: 10px;\n  gap: 15px;\n}\n";
-var styles = {"dragWrapper":"styles-module_dragWrapper__ZzTkF","debugWrapper":"styles-module_debugWrapper__PvhQN"};
+var css_248z = ".styles-module_dragWrapper__sx5xD {\n  z-index: 9999;\n  position: absolute;\n  left: 0px;\n  top: 0px;\n}\n.styles-module_debugWrapper__NPHbX {\n  display: flex;\n  position: absolute;\n  left: 10px;\n  bottom: 10px;\n  gap: 15px;\n}\n";
+var styles = {"dragWrapper":"styles-module_dragWrapper__sx5xD","debugWrapper":"styles-module_debugWrapper__NPHbX"};
 styleInject(css_248z);
 
 var __extends = (undefined && undefined.__extends) || (function () {
@@ -6826,7 +6792,7 @@ var RootEngine = /** @class */ (function () {
         };
         this.checkLoops = function () {
             if (_this.maxLoops >= 0 && _this.loops > _this.maxLoops) {
-                throw new LoopError("Max loop count exceeded.", LoopError.maxLoopsExceeded);
+                throw new LoopError('Max loop count exceeded.', LoopError.maxLoopsExceeded);
             }
             else {
                 _this.loops++;
@@ -6835,7 +6801,7 @@ var RootEngine = /** @class */ (function () {
         this.getRootNode = function (nodes) {
             var roots = Object.values(nodes).filter(function (n) { return n.root; });
             if (roots.length > 1) {
-                throw new Error("The root engine must not be called with more than one root node.");
+                throw new Error('The root engine must not be called with more than one root node.');
             }
             return roots[0];
         };
@@ -6880,9 +6846,7 @@ var RootEngine = /** @class */ (function () {
     RootEngine.prototype.resolveRootNode = function (nodes, options) {
         var _this = this;
         if (options === void 0) { options = {}; }
-        var rootNode = options.rootNodeId
-            ? nodes[options.rootNodeId]
-            : this.getRootNode(nodes);
+        var rootNode = options.rootNodeId ? nodes[options.rootNodeId] : this.getRootNode(nodes);
         if (rootNode) {
             var inputs = this.config.nodeTypes[rootNode.type].inputs;
             if (typeof inputs === 'function') {
@@ -6921,7 +6885,7 @@ var RootEngine = /** @class */ (function () {
             }
         }
         else {
-            console.error("A root node was not found. The Root Engine requires that exactly one node be marked as the root node.");
+            console.error('A root node was not found. The Root Engine requires that exactly one node be marked as the root node.');
             return {};
         }
     };
@@ -6950,20 +6914,18 @@ var NodeEditor = function (_a, ref) {
     var _o = React__default["default"].useReducer(connectNodesReducer(nodesReducer, { nodeTypes: nodeTypes, portTypes: portTypes, cache: cache, circularBehavior: circularBehavior, context: context }, setSideEffectToasts), {}, function () { return getInitialNodes(initialNodes, defaultNodes, nodeTypes, portTypes, context); }), nodes = _o[0], dispatchNodes = _o[1];
     var _p = React__default["default"].useReducer(commentsReducer, initialComments || {}), comments = _p[0], dispatchComments = _p[1];
     React__default["default"].useEffect(function () {
-        dispatchNodes({ type: "HYDRATE_DEFAULT_NODES" });
+        dispatchNodes({ type: 'HYDRATE_DEFAULT_NODES' });
     }, []);
     var _q = React__default["default"].useState(true), shouldRecalculateConnections = _q[0], setShouldRecalculateConnections = _q[1];
     var _r = React__default["default"].useReducer(stageReducer, {
-        scale: typeof initialScale === "number" ? clamp_1(initialScale, 0.1, 7) : 1,
+        scale: typeof initialScale === 'number' ? clamp_1(initialScale, 0.1, 7) : 1,
         translate: { x: 0, y: 0 }
     }), stageState = _r[0], dispatchStageState = _r[1];
     var recalculateConnections = React__default["default"].useCallback(function () {
         createConnections(nodes, stageState, editorId);
     }, [nodes, editorId, stageState, portTypes]);
     var recalculateStageRect = function () {
-        stage.current = document
-            .getElementById("".concat(STAGE_ID).concat(editorId))
-            .getBoundingClientRect();
+        stage.current = document.getElementById("".concat(STAGE_ID).concat(editorId)).getBoundingClientRect();
     };
     React__default["default"].useLayoutEffect(function () {
         if (shouldRecalculateConnections) {
@@ -7012,9 +6974,7 @@ var NodeEditor = function (_a, ref) {
                                         React__default["default"].createElement(Stage, { editorId: editorId, scale: stageState.scale, translate: stageState.translate, spaceToPan: spaceToPan, disablePan: disablePan, disableZoom: disableZoom, dispatchStageState: dispatchStageState, dispatchComments: dispatchComments, disableComments: disableComments || hideComments, stageRef: stage, numNodes: Object.keys(nodes).length, outerStageChildren: React__default["default"].createElement(React__default["default"].Fragment, null,
                                                 debug && (React__default["default"].createElement("div", { className: styles.debugWrapper },
                                                     React__default["default"].createElement("button", { className: styles.debugButton, onClick: function () { return console.log(nodes); } }, "Log Nodes"),
-                                                    React__default["default"].createElement("button", { className: styles.debugButton, onClick: function () {
-                                                            return console.log(JSON.stringify(nodes));
-                                                        } }, "Export Nodes"),
+                                                    React__default["default"].createElement("button", { className: styles.debugButton, onClick: function () { return console.log(JSON.stringify(nodes)); } }, "Export Nodes"),
                                                     React__default["default"].createElement("button", { className: styles.debugButton, onClick: function () { return console.log(comments); } }, "Log Comments"))),
                                                 React__default["default"].createElement(Toaster, { toasts: toasts, dispatchToasts: dispatchToasts })) },
                                             !hideComments &&

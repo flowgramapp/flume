@@ -17,7 +17,7 @@
     "allowSyntheticDefaultImports": true,
     "declaration": true,
     "declarationDir": "./dist",
-    "outDir": "out-tsc",
+    "outDir": ".tsc-out",
     "plugins": [{"name": "typescript-plugin-css-modules"}]
   },
   "include": ["src/**/*"],

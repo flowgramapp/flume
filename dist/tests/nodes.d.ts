@@ -1,5 +1,5 @@
 export const exampleNodes: {
-    "5nCLb85WDw": {
+    '5nCLb85WDw': {
         id: string;
         x: number;
         y: number;
