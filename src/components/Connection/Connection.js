@@ -1,20 +1,10 @@
-import React from "react";
-import {calculateCurve} from '../../connectionCalculator'
+import React from 'react';
+import {calculateCurve} from '../../connectionCalculator';
 
-import styles from "./Connection.module.css";
+import styles from './Connection.module.css';
 
-const Connection = ({
-  from,
-  to,
-  id,
-  lineRef,
-  outputNodeId,
-  outputPortName,
-  inputNodeId,
-  inputPortName,
-  stroke
-}) => {
-  const curve = calculateCurve(from, to)
+const Connection = ({from, to, id, lineRef, outputNodeId, outputPortName, inputNodeId, inputPortName, stroke}) => {
+  const curve = calculateCurve(from, to);
   return (
     <svg className={styles.svg}>
       <path

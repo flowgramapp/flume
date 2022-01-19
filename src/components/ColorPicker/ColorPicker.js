@@ -1,17 +1,17 @@
-import React from "react";
-import { Colors } from "../../typeBuilders";
+import React from 'react';
+import {Colors} from '../../typeBuilders';
 
-import styles from "./ColorPicker.module.css";
+import styles from './ColorPicker.module.css';
 
-export default ({ x, y, onColorPicked, onRequestClose }) => {
+export default ({x, y, onColorPicked, onRequestClose}) => {
   const wrapper = React.useRef();
 
   const testClickOutside = React.useCallback(
     e => {
       if (wrapper.current && !wrapper.current.contains(e.target)) {
         onRequestClose();
-        document.removeEventListener("click", testClickOutside);
-        document.removeEventListener("contextmenu", testClickOutside);
+        document.removeEventListener('click', testClickOutside);
+        document.removeEventListener('contextmenu', testClickOutside);
       }
     },
     [wrapper, onRequestClose]
@@ -21,20 +21,20 @@ export default ({ x, y, onColorPicked, onRequestClose }) => {
     e => {
       if (e.keyCode === 27) {
         onRequestClose();
-        document.removeEventListener("keydown", testEscape);
+        document.removeEventListener('keydown', testEscape);
       }
     },
     [onRequestClose]
   );
 
   React.useEffect(() => {
-    document.addEventListener("keydown", testEscape);
-    document.addEventListener("click", testClickOutside);
-    document.addEventListener("contextmenu", testClickOutside);
+    document.addEventListener('keydown', testEscape);
+    document.addEventListener('click', testClickOutside);
+    document.addEventListener('contextmenu', testClickOutside);
     return () => {
-      document.removeEventListener("click", testClickOutside);
-      document.removeEventListener("contextmenu", testClickOutside);
-      document.removeEventListener("keydown", testEscape);
+      document.removeEventListener('click', testClickOutside);
+      document.removeEventListener('contextmenu', testClickOutside);
+      document.removeEventListener('keydown', testEscape);
     };
   }, [testClickOutside, testEscape]);
 
@@ -61,13 +61,8 @@ export default ({ x, y, onColorPicked, onRequestClose }) => {
   );
 };
 
-const ColorButton = ({ color, onSelected }) => (
+const ColorButton = ({color, onSelected}) => (
   <div className={styles.colorButtonWrapper}>
-    <button
-      className={styles.colorButton}
-      onClick={onSelected}
-      data-color={color}
-      aria-label={color}
-    />
+    <button className={styles.colorButton} onClick={onSelected} data-color={color} aria-label={color} />
   </div>
 );

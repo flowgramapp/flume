@@ -1,13 +1,13 @@
-import React from "react";
-import { Portal } from "react-portal";
-import ContextMenu from "../ContextMenu/ContextMenu";
-import { NodeTypesContext, NodeDispatchContext } from "../../context";
-import Draggable from "../Draggable/Draggable";
-import sortBy from "lodash/sortBy";
-import clamp from "lodash/clamp";
-import { STAGE_ID } from '../../constants'
+import React from 'react';
+import {Portal} from 'react-portal';
+import ContextMenu from '../ContextMenu/ContextMenu';
+import {NodeTypesContext, NodeDispatchContext} from '../../context';
+import Draggable from '../Draggable/Draggable';
+import sortBy from 'lodash/sortBy';
+import clamp from 'lodash/clamp';
+import {STAGE_ID} from '../../constants';
 
-import styles from "./Stage.module.css";
+import styles from './Stage.module.css';
 
 const Stage = ({
   scale,
@@ -29,8 +29,8 @@ const Stage = ({
   const wrapper = React.useRef();
   const translateWrapper = React.useRef();
   const [menuOpen, setMenuOpen] = React.useState(false);
-  const [menuCoordinates, setMenuCoordinates] = React.useState({ x: 0, y: 0 });
-  const dragData = React.useRef({ x: 0, y: 0 });
+  const [menuCoordinates, setMenuCoordinates] = React.useState({x: 0, y: 0});
+  const dragData = React.useRef({x: 0, y: 0});
   const [spaceIsPressed, setSpaceIsPressed] = React.useState(false);
 
   const setStageRect = React.useCallback(() => {
@@ -39,22 +39,22 @@ const Stage = ({
 
   React.useEffect(() => {
     stageRef.current = wrapper.current.getBoundingClientRect();
-    window.addEventListener("resize", setStageRect);
+    window.addEventListener('resize', setStageRect);
     return () => {
-      window.removeEventListener("resize", setStageRect);
+      window.removeEventListener('resize', setStageRect);
     };
   }, [stageRef, setStageRect]);
 
   const handleWheel = React.useCallback(
     e => {
-      if (e.target.nodeName === "TEXTAREA" || e.target.dataset.comment) {
+      if (e.target.nodeName === 'TEXTAREA' || e.target.dataset.comment) {
         if (e.target.clientHeight < e.target.scrollHeight) return;
       }
       e.preventDefault();
       if (numNodes > 0) {
         const delta = e.deltaY;
-        dispatchStageState(({ scale }) => ({
-          type: "SET_SCALE",
+        dispatchStageState(({scale}) => ({
+          type: 'SET_SCALE',
           scale: clamp(scale - clamp(delta, -10, 10) * 0.005, 0.1, 7)
         }));
       }
@@ -77,9 +77,9 @@ const Stage = ({
   const handleMouseDrag = (coords, e) => {
     const xDistance = dragData.current.x - e.clientX;
     const yDistance = dragData.current.y - e.clientY;
-    translateWrapper.current.style.transform = `translate(${-(
-      translate.x + xDistance
-    )}px, ${-(translate.y + yDistance)}px)`;
+    translateWrapper.current.style.transform = `translate(${-(translate.x + xDistance)}px, ${-(
+      translate.y + yDistance
+    )}px)`;
   };
 
   const handleDragEnd = e => {
@@ -87,8 +87,8 @@ const Stage = ({
     const yDistance = dragData.current.y - e.clientY;
     dragData.current.x = e.clientX;
     dragData.current.y = e.clientY;
-    dispatchStageState(({ translate: tran }) => ({
-      type: "SET_TRANSLATE",
+    dispatchStageState(({translate: tran}) => ({
+      type: 'SET_TRANSLATE',
       translate: {
         x: tran.x + xDistance,
         y: tran.y + yDistance
@@ -98,7 +98,7 @@ const Stage = ({
 
   const handleContextMenu = e => {
     e.preventDefault();
-    setMenuCoordinates({ x: e.clientX, y: e.clientY });
+    setMenuCoordinates({x: e.clientX, y: e.clientY});
     setMenuOpen(true);
     return false;
   };
@@ -109,23 +109,19 @@ const Stage = ({
 
   const byScale = value => (1 / scale) * value;
 
-  const addNode = ({ node, internalType }) => {
+  const addNode = ({node, internalType}) => {
     const wrapperRect = wrapper.current.getBoundingClientRect();
-    const x =
-      byScale(menuCoordinates.x - wrapperRect.x - wrapperRect.width / 2) +
-      byScale(translate.x);
-    const y =
-      byScale(menuCoordinates.y - wrapperRect.y - wrapperRect.height / 2) +
-      byScale(translate.y);
-    if (internalType === "comment") {
+    const x = byScale(menuCoordinates.x - wrapperRect.x - wrapperRect.width / 2) + byScale(translate.x);
+    const y = byScale(menuCoordinates.y - wrapperRect.y - wrapperRect.height / 2) + byScale(translate.y);
+    if (internalType === 'comment') {
       dispatchComments({
-        type: "ADD_COMMENT",
+        type: 'ADD_COMMENT',
         x,
         y
       });
     } else {
       dispatchNodes({
-        type: "ADD_NODE",
+        type: 'ADD_NODE',
         x,
         y,
         nodeType: node.type
@@ -136,7 +132,7 @@ const Stage = ({
   const handleDocumentKeyUp = e => {
     if (e.which === 32) {
       setSpaceIsPressed(false);
-      document.removeEventListener("keyup", handleDocumentKeyUp);
+      document.removeEventListener('keyup', handleDocumentKeyUp);
     }
   };
 
@@ -145,7 +141,7 @@ const Stage = ({
       e.preventDefault();
       e.stopPropagation();
       setSpaceIsPressed(true);
-      document.addEventListener("keyup", handleDocumentKeyUp);
+      document.addEventListener('keyup', handleDocumentKeyUp);
     }
   };
 
@@ -156,36 +152,38 @@ const Stage = ({
   };
 
   React.useEffect(() => {
-    if(!disableZoom){
+    if (!disableZoom) {
       let stageWrapper = wrapper.current;
-      stageWrapper.addEventListener("wheel", handleWheel);
+      stageWrapper.addEventListener('wheel', handleWheel);
       return () => {
-        stageWrapper.removeEventListener("wheel", handleWheel);
+        stageWrapper.removeEventListener('wheel', handleWheel);
       };
     }
   }, [handleWheel, disableZoom]);
 
-  const menuOptions = React.useMemo(
-    () => {
-      const options = sortBy(
-        Object.values(nodeTypes)
-          .filter(node => node.addable !== false)
-          .map(node => ({
-            value: node.type,
-            label: node.label,
-            description: node.description,
-            sortIndex: node.sortIndex,
-            node
-          })),
-        ["sortIndex", "label"]
-      )
-      if(!disableComments){
-        options.push({ value: "comment", label: "Comment", description: "A comment for documenting nodes", internalType: "comment" })
-      }
-      return options
-    },
-    [nodeTypes, disableComments]
-  );
+  const menuOptions = React.useMemo(() => {
+    const options = sortBy(
+      Object.values(nodeTypes)
+        .filter(node => node.addable !== false)
+        .map(node => ({
+          value: node.type,
+          label: node.label,
+          description: node.description,
+          sortIndex: node.sortIndex,
+          node
+        })),
+      ['sortIndex', 'label']
+    );
+    if (!disableComments) {
+      options.push({
+        value: 'comment',
+        label: 'Comment',
+        description: 'A comment for documenting nodes',
+        internalType: 'comment'
+      });
+    }
+    return options;
+  }, [nodeTypes, disableComments]);
 
   return (
     <Draggable
@@ -200,8 +198,8 @@ const Stage = ({
       onDragEnd={handleDragEnd}
       onKeyDown={handleKeyDown}
       tabIndex={-1}
-      stageState={{ scale, translate }}
-      style={{ cursor: spaceIsPressed && spaceToPan ? "grab" : "" }}
+      stageState={{scale, translate}}
+      style={{cursor: spaceIsPressed && spaceToPan ? 'grab' : ''}}
       disabled={disablePan || (spaceToPan && !spaceIsPressed)}
       data-flume-stage={true}
     >
@@ -220,12 +218,9 @@ const Stage = ({
       <div
         ref={translateWrapper}
         className={styles.transformWrapper}
-        style={{ transform: `translate(${-translate.x}px, ${-translate.y}px)` }}
+        style={{transform: `translate(${-translate.x}px, ${-translate.y}px)`}}
       >
-        <div
-          className={styles.scaleWrapper}
-          style={{ transform: `scale(${scale})` }}
-        >
+        <div className={styles.scaleWrapper} style={{transform: `scale(${scale})`}}>
           {children}
         </div>
       </div>

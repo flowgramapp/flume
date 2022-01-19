@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 
-import styles from "./Toaster.module.css";
+import styles from './Toaster.module.css';
 
-export default ({ toasts = [], dispatchToasts }) => {
+export default ({toasts = [], dispatchToasts}) => {
   const setHeight = React.useCallback(
     (id, height) => {
       dispatchToasts({
-        type: "SET_HEIGHT",
+        type: 'SET_HEIGHT',
         id,
         height
       });
@@ -17,7 +17,7 @@ export default ({ toasts = [], dispatchToasts }) => {
   const startExit = React.useCallback(
     id => {
       dispatchToasts({
-        type: "SET_EXITING",
+        type: 'SET_EXITING',
         id
       });
     },
@@ -27,7 +27,7 @@ export default ({ toasts = [], dispatchToasts }) => {
   const removeToast = React.useCallback(
     id => {
       dispatchToasts({
-        type: "REMOVE_TOAST",
+        type: 'REMOVE_TOAST',
         id
       });
     },
@@ -79,7 +79,7 @@ const Toast = ({
   }, [id, duration, onExitRequested]);
 
   React.useLayoutEffect(() => {
-    const { height } = wrapper.current.getBoundingClientRect();
+    const {height} = wrapper.current.getBoundingClientRect();
     onHeightReceived(id, height);
   }, [onHeightReceived, id]);
 
@@ -99,28 +99,31 @@ const Toast = ({
       ref={wrapper}
       className={styles.toast}
       data-type={type}
-      style={{ transform: `translateY(-${y}px)` }}
+      style={{transform: `translateY(-${y}px)`}}
       data-exiting={exiting}
       onAnimationEnd={handleAnimationEnd}
       onMouseEnter={stopTimer}
       onMouseLeave={resumeTimer}
       role="alert"
     >
-      {
-        title ? <span className={styles.title}>{title}</span> : null
-      }
+      {title ? <span className={styles.title}>{title}</span> : null}
       <p>{message}</p>
       {!paused && (
         <div
           className={styles.timer}
-          style={{ animationDuration: `${duration}ms` }}
+          style={{animationDuration: `${duration}ms`}}
           onAnimationEnd={e => e.stopPropagation()}
         />
       )}
-      <button className={styles.exitButton} onClick={() => {
-        stopTimer()
-        onExitRequested(id)
-      }}>✕</button>
+      <button
+        className={styles.exitButton}
+        onClick={() => {
+          stopTimer();
+          onExitRequested(id);
+        }}
+      >
+        ✕
+      </button>
     </div>
   );
 };

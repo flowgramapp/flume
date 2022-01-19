@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export default ({
   children,
@@ -36,7 +36,7 @@ export default ({
           offset.current.y -
           (stageRect ? stageRect.current.height : 0) / 2
       ) + byScale(stageState.translate.y);
-    return { x, y };
+    return {x, y};
   };
 
   const updateCoordinates = e => {
@@ -51,8 +51,8 @@ export default ({
     if (onDragEnd) {
       onDragEnd(e, coordinates);
     }
-    window.removeEventListener("mouseup", stopDrag);
-    window.removeEventListener("mousemove", updateCoordinates);
+    window.removeEventListener('mouseup', stopDrag);
+    window.removeEventListener('mousemove', updateCoordinates);
   };
 
   const startDrag = e => {
@@ -64,14 +64,14 @@ export default ({
       x: startCoordinates.current.x - nodeRect.left,
       y: startCoordinates.current.y - nodeRect.top
     };
-    window.addEventListener("mouseup", stopDrag);
-    window.addEventListener("mousemove", updateCoordinates);
+    window.addEventListener('mouseup', stopDrag);
+    window.addEventListener('mousemove', updateCoordinates);
   };
 
   const checkDragDelay = e => {
     let x;
     let y;
-    if ("ontouchstart" in window && e.touches) {
+    if ('ontouchstart' in window && e.touches) {
       x = e.touches[0].clientX;
       y = e.touches[0].clientY;
     } else {
@@ -90,8 +90,8 @@ export default ({
   };
 
   const endDragDelay = () => {
-    document.removeEventListener("mouseup", endDragDelay);
-    document.removeEventListener("mousemove", checkDragDelay);
+    document.removeEventListener('mouseup', endDragDelay);
+    document.removeEventListener('mousemove', checkDragDelay);
     startCoordinates.current = null;
   };
 
@@ -102,7 +102,7 @@ export default ({
     e.stopPropagation();
     let x;
     let y;
-    if ("ontouchstart" in window && e.touches) {
+    if ('ontouchstart' in window && e.touches) {
       x = e.touches[0].clientX;
       y = e.touches[0].clientY;
     } else {
@@ -110,9 +110,9 @@ export default ({
       x = e.clientX;
       y = e.clientY;
     }
-    startCoordinates.current = { x, y };
-    document.addEventListener("mouseup", endDragDelay);
-    document.addEventListener("mousemove", checkDragDelay);
+    startCoordinates.current = {x, y};
+    document.addEventListener('mouseup', endDragDelay);
+    document.addEventListener('mousemove', checkDragDelay);
   };
 
   return (

@@ -1,4 +1,4 @@
-.wrapper{
+.wrapper {
   font-size: 14px;
   padding: 3px 6px;
   border-radius: 4px;
@@ -7,8 +7,8 @@
   border: 1px solid #3c3e40;
   padding-right: 15px;
   position: relative;
-  &::after{
-    content: "";
+  &::after {
+    content: '';
     position: absolute;
     background: none;
     right: 5px;
@@ -19,11 +19,11 @@
     border-width: 6px 5px 0 5px;
     border-color: #191b1c transparent transparent transparent;
   }
-  &:hover{
+  &:hover {
     background: linear-gradient(to top, #63676a, #777b7e);
   }
 }
-.chipWrapper{
+.chipWrapper {
   font-size: 14px;
   padding: 3px 6px;
   border-radius: 4px;
@@ -32,15 +32,15 @@
   margin: 2px;
   position: relative;
 }
-.chipWrapper:hover .deleteButton{
+.chipWrapper:hover .deleteButton {
   opacity: 1;
 }
-.chipsWrapper{
+.chipsWrapper {
   display: flex;
   flex-direction: column;
   margin-bottom: 6px;
 }
-.deleteButton{
+.deleteButton {
   position: absolute;
   right: 0px;
   top: 0px;
@@ -56,13 +56,13 @@
   font-weight: bold;
   opacity: 0;
 }
-.deleteButton:focus{
+.deleteButton:focus {
   opacity: 1;
 }
-.deleteButton:hover{
+.deleteButton:hover {
   background: linear-gradient(to top, #64696c, #797f82);
 }
-.selectedWrapper{
+.selectedWrapper {
   display: flex;
   flex-direction: column;
   border-radius: 4px;
@@ -73,8 +73,8 @@
   padding: 3px 6px;
   padding-right: 15px;
   position: relative;
-  &::after{
-    content: "";
+  &::after {
+    content: '';
     position: absolute;
     background: none;
     right: 5px;
@@ -85,10 +85,10 @@
     border-width: 6px 5px 0 5px;
     border-color: #191b1c transparent transparent transparent;
   }
-  label{
+  label {
     margin: 0px;
   }
-  p{
+  p {
     margin: 0px;
     margin-top: 5px;
     font-size: 12px;

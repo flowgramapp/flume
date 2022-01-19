@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const usePrevious = value => {
   const ref = React.useRef();
@@ -6,6 +6,6 @@ const usePrevious = value => {
     ref.current = value;
   });
   return ref.current;
-}
+};
 
-export default usePrevious
+export default usePrevious;

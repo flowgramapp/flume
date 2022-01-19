@@ -1,33 +1,21 @@
-import React from "react";
-import Draggable from "../Draggable/Draggable";
-import ContextMenu from "../ContextMenu/ContextMenu";
-import ColorPicker from "../ColorPicker/ColorPicker";
-import { StageContext } from "../../context";
-import { Portal } from "react-portal";
-import clamp from "lodash/clamp";
+import React from 'react';
+import Draggable from '../Draggable/Draggable';
+import ContextMenu from '../ContextMenu/ContextMenu';
+import ColorPicker from '../ColorPicker/ColorPicker';
+import {StageContext} from '../../context';
+import {Portal} from 'react-portal';
+import clamp from 'lodash/clamp';
 
-import styles from "./Comment.module.css";
+import styles from './Comment.module.css';
 
-export default ({
-  dispatch,
-  id,
-  x,
-  y,
-  width,
-  height,
-  color,
-  text,
-  stageRect,
-  onDragStart,
-  isNew
-}) => {
+export default ({dispatch, id, x, y, width, height, color, text, stageRect, onDragStart, isNew}) => {
   const stageState = React.useContext(StageContext);
   const wrapper = React.useRef();
   const textarea = React.useRef();
   const [isEditing, setIsEditing] = React.useState(false);
   const [isPickingColor, setIsPickingColor] = React.useState(false);
   const [menuOpen, setMenuOpen] = React.useState(false);
-  const [menuCoordinates, setMenuCoordinates] = React.useState({ x: 0, y: 0 });
+  const [menuCoordinates, setMenuCoordinates] = React.useState({x: 0, y: 0});
   const [colorPickerCoordinates, setColorPickerCoordinates] = React.useState({
     x: 0,
     y: 0
@@ -36,7 +24,7 @@ export default ({
   const handleContextMenu = e => {
     e.preventDefault();
     e.stopPropagation();
-    setMenuCoordinates({ x: e.clientX, y: e.clientY });
+    setMenuCoordinates({x: e.clientX, y: e.clientY});
     setMenuOpen(true);
     return false;
   };
@@ -47,13 +35,13 @@ export default ({
     onDragStart();
   };
 
-  const handleDrag = ({ x, y }) => {
+  const handleDrag = ({x, y}) => {
     wrapper.current.style.transform = `translate(${x}px,${y}px)`;
   };
 
-  const handleDragEnd = (_, { x, y }) => {
+  const handleDragEnd = (_, {x, y}) => {
     dispatch({
-      type: "SET_COMMENT_COORDINATES",
+      type: 'SET_COMMENT_COORDINATES',
       id,
       x,
       y
@@ -71,7 +59,7 @@ export default ({
     const width = clamp(coordinates.x - x + 10, 80, 10000);
     const height = clamp(coordinates.y - y + 10, 30, 10000);
     dispatch({
-      type: "SET_COMMENT_DIMENSIONS",
+      type: 'SET_COMMENT_DIMENSIONS',
       id,
       width,
       height
@@ -80,16 +68,16 @@ export default ({
 
   const handleMenuOption = (option, e) => {
     switch (option.value) {
-      case "edit":
+      case 'edit':
         startTextEdit();
         break;
-      case "color":
+      case 'color':
         setColorPickerCoordinates(menuCoordinates);
         setIsPickingColor(true);
         break;
-      case "delete":
+      case 'delete':
         dispatch({
-          type: "DELETE_COMMENT",
+          type: 'DELETE_COMMENT',
           id
         });
         break;
@@ -107,7 +95,7 @@ export default ({
 
   const handleTextChange = e => {
     dispatch({
-      type: "SET_COMMENT_TEXT",
+      type: 'SET_COMMENT_TEXT',
       id,
       text: e.target.value
     });
@@ -115,7 +103,7 @@ export default ({
 
   const handleColorPicked = color => {
     dispatch({
-      type: "SET_COMMENT_COLOR",
+      type: 'SET_COMMENT_COLOR',
       id,
       color
     });
@@ -125,7 +113,7 @@ export default ({
     if (isNew) {
       setIsEditing(true);
       dispatch({
-        type: "REMOVE_COMMENT_NEW",
+        type: 'REMOVE_COMMENT_NEW',
         id
       });
     }
@@ -139,7 +127,7 @@ export default ({
         transform: `translate(${x}px,${y}px)`,
         width,
         height,
-        zIndex: isEditing ? 999 : ""
+        zIndex: isEditing ? 999 : ''
       }}
       stageState={stageState}
       stageRect={stageRect}
@@ -183,19 +171,19 @@ export default ({
             y={menuCoordinates.y}
             options={[
               {
-                value: "edit",
-                label: "Edit Comment",
-                description: "Edit the text of the comment"
+                value: 'edit',
+                label: 'Edit Comment',
+                description: 'Edit the text of the comment'
               },
               {
-                value: "color",
-                label: "Change Color",
-                description: "Change the color of the comment"
+                value: 'color',
+                label: 'Change Color',
+                description: 'Change the color of the comment'
               },
               {
-                value: "delete",
-                label: "Delete Comment",
-                description: "Delete the comment"
+                value: 'delete',
+                label: 'Delete Comment',
+                description: 'Delete the comment'
               }
             ]}
             onRequestClose={closeContextMenu}

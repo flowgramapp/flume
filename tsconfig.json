@@ -18,8 +18,8 @@
     "declaration": true,
     "declarationDir": "./dist",
     "outDir": "out-tsc",
-    "plugins": [{ "name": "typescript-plugin-css-modules" }]
+    "plugins": [{"name": "typescript-plugin-css-modules"}]
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules"],
+  "exclude": ["node_modules"]
 }

@@ -1,7 +1,7 @@
-import React from "react";
-import clamp from "lodash/clamp";
-import {nanoid} from "nanoid/non-secure";
-import styles from "./ContextMenu.module.css";
+import React from 'react';
+import clamp from 'lodash/clamp';
+import {nanoid} from 'nanoid/non-secure';
+import styles from './ContextMenu.module.css';
 
 const ContextMenu = ({
   x,
@@ -17,7 +17,7 @@ const ContextMenu = ({
   const menuWrapper = React.useRef();
   const menuOptionsWrapper = React.useRef();
   const filterInput = React.useRef();
-  const [filter, setFilter] = React.useState("");
+  const [filter, setFilter] = React.useState('');
   const [menuWidth, setMenuWidth] = React.useState(0);
   const [selectedIndex, setSelectedIndex] = React.useState(0);
   const menuId = React.useRef(nanoid(10));
@@ -31,8 +31,8 @@ const ContextMenu = ({
     e => {
       if (menuWrapper.current && !menuWrapper.current.contains(e.target)) {
         onRequestClose();
-        document.removeEventListener("click", testClickOutside, { capture: true });
-        document.removeEventListener("contextmenu", testClickOutside, { capture: true });
+        document.removeEventListener('click', testClickOutside, {capture: true});
+        document.removeEventListener('contextmenu', testClickOutside, {capture: true});
       }
     },
     [menuWrapper, onRequestClose]
@@ -42,7 +42,7 @@ const ContextMenu = ({
     e => {
       if (e.keyCode === 27) {
         onRequestClose();
-        document.removeEventListener("keydown", testEscape, { capture: true });
+        document.removeEventListener('keydown', testEscape, {capture: true});
       }
     },
     [onRequestClose]
@@ -53,13 +53,13 @@ const ContextMenu = ({
       filterInput.current.focus();
     }
     setMenuWidth(menuWrapper.current.getBoundingClientRect().width);
-    document.addEventListener("keydown", testEscape, { capture: true });
-    document.addEventListener("click", testClickOutside, { capture: true });
-    document.addEventListener("contextmenu", testClickOutside, { capture: true });
+    document.addEventListener('keydown', testEscape, {capture: true});
+    document.addEventListener('click', testClickOutside, {capture: true});
+    document.addEventListener('contextmenu', testClickOutside, {capture: true});
     return () => {
-      document.removeEventListener("click", testClickOutside, { capture: true });
-      document.removeEventListener("contextmenu", testClickOutside, { capture: true });
-      document.removeEventListener("keydown", testEscape, { capture: true });
+      document.removeEventListener('click', testClickOutside, {capture: true});
+      document.removeEventListener('contextmenu', testClickOutside, {capture: true});
+      document.removeEventListener('keydown', testEscape, {capture: true});
     };
   }, [testClickOutside, testEscape]);
 
@@ -110,17 +110,12 @@ const ContextMenu = ({
   }, [hideFilter, hideHeader]);
 
   React.useEffect(() => {
-    const menuOption = document.getElementById(
-      `${menuId.current}-${selectedIndex}`
-    );
+    const menuOption = document.getElementById(`${menuId.current}-${selectedIndex}`);
     if (menuOption) {
       const menuRect = menuOptionsWrapper.current.getBoundingClientRect();
       const optionRect = menuOption.getBoundingClientRect();
-      if (
-        optionRect.y + optionRect.height > menuRect.y + menuRect.height ||
-        optionRect.y < menuRect.y
-      ) {
-        menuOption.scrollIntoView({ block: "nearest" });
+      if (optionRect.y + optionRect.height > menuRect.y + menuRect.height || optionRect.y < menuRect.y) {
+        menuOption.scrollIntoView({block: 'nearest'});
       }
     }
   }, [selectedIndex]);
@@ -133,7 +128,7 @@ const ContextMenu = ({
       style={{
         left: x,
         top: y,
-        width: filter ? menuWidth : "auto"
+        width: filter ? menuWidth : 'auto'
       }}
       ref={menuWrapper}
       tabIndex={0}
@@ -160,7 +155,7 @@ const ContextMenu = ({
         className={styles.optionsWrapper}
         role="menu"
         ref={menuOptionsWrapper}
-        style={{ maxHeight: clamp(window.innerHeight - y - 70, 10, 300) }}
+        style={{maxHeight: clamp(window.innerHeight - y - 70, 10, 300)}}
       >
         {filteredOptions.map((option, i) => (
           <ContextOption
@@ -175,22 +170,13 @@ const ContextMenu = ({
             {option.description ? <p>{option.description}</p> : null}
           </ContextOption>
         ))}
-        {!options.length ? (
-          <span className={styles.emptyText}>{emptyText}</span>
-        ) : null}
+        {!options.length ? <span className={styles.emptyText}>{emptyText}</span> : null}
       </div>
     </div>
   );
 };
 
-const ContextOption = ({
-  menuId,
-  index,
-  children,
-  onClick,
-  selected,
-  onMouseEnter
-}) => {
+const ContextOption = ({menuId, index, children, onClick, selected, onMouseEnter}) => {
   return (
     <div
       className={styles.option}

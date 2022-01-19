@@ -1,19 +1,13 @@
-import React from "react";
-import { Portal } from "react-portal";
-import ContextMenu from "../ContextMenu/ContextMenu";
+import React from 'react';
+import {Portal} from 'react-portal';
+import ContextMenu from '../ContextMenu/ContextMenu';
 
-import styles from "./Select.module.css";
-import selectStyles from "../Select/Select.module.css";
+import styles from './Select.module.css';
+import selectStyles from '../Select/Select.module.css';
 
 const MAX_LABEL_LENGTH = 50;
 
-const Select = ({
-  options = [],
-  placeholder = "[Select an option]",
-  onChange,
-  data,
-  allowMultiple
-}) => {
+const Select = ({options = [], placeholder = '[Select an option]', onChange, data, allowMultiple}) => {
   const [drawerOpen, setDrawerOpen] = React.useState(false);
   const [drawerCoordinates, setDrawerCoordinates] = React.useState({
     x: 0,
@@ -37,10 +31,10 @@ const Select = ({
   };
 
   const handleOptionSelected = option => {
-    if(allowMultiple){
+    if (allowMultiple) {
       onChange([...data, option.value]);
-    }else{
-      onChange(option.value)
+    } else {
+      onChange(option.value);
     }
   };
 
@@ -48,21 +42,14 @@ const Select = ({
     onChange([...data.slice(0, optionIndex), ...data.slice(optionIndex + 1)]);
   };
 
-  const getFilteredOptions = () => (
-    allowMultiple ?
-    options.filter(opt => !data.includes(opt.value))
-    : options
-  )
+  const getFilteredOptions = () => (allowMultiple ? options.filter(opt => !data.includes(opt.value)) : options);
 
   const selectedOption = React.useMemo(() => {
     const option = options.find(o => o.value === data);
     if (option) {
       return {
         ...option,
-        label:
-          option.label.length > MAX_LABEL_LENGTH
-            ? option.label.slice(0, MAX_LABEL_LENGTH) + "..."
-            : option.label
+        label: option.label.length > MAX_LABEL_LENGTH ? option.label.slice(0, MAX_LABEL_LENGTH) + '...' : option.label
       };
     }
   }, [options, data]);
@@ -73,13 +60,9 @@ const Select = ({
         data.length ? (
           <div className={styles.chipsWrapper}>
             {data.map((val, i) => {
-              const optLabel =
-                (options.find(opt => opt.value === val) || {}).label || "";
+              const optLabel = (options.find(opt => opt.value === val) || {}).label || '';
               return (
-                <OptionChip
-                  onRequestDelete={() => handleOptionDeleted(i)}
-                  key={val}
-                >
+                <OptionChip onRequestDelete={() => handleOptionDeleted(i)} key={val}>
                   {optLabel}
                 </OptionChip>
               );
@@ -87,18 +70,13 @@ const Select = ({
           </div>
         ) : null
       ) : data ? (
-        <SelectedOption
-          wrapperRef={wrapper}
-          option={selectedOption}
-          onClick={openDrawer}
-        />
+        <SelectedOption wrapperRef={wrapper} option={selectedOption} onClick={openDrawer} />
       ) : null}
-      {
-        (allowMultiple || !data) &&
+      {(allowMultiple || !data) && (
         <div className={selectStyles.wrapper} ref={wrapper} onClick={openDrawer}>
           {placeholder}
         </div>
-      }
+      )}
       {drawerOpen && (
         <Portal>
           <ContextMenu
@@ -117,18 +95,14 @@ const Select = ({
 
 export default Select;
 
-const SelectedOption = ({
-  option: { label, description } = {},
-  wrapperRef,
-  onClick
-}) => (
+const SelectedOption = ({option: {label, description} = {}, wrapperRef, onClick}) => (
   <div className={styles.selectedWrapper} onClick={onClick} ref={wrapperRef}>
     <label>{label}</label>
     {description ? <p>{description}</p> : null}
   </div>
 );
 
-const OptionChip = ({ children, onRequestDelete }) => (
+const OptionChip = ({children, onRequestDelete}) => (
   <div className={styles.chipWrapper}>
     {children}
     <button

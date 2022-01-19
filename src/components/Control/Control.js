@@ -1,10 +1,10 @@
-import React from "react";
-import Checkbox from "../Checkbox/Checkbox";
-import TextInput from "../TextInput/TextInput";
-import Select from "../Select/Select";
-import { NodeDispatchContext, ContextContext } from "../../context";
+import React from 'react';
+import Checkbox from '../Checkbox/Checkbox';
+import TextInput from '../TextInput/TextInput';
+import Select from '../Select/Select';
+import {NodeDispatchContext, ContextContext} from '../../context';
 
-import styles from "./Control.module.css";
+import styles from './Control.module.css';
 
 const Control = ({
   type,
@@ -34,7 +34,7 @@ const Control = ({
 
   const onChange = data => {
     nodesDispatch({
-      type: "SET_PORT_DATA",
+      type: 'SET_PORT_DATA',
       data,
       nodeId,
       portName,
@@ -52,44 +52,45 @@ const Control = ({
       data
     };
     switch (type) {
-      case "select":
+      case 'select':
         return (
           <Select
             {...commonProps}
-            options={
-              getOptions ? getOptions(inputData, executionContext) : options
-            }
+            options={getOptions ? getOptions(inputData, executionContext) : options}
             placeholder={placeholder}
           />
         );
-      case "text":
+      case 'text':
         return <TextInput {...commonProps} placeholder={placeholder} />;
-      case "number":
-        return (
-          <TextInput {...commonProps} step={step} type="number" placeholder={placeholder} />
-        );
-      case "checkbox":
+      case 'number':
+        return <TextInput {...commonProps} step={step} type="number" placeholder={placeholder} />;
+      case 'checkbox':
         return <Checkbox {...commonProps} label={calculatedLabel} />;
-      case "multiselect":
+      case 'multiselect':
         return (
           <Select
             allowMultiple
             {...commonProps}
-            options={
-              getOptions ? getOptions(inputData, executionContext) : options
-            }
+            options={getOptions ? getOptions(inputData, executionContext) : options}
             placeholder={placeholder}
             label={label}
           />
         );
-      case "custom":
-        return render(data, onChange, executionContext, triggerRecalculation, {
-          label,
-          name,
-          portName,
-          inputLabel,
-          defaultValue
-        }, allData);
+      case 'custom':
+        return render(
+          data,
+          onChange,
+          executionContext,
+          triggerRecalculation,
+          {
+            label,
+            name,
+            portName,
+            inputLabel,
+            defaultValue
+          },
+          allData
+        );
       default:
         return <div>Control</div>;
     }
@@ -97,7 +98,7 @@ const Control = ({
 
   return (
     <div className={styles.wrapper}>
-      {calculatedLabel && type !== "checkbox" && type !== "custom" && (
+      {calculatedLabel && type !== 'checkbox' && type !== 'custom' && (
         <label className={styles.controlLabel}>{calculatedLabel}</label>
       )}
       {getControlByType(type)}

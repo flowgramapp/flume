@@ -1,58 +1,32 @@
-import React from "react";
-import {
-  NodeTypesContext,
-  NodeDispatchContext,
-  StageContext,
-  CacheContext
-} from "../../context";
-import { getPortRect, calculateCurve } from "../../connectionCalculator";
-import { Portal } from "react-portal";
-import ContextMenu from "../ContextMenu/ContextMenu";
-import IoPorts from "../IoPorts/IoPorts";
-import Draggable from "../Draggable/Draggable";
+import React from 'react';
+import {NodeTypesContext, NodeDispatchContext, StageContext, CacheContext} from '../../context';
+import {getPortRect, calculateCurve} from '../../connectionCalculator';
+import {Portal} from 'react-portal';
+import ContextMenu from '../ContextMenu/ContextMenu';
+import IoPorts from '../IoPorts/IoPorts';
+import Draggable from '../Draggable/Draggable';
 
-import styles from "./Node.module.css";
+import styles from './Node.module.css';
 
-const Node = ({
-  id,
-  width,
-  x,
-  y,
-  stageRect,
-  connections,
-  type,
-  inputData,
-  onDragStart,
-  renderNodeHeader
-}) => {
+const Node = ({id, width, x, y, stageRect, connections, type, inputData, onDragStart, renderNodeHeader}) => {
   const cache = React.useContext(CacheContext);
   const nodeTypes = React.useContext(NodeTypesContext);
   const nodesDispatch = React.useContext(NodeDispatchContext);
   const stageState = React.useContext(StageContext);
   const currentNodeType = nodeTypes[type];
-  const { label, deletable, inputs = [], outputs = [] } = currentNodeType;
+  const {label, deletable, inputs = [], outputs = []} = currentNodeType;
 
   const nodeWrapper = React.useRef();
   const [menuOpen, setMenuOpen] = React.useState(false);
-  const [menuCoordinates, setMenuCoordinates] = React.useState({ x: 0, y: 0 });
+  const [menuCoordinates, setMenuCoordinates] = React.useState({x: 0, y: 0});
 
   const byScale = value => (1 / stageState.scale) * value;
 
   const updateConnectionsByTransput = (transput = {}, isOutput) => {
     Object.entries(transput).forEach(([portName, outputs]) => {
       outputs.forEach(output => {
-        const toRect = getPortRect(
-          id,
-          portName,
-          isOutput ? "output" : "input",
-          cache
-        );
-        const fromRect = getPortRect(
-          output.nodeId,
-          output.portName,
-          isOutput ? "input" : "output",
-          cache
-        );
+        const toRect = getPortRect(id, portName, isOutput ? 'output' : 'input', cache);
+        const fromRect = getPortRect(output.nodeId, output.portName, isOutput ? 'input' : 'output', cache);
         const portHalf = fromRect.width / 2;
         let combined;
         if (isOutput) {
@@ -70,37 +44,21 @@ const Node = ({
         }
         const from = {
           x:
-            byScale(
-              toRect.x -
-                stageRect.current.x +
-                portHalf -
-                stageRect.current.width / 2
-            ) + byScale(stageState.translate.x),
+            byScale(toRect.x - stageRect.current.x + portHalf - stageRect.current.width / 2) +
+            byScale(stageState.translate.x),
           y:
-            byScale(
-              toRect.y -
-                stageRect.current.y +
-                portHalf -
-                stageRect.current.height / 2
-            ) + byScale(stageState.translate.y)
+            byScale(toRect.y - stageRect.current.y + portHalf - stageRect.current.height / 2) +
+            byScale(stageState.translate.y)
         };
         const to = {
           x:
-            byScale(
-              fromRect.x -
-                stageRect.current.x +
-                portHalf -
-                stageRect.current.width / 2
-            ) + byScale(stageState.translate.x),
+            byScale(fromRect.x - stageRect.current.x + portHalf - stageRect.current.width / 2) +
+            byScale(stageState.translate.x),
           y:
-            byScale(
-              fromRect.y -
-                stageRect.current.y +
-                portHalf -
-                stageRect.current.height / 2
-            ) + byScale(stageState.translate.y)
+            byScale(fromRect.y - stageRect.current.y + portHalf - stageRect.current.height / 2) +
+            byScale(stageState.translate.y)
         };
-        cnx.setAttribute("d", calculateCurve(from, to));
+        cnx.setAttribute('d', calculateCurve(from, to));
       });
     });
   };
@@ -114,13 +72,13 @@ const Node = ({
 
   const stopDrag = (e, coordinates) => {
     nodesDispatch({
-      type: "SET_NODE_COORDINATES",
+      type: 'SET_NODE_COORDINATES',
       ...coordinates,
       nodeId: id
     });
   };
 
-  const handleDrag = ({ x, y }) => {
+  const handleDrag = ({x, y}) => {
     nodeWrapper.current.style.transform = `translate(${x}px,${y}px)`;
     updateNodeConnections();
   };
@@ -132,7 +90,7 @@ const Node = ({
   const handleContextMenu = e => {
     e.preventDefault();
     e.stopPropagation();
-    setMenuCoordinates({ x: e.clientX, y: e.clientY });
+    setMenuCoordinates({x: e.clientX, y: e.clientY});
     setMenuOpen(true);
     return false;
   };
@@ -143,14 +101,14 @@ const Node = ({
 
   const deleteNode = () => {
     nodesDispatch({
-      type: "REMOVE_NODE",
+      type: 'REMOVE_NODE',
       nodeId: id
     });
   };
 
-  const handleMenuOption = ({ value }) => {
+  const handleMenuOption = ({value}) => {
     switch (value) {
-      case "deleteNode":
+      case 'deleteNode':
         deleteNode();
         break;
       default:
@@ -200,9 +158,9 @@ const Node = ({
               ...(deletable !== false
                 ? [
                     {
-                      label: "Delete Node",
-                      value: "deleteNode",
-                      description: "Deletes a node and all of its connections."
+                      label: 'Delete Node',
+                      value: 'deleteNode',
+                      description: 'Deletes a node and all of its connections.'
                     }
                   ]
                 : [])
@@ -219,8 +177,8 @@ const Node = ({
   );
 };
 
-const NodeHeader = ({ children, className = "", ...props }) => (
-  <h2 {...props} className={styles.label + (className ? ` ${className}` : "")}>
+const NodeHeader = ({children, className = '', ...props}) => (
+  <h2 {...props} className={styles.label + (className ? ` ${className}` : '')}>
     {children}
   </h2>
 );

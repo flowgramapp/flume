@@ -1,8 +1,8 @@
-.wrapper{
+.wrapper {
   background: none;
   border: none;
 }
-.input{
+.input {
   background: linear-gradient(to bottom, #5b5f62, #6f7477);
   width: 100%;
   border: 1px solid #3c3e40;
@@ -11,10 +11,10 @@
   padding: 5px;
   resize: vertical;
   outline: none;
-  &::placeholder{
+  &::placeholder {
     color: rgb(47, 49, 50);
   }
-  &:focus{
+  &:focus {
     background: linear-gradient(to bottom, #676b6e, #75797c);
   }
 }

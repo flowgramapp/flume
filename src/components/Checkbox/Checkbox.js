@@ -1,9 +1,9 @@
-import React from "react";
-import {nanoid} from "nanoid/non-secure";
+import React from 'react';
+import {nanoid} from 'nanoid/non-secure';
 
-import styles from "./Checkbox.module.css";
+import styles from './Checkbox.module.css';
 
-const Checkbox = ({ label, data, onChange }) => {
+const Checkbox = ({label, data, onChange}) => {
   const id = React.useRef(nanoid(10));
 
   return (

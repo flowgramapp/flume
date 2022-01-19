@@ -1,9 +1,9 @@
-import external from 'rollup-plugin-peer-deps-external'
-import postcss from 'rollup-plugin-postcss'
-import commonjs from '@rollup/plugin-commonjs'
-import resolve from '@rollup/plugin-node-resolve'
-import url from '@rollup/plugin-url'
-import svgr from '@svgr/rollup'
+import external from 'rollup-plugin-peer-deps-external';
+import postcss from 'rollup-plugin-postcss';
+import commonjs from '@rollup/plugin-commonjs';
+import resolve from '@rollup/plugin-node-resolve';
+import url from '@rollup/plugin-url';
+import svgr from '@svgr/rollup';
 
 import pkg from './package.json';
 
@@ -14,15 +14,15 @@ export default {
     {
       file: pkg.main,
       format: 'cjs',
-      sourcemap: true,
+      sourcemap: true
     },
     {
       file: pkg.module,
       format: 'es',
       sourcemap: true
-    },
+    }
   ],
-  external: [ 'react', 'react-dom' ],
+  external: ['react', 'react-dom'],
   plugins: [
     external(),
     postcss({

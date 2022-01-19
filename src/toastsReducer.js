@@ -1,8 +1,8 @@
-import {nanoid} from "nanoid/non-secure";
+import {nanoid} from 'nanoid/non-secure';
 
 export default (toasts = [], action) => {
   switch (action.type) {
-    case "ADD_TOAST":
+    case 'ADD_TOAST':
       return [
         {
           id: nanoid(5),
@@ -15,7 +15,7 @@ export default (toasts = [], action) => {
         },
         ...toasts
       ];
-    case "SET_HEIGHT": {
+    case 'SET_HEIGHT': {
       const index = toasts.findIndex(t => t.id === action.id);
       return [
         ...toasts.slice(0, index),
@@ -26,7 +26,7 @@ export default (toasts = [], action) => {
         ...toasts.slice(index + 1)
       ];
     }
-    case "SET_EXITING": {
+    case 'SET_EXITING': {
       const index = toasts.findIndex(t => t.id === action.id);
       return [
         ...toasts.slice(0, index),
@@ -37,12 +37,9 @@ export default (toasts = [], action) => {
         ...toasts.slice(index + 1)
       ];
     }
-    case "REMOVE_TOAST": {
+    case 'REMOVE_TOAST': {
       const index = toasts.findIndex(t => t.id === action.id);
-      return [
-        ...toasts.slice(0, index),
-        ...toasts.slice(index + 1)
-      ];
+      return [...toasts.slice(0, index), ...toasts.slice(index + 1)];
     }
     default:
       return toasts;

@@ -1,22 +1,15 @@
-import React from "react";
-import { RecalculateStageRectContext } from '../../context'
+import React from 'react';
+import {RecalculateStageRectContext} from '../../context';
 
-import styles from "./TextInput.module.css";
+import styles from './TextInput.module.css';
 
-const TextInput = ({
-  placeholder,
-  updateNodeConnections,
-  onChange,
-  data,
-  step,
-  type
-}) => {
-  const numberInput = React.useRef()
-  const recalculateStageRect = React.useContext(RecalculateStageRectContext)
+const TextInput = ({placeholder, updateNodeConnections, onChange, data, step, type}) => {
+  const numberInput = React.useRef();
+  const recalculateStageRect = React.useContext(RecalculateStageRectContext);
 
   const handleDragEnd = () => {
-    document.removeEventListener("mousemove", handleMouseMove);
-    document.removeEventListener("mouseup", handleDragEnd);
+    document.removeEventListener('mousemove', handleMouseMove);
+    document.removeEventListener('mouseup', handleDragEnd);
   };
 
   const handleMouseMove = e => {
@@ -27,17 +20,17 @@ const TextInput = ({
   const handlePossibleResize = e => {
     e.stopPropagation();
     recalculateStageRect();
-    document.addEventListener("mousemove", handleMouseMove);
-    document.addEventListener("mouseup", handleDragEnd);
+    document.addEventListener('mousemove', handleMouseMove);
+    document.addEventListener('mouseup', handleDragEnd);
   };
 
   return (
     <div className={styles.wrapper}>
-      {type === "number" ? (
+      {type === 'number' ? (
         <input
           onKeyDown={e => {
-            if(e.keyCode === 69){
-              e.preventDefault()
+            if (e.keyCode === 69) {
+              e.preventDefault();
               return false;
             }
           }}
@@ -59,9 +52,9 @@ const TextInput = ({
               numberInput.current.value = 0;
             }
           }}
-          step={step || "1"}
+          step={step || '1'}
           onMouseDown={handlePossibleResize}
-          type={type || "text"}
+          type={type || 'text'}
           placeholder={placeholder}
           className={styles.input}
           defaultValue={data}
